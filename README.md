@@ -1,12 +1,7 @@
-# Fertilized Economy?
+# Africa hunger
 
 # Abstract
 A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
-
-Since the first decade of 1900 fertilizer and pesticides have taken over intensively in the agriculture sector, both to speed up the biological processes within the plants as well as to protect them from external invasive organisms.
-MOTIVATION?
-The analysis aims to connect the economical development in terms of agricultural production and usage of fertilizers and pesticides. Furthermore, particular attention will be given to the actual environmental impact deriving from the adoption of these chemicals in terms of local temperature increase and air pollution. To close the argument, we will eventually prove that in highly developed countries the employment of fertilizers and pesticides contributed positively into the economical growth while irremediably harming the environment.
-To support our analysis, we will use the Food and Agriculture Organization of the United Nations database. 
 
 
 # Research questions
