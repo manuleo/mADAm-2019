@@ -24,7 +24,7 @@ This dataset includes information about production prices. We will use it to com
 All FAO’s data are in .csv so easy to parse and to work on.
 
 ### USDA Agricultural Research Service (ARS) Nutrition Facts Database
-(additional dataset found online)
+(additional dataset found online)  
 We will use this dataset to build the optimal diet. This dataset contains nutritional information for raw products, covering all those present in the FAO dataset. The information reported are per 100 g of servings. You can find this dataset in our `data` folder.
 
 ### Additional
