@@ -57,7 +57,7 @@ For the last week we will focus on visualizing the data in the best way and we a
 * An interactive heat map of the world by which the reader can easily see price and availability of every product in our proposed diet. 
 
 
-# Questions for TAa
+# Questions for TAs
 * We would need a more accurate dataset about African population based not only on gender but also on age. This would help us to increase the accuracy of our estimation of kilocalories needed. Could you recommend one to us?
 * We would like to add some ways to rank most suitable countries that can provide food but rather than price/kg and internal supply we couldn’t come up with other ideas. Any suggestion on this?
 
