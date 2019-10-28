@@ -13,19 +13,19 @@ Despite recent technological improvements, there is still a large share of peopl
 
 # Dataset
 ### FAO dataset
-**Food balance**
+**Food balance**  
 This section contains food supplies for every country in the world. As the documentation reports, a region supply is defined as: *“Production + imports - exports + changes in stocks (decrease or increase)”.*
 We will use this database to analyze the amount of kcal/person/day for each African state in the food categories we are interested in.
 
-**Population**
+**Population**  
 Used to determine the male and female population of each state we are interested in. 
 
-**Producer Prices - Annual** 
+**Producer Prices - Annual**  
 This dataset includes information about production prices. We will use it to compute the ranking of the most suitable countries able to help Africa
 
 All FAO’s data are in .csv so easy to parse and to work on.
 
-### USDA Agricultural Research Service (ARS) Nutrition Facts Database
+### USDA Agricultural Research Service (ARS) Nutrition Facts Database  
 (additional dataset found online)  
 We will use this dataset to build the optimal diet. This dataset contains nutritional information for raw products, covering all those present in the FAO dataset. The information reported are per 100 g of servings. You can find this dataset in our `data` folder.
 
