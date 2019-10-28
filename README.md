@@ -52,9 +52,9 @@ We will use this dataset to build the optimal diet. This dataset contains nutrit
 3. The above mentioned diet will be the basis for a more specific analysis on the nations (restricted to Europe, USA and China) more suitable to provide the resources. In particular, we are going to rank countries based on price/kg and internal supply of every product.
 
 #### 25/11/2019
-1. For the last week we will focus on visualizing the data in the best way and we are thinking about creating:
-* An interactive geographical visualization of the poorest country in Africa in terms of lackness of food.
-* An interactive heat map of the world by which the reader can easily see price and availability of every product in our proposed diet. 
+For the last week we will focus on visualizing the data in the best way and we are thinking about creating:
+..* An interactive geographical visualization of the poorest country in Africa in terms of lackness of food.
+..* An interactive heat map of the world by which the reader can easily see price and availability of every product in our proposed diet. 
 
 
 # Questions for TAa
