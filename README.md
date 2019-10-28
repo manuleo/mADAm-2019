@@ -35,7 +35,7 @@ We will use this dataset to build the optimal diet. This dataset contains nutrit
 #### 04/11/2019 
 1. Elaborate a model by which we can calculate an ideal daily caloric intake for men and women. Goal would be to scrape the [Estimated calories webpage](https://health.gov/dietaryguidelines/2015/guidelines/appendix-2/) in order to obtain substantial data on estimated energy needs that we can then compute and adapt to our particular case.
 
-2. Use data from POPULATION section (Fao Database) to extract current African population based on gender.
+2. Use data from POPULATION section (FAO Database) to extract current African population based on gender.
 
 #### 11/11/2019
 1. Compute for every region in Africa an estimation of kilocalories demand taking into account the composition of population.
