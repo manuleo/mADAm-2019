@@ -16,7 +16,9 @@ Despite recent technological improvements, there is still a large share of peopl
 **Food balance**
 This section contains food supplies for every country in the world. As the documentation reports, a region supply is defined as: *“Production + imports - exports + changes in stocks (decrease or increase)”.*
 We will use this database to analyze the amount of kcal/person/day for each African state in the food categories we are interested in.
-Population: used to determine the male and female population of each state we are interested in. 
+
+**Population**
+Used to determine the male and female population of each state we are interested in. 
 
 **Producer Prices - Annual** 
 This dataset includes information about production prices. We will use it to compute the ranking of the most suitable countries able to help Africa
