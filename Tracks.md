@@ -1,5 +1,5 @@
 # Tracks
-* Joao: explode and counter-explode the nutrition values
+* Joao: explode and counter-explode the nutrition values 
 * Manuel: extract African countries from population - age and match with nutrition data
 * Riccardo/Dario: extract kcal from Food Balance + try to predict up to 2015 (2020) 
 
@@ -8,3 +8,7 @@ and we achieve kcal/persona/day in each group -> we can compare this data with F
 
 General idea: we have kcal/persona/day from FAO, we can obtain kcal/year by multiply per people in each country and 365. In the other group
 we sum and multiply per 365 and we have kcal/year total needed
+
+# Notes
+* Talk about the unit measure for the calories
+* For the specific idea, the dataframe Manuel made can help in working specifically -> we could build a map in which for each country we show the problem in nutrition for age group
