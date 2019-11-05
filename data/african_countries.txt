@@ -10,7 +10,7 @@ Central African Republic
 Chad
 Comoros
 Congo
-Côte d'Ivoire
+CÃ´te d'Ivoire
 Democratic Republic of the Congo
 Djibouti
 Egypt
@@ -39,7 +39,7 @@ Namibia
 Niger
 Nigeria
 Rwanda
-Réunion
+RÃ©union
 Sao Tome and Principe
 Senegal
 Seychelles
