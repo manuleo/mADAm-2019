@@ -16,6 +16,7 @@ Djibouti
 Egypt
 Equatorial Guinea
 Eritrea
+Eswatini
 Ethiopia
 Gabon
 Gambia
@@ -47,7 +48,6 @@ Somalia
 South Sudan
 Southern Africa
 Sudan
-Swaziland
 Togo
 Tunisia
 Uganda
