@@ -27,3 +27,6 @@ we sum and multiply per 365 and we have kcal/year total needed
 * Finish the analysis on kcal
 * We have to add an analysis similar to the one about calories for fat, protein and carbo -> the amount of needed carbo, fat and protein came from the percentage we have.
 * Add to the Readme.md link about vitamins
+
+# URLs to reference in work/report
+https://www.nal.usda.gov/fnic/how-many-calories-are-one-gram-fat-carbohydrate-or-protein 
