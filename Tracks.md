@@ -30,3 +30,11 @@ we sum and multiply per 365 and we have kcal/year total needed
 
 # URLs to reference in work/report
 https://www.nal.usda.gov/fnic/how-many-calories-are-one-gram-fat-carbohydrate-or-protein 
+
+
+# Another next:
+- Merge Europe and main project notebook
+- Define functions, change variable names
+- Beautiful chapters, comments
+- Analysis on Europe and Africa individually (plots)
+- Compare Africa and Europe (plots)
