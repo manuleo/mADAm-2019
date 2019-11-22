@@ -7,6 +7,26 @@ import numpy as np
 import pandas as pd
 import gc
 
+def prepare_future(dataframe, start, end):
+    '''
+    Appends empty columns for years in the range [start:end] in the columns, in preparation for future analysis
+    Input:
+        - dataframe (pandas dataframe): dataframe with food supply data for multiple countries
+        - start (int): begining of interval to which to create empty columns (inclusive)
+        - end (int): end of interval to which to create empty columns (inclusive)
+    Outputs:
+        - dataframe (pandas dataframe): dataframe with food supply data for multiple countries (after preparation)
+    Returns the dataframe with the appended columns
+    '''
+    dataframe = dataframe.transpose()
+    
+    for i in np.arange(start,end+1):
+        dataframe[i] = np.nan
+        
+    dataframe = dataframe.transpose()
+    
+    return dataframe
+
 def predict_future(dataset, full_pkl_path, run_RNN = False, past_history = 10, verbose = False):
     """Predict missing data in the future using RNNs. The years to predict are all the ones as NaN
     in the dataset.

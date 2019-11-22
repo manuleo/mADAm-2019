@@ -55,8 +55,8 @@ def timeline(dataframe, zone, extras=""):
         - extras (str): extra information to be displayed in the title of the plot [visualization purposes]
     '''
     dataframe.plot.line(legend = False)
-    plt.xlabel("Time (year)", fontsize=18)
-    plt.ylabel("Food supply (kcal/person/day)", fontsize=12)
+    plt.xlabel("Time (year)")
+    plt.ylabel("Food supply (kcal/person/day)")
     plt.title("Food supply for different {} countries (Each line is a country){}".format(zone, extras))
     
     
@@ -77,25 +77,6 @@ def merge_countries(dataframe, replacements):
     
     return clean_dataframe
 
-def prepare_future(dataframe, start, end):
-    '''
-    Appends empty columns for years in the range [start:end] in the columns, in preparation for future analysis
-    Input:
-        - dataframe (pandas dataframe): dataframe with food supply data for multiple countries
-        - start (int): begining of interval to which to create empty columns (inclusive)
-        - end (int): end of interval to which to create empty columns (exclusive)
-    Outputs:
-        - dataframe (pandas dataframe): dataframe with food supply data for multiple countries (after preparation)
-    Returns the dataframe with the appended columns
-    '''
-    dataframe = dataframe.transpose()
-    
-    for i in np.arange(start,end+1):
-        dataframe[i] = np.nan
-        
-    dataframe = dataframe.transpose()
-    
-    return dataframe
 
 def single_age(age_range):
     '''
@@ -180,25 +161,28 @@ def clean_pop_df(dataframe, countries):
     Outputs:
         - new_dataframe (pandas_dataframe): dataframe with information on countries of interest population, after preprocessing for analysis
     '''     
+    new_dataframe = dataframe.copy()
     #cleaning population dataset
-    dataframe.drop(columns=["Index", "Variant", "Notes", "Country code", "Type", "Parent code"], inplace=True)
-    dataframe.rename(columns={"Reference date (as of 1 July)": "year", "Region, subregion, country or area *": "country"}, inplace=True)
+    new_dataframe.drop(columns=["Index", "Variant", "Notes", "Country code", "Type", "Parent code"], inplace=True)
+    new_dataframe.rename(columns={"Reference date (as of 1 July)": "year", "Region, subregion, country or area *": "country"}, inplace=True)
     
     #keeping only interesting countries
-    dataframe = dataframe[dataframe['country'].isin(countries)]
+    new_dataframe = new_dataframe[new_dataframe['country'].isin(countries)]
     
     #take into consideration the 1000 of population from the beginning now
     
-    dataframe = dataframe.apply(lambda x: x*1000 if x.name not in ['country', 'year'] else x)
+    new_dataframe = new_dataframe.apply(lambda x: x*1000 if x.name not in ['country', 'year'] else x)
     #dataframe.iloc[:, 2:] = dataframe.iloc[:, 2:]*1000
     
-    return dataframe
+    return new_dataframe
 
-def interpolate_years(dataframe):
+def interpolate_years(dataframe, start, end):
     '''
-    Interpolation of years' population, which are 5 years apart each.
+    Interpolation of years' population, which are 5 years apart each, into a 1 year frequency
     Inputs:
         - dataframe (pandas dataframe): dataframe of population for multiple countries (years separated by multiple of 5)
+        - start (int): begining of interval of years where we want to interpolate (inclusive)
+        - end (int): end of interval of years where we want to interpolate (inclusive)
     Outputs:
         - dataframe_yearly (pandas dataframe): dataframe of population for multiple countries after interpolation of years
     '''
@@ -210,7 +194,7 @@ def interpolate_years(dataframe):
         for ages in dataframe.columns[2:]:
             x = dataframe.year.drop_duplicates()
             y = dataframe[(dataframe.country==country)][ages].astype(float)
-            xnew = np.arange(1950,2021)
+            xnew = np.arange(start,end+1)
             ynew = np.interp(xnew, x, y, left=None, right=None, period=None)
             pop_temp[ages] = ynew
             pop_temp["country"]=country
@@ -238,7 +222,7 @@ def obtain_total_pop(male_dataframe, female_dataframe):
 
 def reshape_pop_dataframe(dataframe):
     '''
-    Reshape a dataframe to be similar in format to other datasets used, in other to allow comparisons of the two.
+    Reshape a population dataframe to be similar in format to other datasets used, in other to allow comparisons of the two.
     Input:
         - dataframe (pandas dataframe): dataframe with population information for multiple countries
     Output:
@@ -254,7 +238,7 @@ def reshape_pop_dataframe(dataframe):
     
     return dataframe
 
-def get_calories(dataframe, need):
+def get_calories_need(dataframe, need):
     '''
     Returns a dataframe with caloric needs per country.
     Inputs:
@@ -280,11 +264,35 @@ def obtain_total_cal_need(male_dataframe, female_dataframe):
     Output:
         - total_cal_demand (pandas dataframe): dataframe with caloric needs for each country, each year and per age group
     '''
+    # computing calory demand in each country in each year per age group (kcal/day)
     total_cal_demand = male_dataframe.copy()
     sum_ind = total_cal_demand.columns[2:]
     total_cal_demand[sum_ind] = total_cal_demand[sum_ind] + female_dataframe[sum_ind]
     
+    # computing calory demand in each country in each year (kcal/day)
+    sum_ind = total_cal_demand.columns[2:]
+    total_cal_demand['Calories'] = total_cal_demand[sum_ind].sum(axis=1)
+    total_cal_demand.drop(columns=sum_ind, inplace=True)
+    
+    # computing calory demand in each country in each year (kcal/year)    
+    total_cal_demand['Calories'] = total_cal_demand['Calories']*365
+    
     return total_cal_demand
+
+def reshape_calories_df(cal_dafaframe):
+    '''
+    Reshape a calories dataframe to be similar in format to other datasets used, in other to allow comparisons of the two.
+    Input:
+        - total_cal_dataframe (pandas dataframe): dataframe with caloric need information for multiple countries
+    Output:
+        - reshaped_dataframe (pandas daframe): reshaped dataframe with caloric need information for multiple countries
+    '''
+    years = list(cal_dafaframe.year.drop_duplicates().sort_values())
+    cal_dafaframe = cal_dafaframe.sort_values('year').groupby("country")['Calories'].apply(lambda df: df.reset_index(drop=True)).unstack()
+    cal_dafaframe.columns = years
+    cal_dafaframe.index.name = 'Country'
+    
+    return cal_dafaframe
 
 def obtain_difference(pop_dataframe, supply_dataframe, total_cal_demand):
     '''
@@ -296,6 +304,8 @@ def obtain_difference(pop_dataframe, supply_dataframe, total_cal_demand):
     Outputs:
         - cal_difference (pandas dataframe): dataframe with difference between available supply and actual demand (of calories) for multiple countries
     '''
+    
+    # transform supply unit to kcal/person/day 
     supply_dataframe_cpy = supply_dataframe.transpose()
     supply_dataframe_cpy = supply_dataframe_cpy*365
     
@@ -305,6 +315,7 @@ def obtain_difference(pop_dataframe, supply_dataframe, total_cal_demand):
 
     supply_final = supply_final.dropna(axis=1, how="all")
     
+    # calculate the difference    
     cal_difference = (supply_final - total_cal_demand)/365
     cal_difference = cal_difference.div(pop_to_mult).dropna(axis=1, how="all")
     cal_difference = cal_difference.dropna(axis=0, how="all")
