@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import re
+import matplotlib.pyplot as plt
+from collections import defaultdict
 
 def clean_Fs_and_years(dataframe):
     ''' 
@@ -32,7 +34,7 @@ def obtain_supply(dataframe_balance):
         (by selecting Item Code = 2901 and Element Code = 664) and drops unecessary data
     Returns supply dataframe
     '''
-    dataframe_supply = dataframe_balance[(dataframe_balance["Item Code"] == 2901) & (dataframe_balance["Element Code"] == 664)];
+    dataframe_supply = dataframe_balance[(dataframe_balance["Item Code"] == 2901) & (dataframe_balance["Element Code"] == 664)]
     dataframe_supply = dataframe_supply.drop(columns=["Area Code","Item Code","Item","Element Code","Element", "Unit"])
     
     return dataframe_supply
