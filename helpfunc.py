@@ -1,14 +1,6 @@
 import pandas as pd
 import numpy as np
 import re
-from matplotlib.ticker import MaxNLocator
-import matplotlib.pyplot as plt
-from requests import get
-from bs4 import BeautifulSoup
-from collections import defaultdict
-from io import StringIO
-from scipy.optimize import curve_fit
-plt.rcParams["figure.figsize"] = (15,8) #set size of plot
 
 def clean_Fs_and_years(dataframe):
     ''' 
@@ -79,7 +71,7 @@ def prepare_future(dataframe, start, end):
     '''
     dataframe = dataframe.transpose()
     
-    for i in np.arange(2014,2021):
+    for i in np.arange(start,end+1):
         dataframe[i] = np.nan
         
     dataframe = dataframe.transpose()
@@ -242,7 +234,7 @@ def obtain_difference(pop_dataframe, supply_dataframe, total_cal_demand):
     Returns the difference between supply and demand in caloric need for a specific zone of the world; 
         pop_dataframe is the population data for the zone; supply_dataframe has information about
         inner country available supply; total_cal_demand has information about how many calories each 
-        country in the zone needs to properly feed its population. The returned value is in kcal/person/year.
+        country in the zone needs to properly feed its population. The returned value is in kcal/person/day.
     '''
     supply_dataframe_cpy = supply_dataframe.transpose()
     supply_dataframe_cpy = supply_dataframe_cpy*365
