@@ -99,8 +99,8 @@ def draw_demand_bar(current_year, cal_demand):
         - cal_demand (pandas dataframe): dataframe with kcal demand for interested countries
     '''
     # clear plot and define grid
-    plt.clf()
-    grid = plt.GridSpec(1, 5, wspace=0.4, hspace=0.3)
+    plt.clf();
+    grid = plt.GridSpec(1, 5, wspace=0.4, hspace=0.3);
     cal_sorted = cal_demand[current_year].sort_values()
     
     # first bar plot 
