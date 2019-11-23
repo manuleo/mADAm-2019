@@ -9,6 +9,7 @@ import geopandas as gpd
 import folium
 from folium import plugins
 import warnings
+import branca.colormap as cm
 
 warnings.simplefilter(action='ignore', category=FutureWarning) # Folium future warning
 plt.rcParams["figure.figsize"] = (15,8) #set size of plot
@@ -28,7 +29,7 @@ def timeline_supply(dataframe, zone, extras=""):
     plt.ylabel("Food supply (kcal/person/day)")
     plt.title("Food supply for different {} countries (Each line is a country){}".format(zone, extras))
     
-def plot_map(dataframe, geo_world_path, country_kv, year, colorbrew, legend_name, value_description, save_path):
+def plot_map(dataframe, geo_world_path, country_kv, year, colorbrew, legend_name, value_description, save_path, bins=6):
     '''
     Plot a choropleth map (geographic heat map), implementing tooltips showing name of the countries and the values passed in dataframe.
     Inputs:
@@ -40,6 +41,7 @@ def plot_map(dataframe, geo_world_path, country_kv, year, colorbrew, legend_name
         - legend_name (string): name in the legend of the colors
         - value_description (string): description of the value presented in the map
         - save_path (string): string of the path where save the map
+        - bins (int, default = 6): integer or list representing the number of bins to use in the legend (integer for equally spaced, list to define them)
     Output:
         - mymap: map that will be plotted'''
     
@@ -50,7 +52,7 @@ def plot_map(dataframe, geo_world_path, country_kv, year, colorbrew, legend_name
     data_plot = data_plot.merge(dataframe[year].to_frame(), left_on="names", right_index=True)
     data_plot = data_plot[["id","geometry","names",year]]
     data_plot = data_plot.rename(columns={year:"val"})
-    
+        
     #Preparing plot
     x_map=data_plot.centroid.x.mean() #Center map
     y_map=data_plot.centroid.y.mean()
@@ -65,11 +67,12 @@ def plot_map(dataframe, geo_world_path, country_kv, year, colorbrew, legend_name
         data=data_plot,
         columns=['id',"val"],
         key_on="feature.properties.id",
-        fill_color=colorbrew,
         fill_opacity=0.7,
         line_opacity=0.2,
+        fill_color=colorbrew,
         legend_name=legend_name,
-        smooth_factor=0.1
+        smooth_factor=0.1,
+        bins = bins
     )
     #Style and Highlight function for tooltip
     style_function = lambda x: {'fillColor': '#ffffff', 
@@ -140,3 +143,37 @@ def draw_demand_bar(current_year, cal_demand):
     plt.text(0,38, str(excess_share) + " %", fontsize=20, weight = 'bold', horizontalalignment="center");
     
     
+    
+def timeline(end_year):
+    '''
+    Plot a timeline for a specific period of time
+    '''
+    plt.clf()
+    grid = plt.GridSpec(2, 1, wspace=0.4, hspace=0.3);
+    x = pop_male_africa.year.drop_duplicates().reset_index(drop=True)
+    y = pop_male_africa[(pop_male_africa.country==countryrand)]["30-34"].reset_index(drop=True)
+    xy_male = pd.DataFrame(dict(x=x, y=y))
+    xy_male = xy_male[(xy_male.x <= end_year)]
+    # first bar plot 
+    plt.subplot(grid[0, 0]);
+    plt.plot(xy_male.x, xy_male.y)
+    #axs[0].plot(xy_male.x,xy_male.y)
+    plt.xlabel("Time (year)",fontsize=8)
+    plt.ylabel("Male population for group age of 30-34", fontsize=8);
+    plt.xlim(1950,2020)
+    plt.ylim(0,y.max())
+    plt.title(""+countryrand)
+
+    x = pop_female_africa.year.drop_duplicates().reset_index(drop=True)
+    y = pop_female_africa[(pop_female_africa.country==countryrand)]["30-34"].reset_index(drop=True)
+    xy_female = pd.DataFrame(dict(x=x, y=y))
+    xy_female = xy_female[(xy_female.x <= end_year)]
+    plt.subplot(grid[1, 0]);
+    plt.plot(xy_female.x, xy_female.y, color="#ffc0cb")
+    #axs[1].plot(xy_female.x,xy_female.y,color="#ffc0cb")
+    plt.xlabel("Time (year)",fontsize=8)
+    plt.ylabel("Female population for group age of 30-34", fontsize=8);
+    plt.xlim(1950,2020)
+    plt.ylim(0,y.max())
+    plt.title(""+countryrand)
+    plt.subplots_adjust(hspace=0.5);
