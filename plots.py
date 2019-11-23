@@ -28,13 +28,14 @@ def timeline_supply(dataframe, zone, extras=""):
     plt.ylabel("Food supply (kcal/person/day)")
     plt.title("Food supply for different {} countries (Each line is a country){}".format(zone, extras))
     
-def plot_map(dataframe, geo_world_path, country_codes, colorbrew, legend_name, value_description, save_path):
+def plot_map(dataframe, geo_world_path, country_kv, year, colorbrew, legend_name, value_description, save_path):
     '''
     Plot a choropleth map (geographic heat map), implementing tooltips showing name of the countries and the values passed in dataframe.
     Inputs:
         - dataframe (pandas dataframe): dataframe containing a column with the values to plot in the choropleth for each country
         - geo_world_path (string): path to the json with coordinates for all the country in the word (geometries)
-        - country_codes (list): countries to retain from the world in the plot
+        - country_kv (Pandas dataframe): countries to retain from the world in the plot. Make sure keys (codes) are from json and values (names) match your dataframe
+        - year (int): year that you want to display. Has to be the name of the column.
         - colorblew (string): color palette to use in the map
         - legend_name (string): name in the legend of the colors
         - value_description (string): description of the value presented in the map
@@ -44,9 +45,11 @@ def plot_map(dataframe, geo_world_path, country_codes, colorbrew, legend_name, v
     
     #Preparing data to plot
     geojson_world = gpd.read_file(geo_world_path) 
-    geojson_continent = geojson_world[geojson_world.id.isin(country_codes)] #retaining interested countries from "country_codes" list
-    data_plot = geojson_continent.sort_values(by="name").copy() # sorting by name to match the country codes
-    data_plot["val"] = dataframe.values #adding values to plot from "dataframe"
+    geojson_continent = geojson_world[geojson_world.id.isin(country_kv.codes.values)] #retaining interested countries from "country_codes" list
+    data_plot = geojson_continent.merge(country_kv, left_on="id", right_on="codes")
+    data_plot = data_plot.merge(dataframe[year].to_frame(), left_on="names", right_index=True)
+    data_plot = data_plot[["id","geometry","names",year]]
+    data_plot = data_plot.rename(columns={year:"val"})
     
     #Preparing plot
     x_map=data_plot.centroid.x.mean() #Center map
@@ -60,7 +63,7 @@ def plot_map(dataframe, geo_world_path, country_codes, colorbrew, legend_name, v
         geo_data=data_plot,
         name='Choropleth',
         data=data_plot,
-        columns=['id','val'],
+        columns=['id',"val"],
         key_on="feature.properties.id",
         fill_color=colorbrew,
         fill_opacity=0.7,
@@ -85,7 +88,7 @@ def plot_map(dataframe, geo_world_path, country_codes, colorbrew, legend_name, v
         control=False,
         highlight_function=highlight_function, 
         tooltip=folium.features.GeoJsonTooltip(
-        fields=['name','val'],
+        fields=['names',"val"],
         aliases=['Country: ',value_description],
         style=("background-color: white; color: #333333; font-family: arial; font-size: 12px; padding: 10px;") 
         )
