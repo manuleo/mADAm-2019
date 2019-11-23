@@ -8,7 +8,11 @@ import matplotlib.pyplot as plt
 import geopandas as gpd
 import folium
 from folium import plugins
+import warnings
+
+warnings.simplefilter(action='ignore', category=FutureWarning) # Folium future warning
 plt.rcParams["figure.figsize"] = (15,8) #set size of plot
+
 
 
 def timeline_supply(dataframe, zone, extras=""):
@@ -24,7 +28,7 @@ def timeline_supply(dataframe, zone, extras=""):
     plt.ylabel("Food supply (kcal/person/day)")
     plt.title("Food supply for different {} countries (Each line is a country){}".format(zone, extras))
     
-def plot_map(dataframe, geo_world_path, country_codes, colorbrew, legend_name, value_description):
+def plot_map(dataframe, geo_world_path, country_codes, colorbrew, legend_name, value_description, save_path):
     '''
     Plot a choropleth map (geographic heat map), implementing tooltips showing name of the countries and the values passed in dataframe.
     Inputs:
@@ -34,6 +38,7 @@ def plot_map(dataframe, geo_world_path, country_codes, colorbrew, legend_name, v
         - colorblew (string): color palette to use in the map
         - legend_name (string): name in the legend of the colors
         - value_description (string): description of the value presented in the map
+        - save_path (string): string of the path where save the map
     Output:
         - mymap: map that will be plotted'''
     
@@ -89,6 +94,8 @@ def plot_map(dataframe, geo_world_path, country_codes, colorbrew, legend_name, v
     mymap.add_child(tooltips)
     mymap.keep_in_front(tooltips)
     folium.LayerControl().add_to(mymap)
+    mymap.save(outfile=save_path)
+
     return mymap
 
 def draw_demand_bar(current_year, cal_demand):
@@ -128,4 +135,5 @@ def draw_demand_bar(current_year, cal_demand):
     excess_share = int(excess/(deficit+excess)*100)
     plt.text(0,2, str(deficit_share) + " %", fontsize=20, weight = 'bold', horizontalalignment="center");
     plt.text(0,38, str(excess_share) + " %", fontsize=20, weight = 'bold', horizontalalignment="center");
+    
     
