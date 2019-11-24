@@ -177,16 +177,19 @@ def interpolate_years(dataframe, start, end):
     Outputs:
         - dataframe_yearly (pandas dataframe): dataframe of population for multiple countries after interpolation of years
     '''
+    # define new dataframes
     coll = ['country', 'year'] 
-
     pop_temp= pd.DataFrame(columns = coll)
     dataframe_yearly= pd.DataFrame(columns = coll)
+    
     for country in dataframe.country.drop_duplicates():
         for ages in dataframe.columns[2:]:
+            #take years and interpolate
             x = dataframe.year.drop_duplicates()
             y = dataframe[(dataframe.country==country)][ages].astype(float)
             xnew = np.arange(start,end+1)
             ynew = np.interp(xnew, x, y, left=None, right=None, period=None)
+            #rebuild dataframe
             pop_temp[ages] = ynew
             pop_temp["country"]=country
             pop_temp["year"]=xnew  
@@ -204,9 +207,11 @@ def obtain_total_pop(male_dataframe, female_dataframe):
     Output:
         - pop_total (pandas dataframe): dataframe of total population for multiple countries
     '''
+    # sum dataframes
     pop_total = male_dataframe.copy()
     pop_total.iloc[:, 2:] = male_dataframe.iloc[:, 2:] + female_dataframe.iloc[:, 2:]
     sum_ind = pop_total.columns[2:]
+    # sum over group ages
     pop_total['Population'] = pop_total[sum_ind].sum(axis=1)
     pop_total.drop(columns=sum_ind, inplace=True)
     return pop_total

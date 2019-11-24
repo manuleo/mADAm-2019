@@ -9,7 +9,7 @@ import geopandas as gpd
 import folium
 from folium import plugins
 import warnings
-import branca.colormap as cm
+import random
 
 warnings.simplefilter(action='ignore', category=FutureWarning) # Folium future warning
 plt.rcParams["figure.figsize"] = (15,8) #set size of plot
@@ -144,36 +144,62 @@ def draw_demand_bar(current_year, cal_demand):
     
     
     
-def timeline(end_year):
+def timeline_country_gender(end_year, dataframe_male, dataframe_female, age_group, countries):
     '''
-    Plot a timeline for a specific period of time
+    Plot a timeline of the gender dataframe for a bunch of countries on a particular age group.
+    Inputs:
+        - end_year (int): year for which the timeline stop
+        - dataframe_male (pandas dataframe): male population dataframe with informaton per age group
+        - dataframe_female (pandas dataframe): female population dataframe with informaton per age group
+        - age_group (string): age group you want to plot from the dataframes
+        - countries (list): list of countries to plot. 
     '''
+    
+    min_year = min(dataframe_male.year.values)
+    max_year = max(dataframe_male.year.values)
+    
     plt.clf()
     grid = plt.GridSpec(2, 1, wspace=0.4, hspace=0.3);
-    x = pop_male_africa.year.drop_duplicates().reset_index(drop=True)
-    y = pop_male_africa[(pop_male_africa.country==countryrand)]["30-34"].reset_index(drop=True)
-    xy_male = pd.DataFrame(dict(x=x, y=y))
-    xy_male = xy_male[(xy_male.x <= end_year)]
-    # first bar plot 
+    
+    #plotting male plot
     plt.subplot(grid[0, 0]);
-    plt.plot(xy_male.x, xy_male.y)
-    #axs[0].plot(xy_male.x,xy_male.y)
+    male_max = 0
+    for c in countries:
+        x = dataframe_male.year.drop_duplicates().reset_index(drop=True)
+        y = dataframe_male[(dataframe_male.country==c)][age_group].reset_index(drop=True)
+        # limiting year
+        xy_male = pd.DataFrame(dict(x=x, y=y))
+        xy_male = xy_male[(xy_male.x <= end_year)]
+        # computing y limit for the plot
+        if y.max() > male_max:
+            male_max = y.max()
+        # plotting
+        plt.plot(xy_male.x, xy_male.y, label=c)
+    
     plt.xlabel("Time (year)",fontsize=8)
-    plt.ylabel("Male population for group age of 30-34", fontsize=8);
-    plt.xlim(1950,2020)
-    plt.ylim(0,y.max())
-    plt.title(""+countryrand)
-
-    x = pop_female_africa.year.drop_duplicates().reset_index(drop=True)
-    y = pop_female_africa[(pop_female_africa.country==countryrand)]["30-34"].reset_index(drop=True)
-    xy_female = pd.DataFrame(dict(x=x, y=y))
-    xy_female = xy_female[(xy_female.x <= end_year)]
+    plt.ylabel("Male population for group age of {}".format(age_group), fontsize=8);
+    plt.xlim(min_year,max_year)
+    plt.ylim(0, male_max)
+    plt.legend(loc = "upper left")
+    plt.title("Growing of male population - year {}".format(end_year))
+    
+    # plotting female plot
     plt.subplot(grid[1, 0]);
-    plt.plot(xy_female.x, xy_female.y, color="#ffc0cb")
-    #axs[1].plot(xy_female.x,xy_female.y,color="#ffc0cb")
+    female_max = 0
+    for c in countries:
+        x = dataframe_female.year.drop_duplicates().reset_index(drop=True)
+        y = dataframe_female[(dataframe_female.country==c)][age_group].reset_index(drop=True)
+        xy_female = pd.DataFrame(dict(x=x, y=y))
+        xy_female = xy_female[(xy_female.x <= end_year)]
+        
+        if y.max() > female_max:
+            female_max = y.max()
+        plt.plot(xy_female.x, xy_female.y, label=c)
+    
     plt.xlabel("Time (year)",fontsize=8)
-    plt.ylabel("Female population for group age of 30-34", fontsize=8);
-    plt.xlim(1950,2020)
-    plt.ylim(0,y.max())
-    plt.title(""+countryrand)
+    plt.ylabel("Female population for group age of {}".format(age_group), fontsize=8);
+    plt.xlim(min_year,max_year)
+    plt.ylim(0,female_max)
+    plt.legend(loc = "upper left")
+    plt.title("Growing of female population - year {}".format(end_year))
     plt.subplots_adjust(hspace=0.5);
