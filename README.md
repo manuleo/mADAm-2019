@@ -1,5 +1,7 @@
 # Solving hunger in Africa: a global handbook
 
+## Notebook containing the project is `project.ipynb`. As jupyter notebook doesn't reproduce the embedded HTML, the already rendered version is available [HERE](https://nbviewer.jupyter.org/github/manuleo/mADAm-2019/blob/master/project.ipynb)
+
 # Abstract
 Despite recent technological improvements, there is still a large share of people who are starving. *“1 in 9 people in this world go to bed on an empty stomach”* (source: [World Food Program](https://www.wfp.org/zero-hunger)). The aim of this project is to propose a way to end starvation in Africa, one of the continents most affected by this hunger issue. To do so, we will tackle the problem from two different perspectives. On one hand, the analysis will show an estimatation of which African countries have food deficits. On the other hand, the investigation will give the reader a complete picture of the food availability across Europe. The FAO dataset will be intensively used as it contains useful information about net food supply for both Africa and Europe. The analysis section will then leave space to a more important chapter of our story: how to solve the uneven distribution of food? We would like to reallocate resources that otherwise would be end up as food waste from the richest European countries to the poorest African ones. This combined effort approach is a simple solution we think could potentially have a huge impact on many lives!
 
@@ -43,7 +45,7 @@ This dataset was retrieved from Kaggle at the following [link](https://www.kaggl
 
 ### USDA Agricultural Research Service (ARS) Nutrition Facts Database  
 (additional dataset found online)  
-We will use this dataset to build the optimal diet. This dataset contains nutritional information for raw products, covering all those present in the FAO dataset. The information reported are per 100 g of servings. You can find this dataset in our `data` folder.
+We will use this dataset to build the optimal diet. This dataset contains nutritional information for raw products, covering all those present in the FAO dataset. The information reported are per 100 g of servings.
 
 ### Additional
 [Estimated calories needed](https://health.gov/dietaryguidelines/2015/guidelines/appendix-2/): we will scrape this page to obtain information on the average calories needed for the African population
@@ -91,4 +93,4 @@ In the last two weeks we will focus entirely on the creation of an effective dat
 
 5. Come up with visualization methods for these informations, in order to catch the attention of the user. We have described carefully in the notebook different type of interactive plots we have in mind.
 
-6. Propose to the reader the results of our model on two levels. The first one is aimed to catch the reader attention by showing him just few but interesting results coming from our first analysis on Africa and Europe over the years. In this part, we will use **heatmaps**, **heatmaps with time**, **short animation of different kinds**. As the data story goes on, they reader will gain more knowledge on African history of famine and European food wasting regime. As the second level comes in, our proposal will be 
+6. Propose to the reader the results of our model on two levels. The first one is aimed to catch the reader attention by showing him just few but interesting results coming from our first analysis on Africa and Europe over the years. In this part, we will use **heatmaps**, **heatmaps with time**, **short animation of different kinds**. As the data story goes on, they reader will gain more knowledge on African history of famine and European food wasting trend. As the second level comes in, our proposal will be to introduce the model of macronutrients, final products and finally reallocation of resources we proposed.
