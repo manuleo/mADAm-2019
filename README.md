@@ -73,17 +73,9 @@ We will use this dataset to build the optimal diet. This dataset contains nutrit
 For the last week we will focus on visualizing the data in the best way and we are thinking about creating:
 * An interactive geographical visualization of the poorest country in Africa in terms of lack of food.
 
-
-# Milestone 2
-The results we came up with are satisfactory as they accurately reproduce what was expected. They also allowed for interesting analysis.
-We decided to conduct an analysis on Europe too as it's interesting to see how much spare food would be available for redistribution, as European countries are more likely to be able to provide help. 
-Furthermore, it was decided to restrict further analysis to 2020 as the interest is in the contemporary situation.
-Nine African countries were found to show an overall deficit in supply, meaning unlike other African countries, they are not capable of solving their issues themselves.  
-
-# Milestones up to Milestone 3
+# Milestones up to milestone 3
 Methodology: A proposal will be made how food could be redistributed from Europe to Africa, not countrywise. Even though a country might overall be in a surplus, it could potentially lack some macronutrient (making up for it with more of another one). As we are not only interested in supplying the necessary calories but also providing a healhty diet, the analysis will be continued with into the three macronutrients (Carbs, Proteins and Fat). Due to calories not being a tangible unit for most readers (especially when using orders of magnitude of Gigacalories), representative products for each macronutrient will be introduced to facilitate conveyance for a broader audience.
 
-# Milestones up to milestone 3
 #### Week 26/11-31/11:
 1. Split the nutrition supply into macronutrients and analyze respective surplus and deficit
 2. After obtaining such informations, we are able to choose which items are considered as "of interest" to represent the abstract notion of calories
