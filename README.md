@@ -86,7 +86,7 @@ Methodology: A proposal will be made how food could be redistributed from Europe
 
 4. After deciding these quantities, we'll find which countries should provide and receive which food items and in what quantities, based on their surplus and deficits, respectively. The goal here is to have a simple but effective way to communicate to the reader order of magnitudes on play in this problem. We will provide real examples on how just one country or a group of countries could sustain African calories' debt (if their population is comparable). In addition, it will be considered to compute in a more accurate way how european countries will have to contribute to fill up the demand. We still have to figure out an efficient model but the idea is to define a share of final products based on individual country's population. 
 
-#### 20/12/2019*:
+#### 20/12/2019:
 In the last two weeks we will focus entirely on the creation of an effective datastory. 
 
 5. Come up with visualization methods for these informations, in order to catch the attention of the user. We have described carefully in the notebook different type of interactive plots we have in mind.
