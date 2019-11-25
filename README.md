@@ -38,7 +38,7 @@ The dataset was retrieved at this [link](https://population.un.org/wpp/). This d
 All FAO’s dataset are in .csv so easy to parse and to work on. Same applies to United Nations dataset. The dimensions are overall manageable and no problems emerged.
 
 ## Geospatial data 
-This dataset was retrieved from Kaggle at the folliwing [link](https://www.kaggle.com/worldbank/world-development-indicators). The dataset contains the geometry of every country in the world. The dataset can be imported easily as it's a json file and it also quite small. Json file will be then converted in a GeoPandas Dataframe with geopandas (specialized library to work with geographical visualization).
+This dataset was retrieved from Kaggle at the following [link](https://www.kaggle.com/worldbank/world-development-indicators). The dataset contains the geometry of every country in the world. The dataset can be imported easily as it's a json file and also quite small. The Json file will be then converted to a GeoPandas Dataframe with geopandas (specialized library to work with geographical visualization).
 
 
 ### USDA Agricultural Research Service (ARS) Nutrition Facts Database  
@@ -83,11 +83,16 @@ Nine African countries were found to show an overall deficit in supply, meaning 
 # Milestones up to Milestone 3
 Methodology: A proposal will be made how food could be redistributed from Europe to Africa, not countrywise. Even though a country might overall be in a surplus, it could potentially lack some macronutrient (making up for it with more of another one). As we are not only interested in supplying the necessary calories but also providing a healhty diet, the analysis will be continued with into the three macronutrients (Carbs, Proteins and Fat). Due to calories not being a tangible unit for most readers (especially when using orders of magnitude of Gigacalories), representative products for each macronutrient will be introduced to facilitate conveyance for a broader audience.
 
-#### 01/12/2019 
-1. Conduct the second analysis looking at individual macronutrients. 
+Next steps until Milestone 3:
+*Week 26/11-31/11*:
+1. Split the nutrition supply into macronutrients and analyze respective surplus and deficit
+2. After obtaining such informations, we're able to choose which items are considered as "of interest" to represent the abstract notion of calories
+*Week 2/12-7/12*:
+3. We aggregate European and African countries and, by representing calories/macronutrients as food items, we decide how much of which food items Europe as a whole should provide to Africa
+4. After deciding these quantities, we'll find which countries should provide and receive which food items and in what quantities, based on their surplus and deficits, respectively
+*Week 9/12-14/12*:
+5. Come up with visualization methods for these informations, in order to catch the attention of the user
+*Weeks from 16/12-25/12*:
+6. Develop a data story that presents the issue we want to solve, and propose our way to solve it
 
-#### 08/12/2019
-1. Define representative products and translate results.
-
-#### 20/12/2019
-1. Complete the data story and visualize the last results. 
+During all the weeks starting now (26/11) we'll be finding ways to interactively and interestingly show the results we come up with.
