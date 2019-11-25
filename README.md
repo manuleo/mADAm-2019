@@ -83,16 +83,16 @@ Nine African countries were found to show an overall deficit in supply, meaning 
 # Milestones up to Milestone 3
 Methodology: A proposal will be made how food could be redistributed from Europe to Africa, not countrywise. Even though a country might overall be in a surplus, it could potentially lack some macronutrient (making up for it with more of another one). As we are not only interested in supplying the necessary calories but also providing a healhty diet, the analysis will be continued with into the three macronutrients (Carbs, Proteins and Fat). Due to calories not being a tangible unit for most readers (especially when using orders of magnitude of Gigacalories), representative products for each macronutrient will be introduced to facilitate conveyance for a broader audience.
 
-Next steps until Milestone 3:
-*Week 26/11-31/11*:
+# Milestones up to milestone 3
+#### Week 26/11-31/11:
 1. Split the nutrition supply into macronutrients and analyze respective surplus and deficit
-2. After obtaining such informations, we're able to choose which items are considered as "of interest" to represent the abstract notion of calories
-*Week 2/12-7/12*:
+2. After obtaining such informations, we are able to choose which items are considered as "of interest" to represent the abstract notion of calories
+#### Week 2/12-7/12:
 3. We aggregate European and African countries and, by representing calories/macronutrients as food items, we decide how much of which food items Europe as a whole should provide to Africa
 4. After deciding these quantities, we'll find which countries should provide and receive which food items and in what quantities, based on their surplus and deficits, respectively
-*Week 9/12-14/12*:
+#### Week 9/12-14/12*:
 5. Come up with visualization methods for these informations, in order to catch the attention of the user
-*Weeks from 16/12-25/12*:
+#### Weeks from 16/12-25/12*:
 6. Develop a data story that presents the issue we want to solve, and propose our way to solve it
 
 During all the weeks starting now (26/11) we'll be finding ways to interactively and interestingly show the results we come up with.
