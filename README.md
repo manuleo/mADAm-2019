@@ -33,10 +33,9 @@ This section contains food supplies for every country in the world. As the docum
 We will use this database to analyze the amount of kcal/person/day for each African **and** European state in the food categories we are interested in.
 
 ## United Nations /DESA / Population Division 
-[**Population**](https://population.un.org/wpp/) 
-Used to determine the male and female population for Europe and Africa
-
-All FAO’s data are in .csv so easy to parse and to work on. Same applies to United Nations dataset. The dimensions are overall manageable and no problems emerged.
+**Population**
+The dataset was retrieved at this [link](https://population.un.org/wpp/). This dataset was used to determine the male and female population for Europe and Africa from 1950 to 2020 with a granularity of 5 years. We will interpolate to obtain data with 1 year frequency.
+All FAO’s dataset are in .csv so easy to parse and to work on. Same applies to United Nations dataset. The dimensions are overall manageable and no problems emerged.
 
 ## Geospatial data 
 This dataset was retrieved from Kaggle at the folliwing [link](https://www.kaggle.com/worldbank/world-development-indicators). The dataset contains the geometry of every country in the world. The dataset can be imported easily as it's a json file and it also quite small. Json file will be then converted in a GeoPandas Dataframe with geopandas (specialized library to work with geographical visualization).
