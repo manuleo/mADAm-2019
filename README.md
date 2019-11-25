@@ -32,12 +32,12 @@ To go:
 This section contains food supplies for every country in the world. As the documentation reports, a region supply is defined as: *“Production + imports - exports + changes in stocks (decrease or increase)”.*
 We will use this database to analyze the amount of kcal/person/day for each African **and** European state in the food categories we are interested in.
 
-## United Nations /DESA / Population Division 
+### United Nations /DESA / Population Division 
 **Population**
 The dataset was retrieved at this [link](https://population.un.org/wpp/). This dataset was used to determine the male and female population for Europe and Africa from 1950 to 2020 with a granularity of 5 years. We will interpolate to obtain data with 1 year frequency.
 All FAO’s dataset are in .csv so easy to parse and to work on. Same applies to United Nations dataset. The dimensions are overall manageable and no problems emerged.
 
-## Geospatial data 
+### Geospatial data 
 This dataset was retrieved from Kaggle at the following [link](https://www.kaggle.com/worldbank/world-development-indicators). The dataset contains the geometry of every country in the world. The dataset can be imported easily as it's a json file and also quite small. The Json file will be then converted to a GeoPandas Dataframe with geopandas (specialized library to work with geographical visualization).
 
 
@@ -73,26 +73,18 @@ We will use this dataset to build the optimal diet. This dataset contains nutrit
 For the last week we will focus on visualizing the data in the best way and we are thinking about creating:
 * An interactive geographical visualization of the poorest country in Africa in terms of lack of food.
 
-
-# Milestone 2
-The results we came up with are satisfactory as they accurately reproduce what was expected. They also allowed for interesting analysis.
-We decided to conduct an analysis on Europe too as it's interesting to see how much spare food would be available for redistribution, as European countries are more likely to be able to provide help. 
-Furthermore, it was decided to restrict further analysis to 2020 as the interest is in the contemporary situation.
-Nine African countries were found to show an overall deficit in supply, meaning unlike other African countries, they are not capable of solving their issues themselves.  
-
-# Milestones up to Milestone 3
+# Milestones up to milestone 3
 Methodology: A proposal will be made how food could be redistributed from Europe to Africa, not countrywise. Even though a country might overall be in a surplus, it could potentially lack some macronutrient (making up for it with more of another one). As we are not only interested in supplying the necessary calories but also providing a healhty diet, the analysis will be continued with into the three macronutrients (Carbs, Proteins and Fat). Due to calories not being a tangible unit for most readers (especially when using orders of magnitude of Gigacalories), representative products for each macronutrient will be introduced to facilitate conveyance for a broader audience.
 
-Next steps until Milestone 3:
-*Week 26/11-31/11*:
+#### Week 26/11-31/11:
 1. Split the nutrition supply into macronutrients and analyze respective surplus and deficit
-2. After obtaining such informations, we're able to choose which items are considered as "of interest" to represent the abstract notion of calories
-*Week 2/12-7/12*:
+2. After obtaining such informations, we are able to choose which items are considered as "of interest" to represent the abstract notion of calories
+#### Week 2/12-7/12:
 3. We aggregate European and African countries and, by representing calories/macronutrients as food items, we decide how much of which food items Europe as a whole should provide to Africa
 4. After deciding these quantities, we'll find which countries should provide and receive which food items and in what quantities, based on their surplus and deficits, respectively
-*Week 9/12-14/12*:
+#### Week 9/12-14/12*:
 5. Come up with visualization methods for these informations, in order to catch the attention of the user
-*Weeks from 16/12-25/12*:
+#### Weeks from 16/12-25/12*:
 6. Develop a data story that presents the issue we want to solve, and propose our way to solve it
 
 During all the weeks starting now (26/11) we'll be finding ways to interactively and interestingly show the results we come up with.
