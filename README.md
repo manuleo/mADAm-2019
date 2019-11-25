@@ -76,15 +76,19 @@ For the last week we will focus on visualizing the data in the best way and we a
 # Milestones up to milestone 3
 Methodology: A proposal will be made how food could be redistributed from Europe to Africa, not countrywise. Even though a country might overall be in a surplus, it could potentially lack some macronutrient (making up for it with more of another one). As we are not only interested in supplying the necessary calories but also providing a healhty diet, the analysis will be continued with into the three macronutrients (Carbs, Proteins and Fat). Due to calories not being a tangible unit for most readers (especially when using orders of magnitude of Gigacalories), representative products for each macronutrient will be introduced to facilitate conveyance for a broader audience.
 
-#### Week 26/11-31/11:
-1. Split the nutrition supply into macronutrients and analyze respective surplus and deficit
-2. After obtaining such informations, we are able to choose which items are considered as "of interest" to represent the abstract notion of calories
-#### Week 2/12-7/12:
-3. We aggregate European and African countries and, by representing calories/macronutrients as food items, we decide how much of which food items Europe as a whole should provide to Africa
-4. After deciding these quantities, we'll find which countries should provide and receive which food items and in what quantities, based on their surplus and deficits, respectively
-#### Week 9/12-14/12*:
-5. Come up with visualization methods for these informations, in order to catch the attention of the user
-#### Weeks from 16/12-25/12*:
-6. Develop a data story that presents the issue we want to solve, and propose our way to solve it
+#### 31/11/2019:
+1. Split the nutrition supply into macronutrients (55% Charbohydrates, 25% proteins, 20% fat) and analyze respective surplus and deficit. The strategy we will adopt is similar as the one we have shown in the first two parts of our notebook. The division into macronutrients is needed as in reality we would have to actually feed people healthily and respecting natural demand of everyone's body.
 
-During all the weeks starting now (26/11) we'll be finding ways to interactively and interestingly show the results we come up with.
+2. After obtaining such informations, we are able to choose which items are considered as "of interest" to represent the abstract notion of calories. The choice of this final products will be weighted on many factors among nutrient-density, availability in different European countries, etc. As above mentioned, we are committed to create a simple diet composed by few products that combined together will be able to meet African food demand while respecting the contraints we have from European availability of spare food. 
+
+#### 07/12/2019:
+3. We now move on aggregating European and African countries and, by representing calories/macronutrients as food items, we decide how much of which food items Europe, considered as a whole, should provide based on what Africa actually needs. 
+
+4. After deciding these quantities, we'll find which countries should provide and receive which food items and in what quantities, based on their surplus and deficits, respectively. The goal here is to have a simple but effective way to communicate to the reader order of magnitudes on play in this problem. We will provide real examples on how just one country or a group of countries could sustain African calories' debt (if their population is comparable). In addition, it will be considered to compute in a more accurate way how european countries will have to contribute to fill up the demand. We still have to figure out an efficient model but the idea is to define a share of final products based on individual country's population. 
+
+#### 20/12/2019*:
+In the last two weeks we will focus entirely on the creation of an effective datastory. 
+
+5. Come up with visualization methods for these informations, in order to catch the attention of the user. We have described carefully in the notebook different type of interactive plots we have in mind.
+
+6. Propose to the reader the results of our model on two levels. The first one is aimed to catch the reader attention by showing him just few but interesting results coming from our first analysis on Africa and Europe over the years. In this part, we will use **heatmaps**, **heatmaps with time**, **short animation of different kinds**. As the data story goes on, they reader will gain more knowledge on African history of famine and European food wasting regime. As the second level comes in, our proposal will be 
