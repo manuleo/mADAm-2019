@@ -331,3 +331,34 @@ def obtain_difference(pop_dataframe, supply_dataframe, total_cal_demand):
     cal_difference = cal_difference.dropna(axis=0, how="all")
     
     return cal_difference
+
+def prepare_timeline(dataframe):
+    dataframe = dataframe.transpose()
+    dataframe.index = dataframe.index.astype(int)
+    return dataframe
+
+def clean_and_prepare_macros(dataframe, replacements, merges, start=2014, end=2020):
+    dataframe = clean_Fs_and_years(dataframe)
+    dataframe = dataframe.fillna(0)
+    
+    dataframe = replace_names_of_countries(dataframe, replacements)
+    
+    kcal_supply = obtain_supply(dataframe).set_index("Area")
+    fat_supply = obtain_fat(dataframe).set_index("Area") * 9
+    prot_supply = obtain_protein(dataframe).set_index("Area") * 4
+    carbs_supply = kcal_supply - fat_supply - prot_supply
+    
+    fat_supply, prot_supply, carbs_supply = prepare_timeline(fat_supply), \
+                                            prepare_timeline(prot_supply), \
+                                            prepare_timeline(carbs_supply)
+    
+    fat_supply, prot_supply, carbs_supply = merge_countries(fat_supply, merges), \
+                                            merge_countries(prot_supply, merges), \
+                                            merge_countries(carbs_supply, merges)
+    
+    
+    fat_supply, prot_supply, carbs_supply = prepare_future(fat_supply, start, end), \
+                                            prepare_future(prot_supply, start, end), \
+                                            prepare_future(carbs_supply, start, end)
+    
+    return fat_supply, prot_supply, carbs_supply
