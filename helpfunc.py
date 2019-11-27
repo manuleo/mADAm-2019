@@ -50,6 +50,20 @@ def obtain_supply(dataframe_balance):
     
     return dataframe_supply
     
+def obtain_protein(dataframe_balance):
+    
+    dataframe_supply = dataframe_balance[(dataframe_balance["Item Code"] == 2901) &(dataframe_balance["Element Code"] == 674)]
+    dataframe_supply = dataframe_supply.drop(columns=["Area Code","Item Code","Item","Element Code","Element", "Unit"])
+    
+    return dataframe_supply
+
+def obtain_fat(dataframe_balance):
+    
+    dataframe_supply = dataframe_balance[(dataframe_balance["Item Code"] == 2901) &(dataframe_balance["Element Code"] == 684)]
+    dataframe_supply = dataframe_supply.drop(columns=["Area Code","Item Code","Item","Element Code","Element", "Unit"])
+    
+    return dataframe_supply
+    
     
 def merge_countries(dataframe, replacements):
     '''
