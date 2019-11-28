@@ -61,7 +61,7 @@ def predict_future(dataset, full_pkl_path, run_RNN = False, past_history = 10, v
     for c in dataset.columns.values:
         if verbose:
             print("Predicting {}".format(c))
-        country = dataframe[c]
+        country = dataset[c]
         country = country.values[:train_index + 1] # Train data
         
         # Normalize train data
@@ -70,12 +70,12 @@ def predict_future(dataset, full_pkl_path, run_RNN = False, past_history = 10, v
         country = (country - country_mean)/country_std
         
         # Predict
-        country_full = make_pred(country, past_history, first_year, train_index, last_year_index)
+        country_full = make_pred(country, past_history, first_year, train_index, last_year_index, verbose)
         if verbose:
             print("{} finished".format(c))
         
         # Assing back
-        new_country = new_country*country_std + country_mean
+        new_country = country_full*country_std + country_mean
         dataset_full[c] = new_country
     
     if verbose:
@@ -123,8 +123,8 @@ def make_pred(country, past_history, first_year, train_index, last_year_index, v
         - verbose (bool, default False): defines if print or not logging messages
     Output:
         - country (numpy array): update array with prediction for the new years"""
-    
-    for i in range(train_index, last_year):
+
+    for i in range(train_index, last_year_index):
         if verbose:
             print("Predicting year {}..".format(first_year + i - train_index)) 
         
@@ -133,7 +133,7 @@ def make_pred(country, past_history, first_year, train_index, last_year_index, v
         
         # Preparing data
         country_train, y_train = prepare_data(country, 0, i, past_history)
-        country_predict, y_predict = prepare_data(italy, i-past_history, None, past_history)
+        country_predict, y_predict = prepare_data(country, i-past_history, None, past_history)
         
         # Constants for batching
         BATCH_SIZE = 256
@@ -147,7 +147,7 @@ def make_pred(country, past_history, first_year, train_index, last_year_index, v
         
         # Define model
         rnn_model = tf.keras.models.Sequential([
-        tf.keras.layers.LSTM(8, input_shape=train.shape[-2:]),
+        tf.keras.layers.LSTM(8, input_shape=country_train.shape[-2:]),
         tf.keras.layers.Dense(1)
         ])
 

@@ -7,6 +7,7 @@ import numpy as np
 import re
 import matplotlib.pyplot as plt
 from collections import defaultdict
+from neural import prepare_future
 
 def clean_Fs_and_years(dataframe):
     ''' 
