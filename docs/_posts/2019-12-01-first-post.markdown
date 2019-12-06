@@ -1,7 +1,8 @@
 ---
 layout: default
-# img: phones.png
-# category: Services
+id_div: first_section
+img: |
+category: |
 title: First try
 description: |
 ---
@@ -13,14 +14,6 @@ So why are there still people starving, you may legitimately ask. Exactly what w
 In the first part of the analysis, Africa’s historical food situation was thoroughly analyzed. Based on past values, data were predicted and analyzed for the upcoming year 2020 in order to be as close to reality as possible. The following animation was generated to allow gaining insights.
 
 
-<div style="margin-left: -150pt;">
+<div align="center">
 {% include african_cal_diff_animation.html %}
 </div>
-
--------------------------------
-
-### A test with Vega
-<div id="view"></div>
-<script>
-  vegaEmbed('#view', 'hello.json');
-</script>
