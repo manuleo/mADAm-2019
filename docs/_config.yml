@@ -13,7 +13,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/mADAm-2019" # the subpath of your site, e.g. /blog
 url: "https://manuleo.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 tagline:             'A Jekyll theme'
-paginate:            5
+paginate:            2
 
 # About/contact
 author:

@@ -3,6 +3,15 @@ layout: default
 title: Home
 ---
 
+<div id="view"></div>
+<script>
+  vegaEmbed('#view', 'hello.json');
+</script>
+
+<div style="margin-left: -150pt;">
+{% include african_cal_diff_animation.html %}
+</div>
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -17,22 +26,5 @@ title: Home
     {{ post.content }}
   </div>
   {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
 </div>
 
