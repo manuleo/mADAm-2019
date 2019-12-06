@@ -1,8 +1,3 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-
 # Setup
 title: Your awesome title
 email: your-email@example.com
@@ -11,15 +6,18 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/mADAm-2019" # the subpath of your site, e.g. /blog
-url: "https://manuleo.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-tagline:             'A Jekyll theme'
-paginate:            2
+url: "https://manuleo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+tagline:    'A Jekyll theme'
+paginate:    2
 
-# About/contact
-author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+# Build settings
+markdown: kramdown
+permalink: pretty
 
-# Custom vars
-version:             1.0.0
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  - title: github
+    url: https://github.com/manuleo/mADAm-2019
