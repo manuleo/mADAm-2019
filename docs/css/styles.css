@@ -59,3 +59,20 @@ Our CSS styles
  .border-between > [class*='col-']:first-child:before {
     display: none;
  }
+.kcalctr {
+    font-size: 40pt;
+    width: 30%;
+}
+
+.mealctr {
+    font-size: 60pt;
+    width: 20%;
+}
+
+#meal_europe, #kcal_europe {
+    color: #00c200;
+}
+
+#meal_africa, #kcal_africa {
+    color: #ff0000;
+}
