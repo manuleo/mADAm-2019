@@ -7,112 +7,42 @@ title: Interactive Map
 description: |
 ---
 ### A map test
-<div id="map" style="width: 1000px; height: 800px"></div>
+<div class="row border-between">
+    <div class="col-md-6">
+        <div id="map_africa" style="width: 100%; height: 700px"></div>
+    </div>
+    <div class ="col-md-6">
+        <div id="map_europe" style="width: 100%; height: 700px"></div>
+    </div>
+</div>
 
 <script>
 
-function getColor(d) {
-  return d > 3300  ? '#045a8d' :
-          d > 3000  ? '#2b8cbe' :
-          d > 2760  ? '#74a9cf' :
-          d > 2450   ? '#a6bddb' :
-          d > 2200   ? '#d0d1e6' :
-                    '#f1eef6';
-}
-
-function style(feature) {
-    return {
-        fillColor: getColor(feature.properties[2020]),
-        weight: 0.5,
-        opacity: 0.7,
-        color: '#000000',
-        dashArray: '2',
-        fillOpacity: 0.7
-    };
-}
-
-function highlightFeature(e) {
-    var layer = e.target;
-
-    layer.setStyle({
-        weight: 1.5,
-        color: '#666',
-        dashArray: '',
-        fillOpacity: 0.8
-    });
-
-    info.update(layer.feature.properties);
-
-    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront();
+var africa_ticks = {};
+$.ajax({
+    url: "json/africa_supply/africa_supply_ticks.json",
+    async: false,
+    dataType: 'json',
+    success: function(data) {
+        africa_ticks = data;
     }
-}
-
-function resetHighlight(e) {
-    geojsonLayer.resetStyle(e.target);
-    info.update();
-}
-
-function onEachFeature(feature, layer) {
-    layer.on({
-        mouseover: highlightFeature,
-        mouseout: resetHighlight
-    });
-}
-
-function zoomToFeature(e) {
-    map.fitBounds(e.target.getBounds());
-}
-
-var info = L.control();
-
-info.onAdd = function (map) {
-    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-    this.update();
-    return this._div;
-};
-
-// method that we will use to update the control based on feature properties passed
-info.update = function (props) {
-    this._div.innerHTML = '<h4>African Food supply</h4>' +  (props ?
-        '<b>' + props.name + '</b><br /><b>' + props[2020].toFixed(2) + ' </b> kcal / persona / day'
-        : 'Hover over a state');
-};
-
-var legend = L.control({position: 'bottomright'});
-
-legend.onAdd = function (map) {
-
-    var div = L.DomUtil.create('div', 'info legend'),
-        grades = [1900, 2200, 2450, 2760, 3000, 3300],
-        labels = [];
-
-    // loop through our density intervals and generate a label with a colored square for each interval
-    for (var i = 0; i < grades.length; i++) {
-        div.innerHTML +=
-            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
-    }
-
-    return div;
-};
-
-
-
-var map = L.map('map').setView([2.318462, 19.56871], 2.5);
-
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-    id: 'mapbox/light-v9',
-    attribution: 'taken online'
-}).addTo(map);
-
-var geojsonLayer = new L.GeoJSON.AJAX("json/africa_supply.geojson",{
-    style: style,
-    onEachFeature: onEachFeature
 });
-geojsonLayer.addTo(map);
-info.addTo(map);
-legend.addTo(map);
 
+var europe_ticks = {};
+$.ajax({
+    url: "json/europe_supply/europe_supply_ticks.json",
+    async: false,
+    dataType: 'json',
+    success: function(data) {
+        europe_ticks = data;
+    }
+});
+
+colors = ["#fff7fb","#ece7f2", "#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#045a8d", "#023858"]
+load_map(europe_ticks, "json/europe_supply/europe_supply_", colors, 'map_europe', [54.5260, 15.2551], 'European Food Supply', 'kcal / persona / day', 4, 2);
+
+
+colors = ["#f1eef6","#d0d1e6", "#a6bddb", "#74a9cf", "#2b8cbe", "#045a8d"]
+load_map(africa_ticks, "json/africa_supply/africa_supply_", colors, 'map_africa', [2.318462, 19.56871], 'African Food Supply', 'kcal / persona / day', 3, 1);
 
 </script>

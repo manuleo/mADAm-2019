@@ -5,6 +5,8 @@
 import pandas as pd
 import numpy as np
 import re
+import json
+import geopandas as gpd
 import matplotlib.pyplot as plt
 from collections import defaultdict
 from neural import prepare_future
@@ -333,33 +335,42 @@ def obtain_difference(pop_dataframe, supply_dataframe, total_cal_demand):
     
     return cal_difference
 
-def prepare_timeline(dataframe):
-    dataframe = dataframe.transpose()
-    dataframe.index = dataframe.index.astype(int)
-    return dataframe
 
-def clean_and_prepare_macros(dataframe, replacements, merges, start=2014, end=2020):
-    dataframe = clean_Fs_and_years(dataframe)
-    dataframe = dataframe.fillna(0)
+def save_map_data(geojson, country_kv, dataframe, path_data, path_ticks, bins=6):
+    '''
+    Save the map data to be used for datastory
+    Inputs:
+        - geojson (geopandas dataframe): geojson with shape for the interested countries
+        - country_kv (Pandas dataframe): countries to retain from the world. Make sure keys (codes) are from json and values (names) match your dataframe
+        - dataframe (pandas dataframe): dataframe containing the values to plot in the choropleth for each country
+        - path_data (string): where to save the data in geojson format
+        - path_ticks (string): where to save the ticks to be used in each map version
+        - bins (int, default = 6): integer representing the number of bins to use in the legend
+    '''   
+    # saving the datas in the geojson
+    save_data = geojson.merge(country_kv, left_on="id", right_on="codes")
+    for year in range(1961, 2021):
+        save_data = save_data.merge(dataframe.T[year].to_frame(), left_on="names", right_index=True)
+    save_data = save_data.drop(columns=["codes", "names"])
+    for col in save_data.columns[3:]:
+        save_data[col] = save_data[col].astype("float")
+    save_data.columns = save_data.columns.astype(str)
+    for year in range(1961, 2021): 
+        to_save = save_data[["id", "name", "geometry", str(year)]].copy().rename(columns={str(year):"val"})
+        to_save["year"] = year*np.ones(to_save.index.size)
+        to_save.to_file(path_data.format(year), driver="GeoJSON")
     
-    dataframe = replace_names_of_countries(dataframe, replacements)
-    
-    kcal_supply = obtain_supply(dataframe).set_index("Area")
-    fat_supply = obtain_fat(dataframe).set_index("Area") * 9
-    prot_supply = obtain_protein(dataframe).set_index("Area") * 4
-    carbs_supply = kcal_supply - fat_supply - prot_supply
-    
-    fat_supply, prot_supply, carbs_supply = prepare_timeline(fat_supply), \
-                                            prepare_timeline(prot_supply), \
-                                            prepare_timeline(carbs_supply)
-    
-    fat_supply, prot_supply, carbs_supply = merge_countries(fat_supply, merges), \
-                                            merge_countries(prot_supply, merges), \
-                                            merge_countries(carbs_supply, merges)
-    
-    
-    fat_supply, prot_supply, carbs_supply = prepare_future(fat_supply, start, end), \
-                                            prepare_future(prot_supply, start, end), \
-                                            prepare_future(carbs_supply, start, end)
-    
-    return fat_supply, prot_supply, carbs_supply
+    # saving ticks
+    ticks_years = dict()
+    for year in range(1961, 2021):
+        min_val = min(save_data[str(year)])
+        max_val = max(save_data[str(year)])
+        increment = (max_val-min_val)/bins
+        ticks = []
+        ticks.append(min_val)
+        for i in range(1, bins):
+            ticks.append(ticks[i-1]+increment)
+        ticks.append(max_val)
+        ticks_years[str(year)] = list(np.rint(ticks))
+    with open(path_ticks, 'w') as fp:
+        json.dump(ticks_years, fp)
