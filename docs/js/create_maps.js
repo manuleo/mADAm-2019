@@ -99,6 +99,7 @@ function load_map(ticks, path, colors, id_div, centre_point, info_string, info_s
     map.scrollWheelZoom.disable();
     map.boxZoom.disable();
     map.keyboard.disable();
+    map.dragging.disable();
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
         id: 'mapbox/light-v9',

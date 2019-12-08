@@ -60,11 +60,11 @@ L.Control.SliderControl = L.Control.extend({
         $(sliderContainer).append('<div id="leaflet-slider' + this.options.sliderId + '" style="width:200px"><div class="ui-slider-handle"></div><div id="slider-timestamp' + this.options.sliderId + '" style="width:200px; margin-top:20px; background-color:#FFFFFF; text-align:center; border-radius:5px;"></div></div>');
 
         //Prevent map panning/zooming while using the slider
-        $(sliderContainer).mousedown(function () {
-            map.dragging.disable();
-        });
+        // $(sliderContainer).mousedown(function () {
+        //     map.dragging.disable();
+        // });
         $(document).mouseup(function () {
-            map.dragging.enable();
+            // map.dragging.enable();
             //Hide the slider timestamp if not range and option alwaysShowDate is set on false
             if (options.range || !options.alwaysShowDate) {
                 $(options.sliderTimeStampId).html('');
