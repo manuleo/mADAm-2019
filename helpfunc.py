@@ -336,7 +336,7 @@ def obtain_difference(pop_dataframe, supply_dataframe, total_cal_demand):
     return cal_difference
 
 
-def save_map_data(geojson, country_kv, dataframe, path_data, path_ticks, bins=6):
+def save_map_data(geojson, country_kv, dataframe, path_data, path_ticks, bins=6, year_start = 1961, year_end = 2020):
     '''
     Save the map data to be used for datastory
     Inputs:
@@ -345,32 +345,44 @@ def save_map_data(geojson, country_kv, dataframe, path_data, path_ticks, bins=6)
         - dataframe (pandas dataframe): dataframe containing the values to plot in the choropleth for each country
         - path_data (string): where to save the data in geojson format
         - path_ticks (string): where to save the ticks to be used in each map version
-        - bins (int, default = 6): integer representing the number of bins to use in the legend
+        - bins (int or list, default = 6): integer representing the number of bins to use in the legend or list directly representing which bins use (not pass min and max)
     '''   
     # saving the datas in the geojson
     save_data = geojson.merge(country_kv, left_on="id", right_on="codes")
-    for year in range(1961, 2021):
+    for year in range(year_start, year_end+1):
         save_data = save_data.merge(dataframe.T[year].to_frame(), left_on="names", right_index=True)
     save_data = save_data.drop(columns=["codes", "names"])
     for col in save_data.columns[3:]:
         save_data[col] = save_data[col].astype("float")
     save_data.columns = save_data.columns.astype(str)
-    for year in range(1961, 2021): 
+    for year in range(year_start, year_end+1): 
         to_save = save_data[["id", "name", "geometry", str(year)]].copy().rename(columns={str(year):"val"})
         to_save["year"] = year*np.ones(to_save.index.size)
         to_save.to_file(path_data.format(year), driver="GeoJSON")
     
-    # saving ticks
     ticks_years = dict()
-    for year in range(1961, 2021):
-        min_val = min(save_data[str(year)])
-        max_val = max(save_data[str(year)])
-        increment = (max_val-min_val)/bins
-        ticks = []
-        ticks.append(min_val)
-        for i in range(1, bins):
-            ticks.append(ticks[i-1]+increment)
-        ticks.append(max_val)
-        ticks_years[str(year)] = list(np.rint(ticks))
-    with open(path_ticks, 'w') as fp:
-        json.dump(ticks_years, fp)
+    if isinstance(bins, int):
+        # saving ticks
+        for year in range(year_start, year_end+1):
+            min_val = min(save_data[str(year)])
+            max_val = max(save_data[str(year)])
+            increment = (max_val-min_val)/bins
+            ticks = []
+            ticks.append(min_val)
+            for i in range(1, bins):
+                ticks.append(ticks[i-1]+increment)
+            ticks.append(max_val)
+            ticks_years[str(year)] = list(np.rint(ticks))
+        with open(path_ticks, 'w') as fp:
+            json.dump(ticks_years, fp)
+    else:
+        for year in range(year_start, year_end+1):
+            min_val = min(save_data[str(year)])
+            max_val = max(save_data[str(year)])
+            ticks = []
+            ticks.append(min_val)
+            ticks+=bins
+            ticks.append(max_val)
+            ticks_years[str(year)] = list(np.rint(ticks))
+        with open(path_ticks, 'w') as fp:
+            json.dump(ticks_years, fp)
