@@ -40,7 +40,7 @@ Our CSS styles
     cursor:crosshair;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     .big_container {
         width: 90% !important;
     }

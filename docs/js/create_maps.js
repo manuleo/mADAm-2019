@@ -2,7 +2,7 @@ function load_map(ticks, path, colors, id_div, centre_point, info_string, info_s
 
     function getColor(d, year) {
         for (var i=ticks[year].length-2; i>=0; i--) {
-            if (d >= ticks[year][i])
+            if (Math.round(d) >= ticks[year][i])
                 return colors[i];
         }
     }
