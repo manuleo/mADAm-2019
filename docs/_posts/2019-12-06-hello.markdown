@@ -1,0 +1,86 @@
+---
+layout: default
+id_div: six
+img: |
+category: |
+title: Need per age and gender
+description: |
+---
+### A plot test
+<div id="hello">
+    <object id="1961" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1961.html"></object>
+    <object id="1962" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1962.html"></object>
+    <object id="1963" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1963.html"></object>
+    <object id="1964" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1964.html"></object>
+    <object id="1965" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1965.html"></object>
+    <object id="1966" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1966.html"></object>
+    <object id="1967" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1967.html"></object>
+    <object id="1968" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1968.html"></object>
+    <object id="1969" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1969.html"></object>
+    <object id="1970" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1970.html"></object>
+    <object id="1971" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1971.html"></object>
+    <object id="1972" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1972.html"></object>
+    <object id="1973" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1973.html"></object>
+    <object id="1974" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1974.html"></object>
+    <object id="1975" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1975.html"></object>
+    <object id="1976" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1976.html"></object>
+    <object id="1977" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1977.html"></object>
+    <object id="1978" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1978.html"></object>
+    <object id="1979" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1979.html"></object>
+    <object id="1980" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1980.html"></object>
+    <object id="1981" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1981.html"></object>
+    <object id="1982" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1982.html"></object>
+    <object id="1983" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1983.html"></object>
+    <object id="1984" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1984.html"></object>
+    <object id="1985" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1985.html"></object>
+    <object id="1986" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1986.html"></object>
+    <object id="1987" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1987.html"></object>
+    <object id="1988" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1988.html"></object>
+    <object id="1989" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1989.html"></object>
+    <object id="1990" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1990.html"></object>
+    <object id="1991" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1991.html"></object>
+    <object id="1992" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1992.html"></object>
+    <object id="1993" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1993.html"></object>
+    <object id="1994" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1994.html"></object>
+    <object id="1995" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1995.html"></object>
+    <object id="1996" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1996.html"></object>
+    <object id="1997" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1997.html"></object>
+    <object id="1998" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1998.html"></object>
+    <object id="1999" style="display: none" type="text/html" width="1800" height="750" data="new/hello_1999.html"></object>
+    <object id="2000" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2000.html"></object>
+    <object id="2001" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2001.html"></object>
+    <object id="2002" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2002.html"></object>
+    <object id="2003" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2003.html"></object>
+    <object id="2004" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2004.html"></object>
+    <object id="2005" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2005.html"></object>
+    <object id="2006" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2006.html"></object>
+    <object id="2007" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2007.html"></object>
+    <object id="2008" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2008.html"></object>
+    <object id="2009" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2009.html"></object>
+    <object id="2010" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2010.html"></object>
+    <object id="2011" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2011.html"></object>
+    <object id="2012" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2012.html"></object>
+    <object id="2013" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2013.html"></object>
+    <object id="2014" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2014.html"></object>
+    <object id="2015" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2015.html"></object>
+    <object id="2016" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2016.html"></object>
+    <object id="2017" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2017.html"></object>
+    <object id="2018" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2018.html"></object>
+    <object id="2019" style="display: none" type="text/html" width="1800" height="750" data="new/hello_2019.html"></object>
+    <object id="2020" style="display: inline" type="text/html" width= "1500" height="750" data="new/hello_2020.html"></object>
+    <p id="year" style="font-size: 20pt">2020</p>
+</div>
+
+<input type="range" min="1961" max="2020" value="2020" oninput="updateSlider(this.value)" style="width: 25%">
+
+<script>
+    var old = document.getElementById("2020");
+    var year_div = document.getElementById("year");
+    function updateSlider(value) {
+        var div = document.getElementById(value.toString());
+        old.style.display = "none";
+        div.style.display = "inline";
+        year_div.innerHTML = value;
+        old = div;
+    }
+</script>
