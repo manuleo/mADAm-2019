@@ -7,23 +7,6 @@ title: Interactive Map
 description: |
 ---
 ### A map test
-<div class="row border-between">
-    <div class="col-sm-12 col-md-6">
-        <div id="map_africa_supply" style="width: 100%; height: 700px"></div>
-    </div>
-    <div class ="col-sm-12 col-md-6">
-        <div id="map_europe_supply" style="width: 100%; height: 700px"></div>
-    </div>
-</div>
-<br>
-<div class="row border-between">
-    <div class="col-sm-12 col-md-6">
-        <div id="map_africa_need" style="width: 100%; height: 700px"></div>
-    </div>
-    <div class ="col-sm-12 col-md-6">
-        <div id="map_europe_need" style="width: 100%; height: 700px"></div>
-    </div>
-</div>
 <br>
 <div class="row">
     <div class="col-sm-12">
@@ -32,46 +15,6 @@ description: |
 </div>
 
 <script>
-
-var africa_ticks_supply = {};
-$.ajax({
-    url: "json/africa_supply/africa_supply_ticks.json",
-    async: false,
-    dataType: 'json',
-    success: function(data) {
-        africa_ticks_supply = data;
-    }
-});
-
-var europe_ticks_supply = {};
-$.ajax({
-    url: "json/europe_supply/europe_supply_ticks.json",
-    async: false,
-    dataType: 'json',
-    success: function(data) {
-        europe_ticks_supply = data;
-    }
-});
-
-var africa_ticks_need = {};
-$.ajax({
-    url: "json/africa_need/africa_need_ticks.json",
-    async: false,
-    dataType: 'json',
-    success: function(data) {
-        africa_ticks_need = data;
-    }
-});
-
-var europe_ticks_need = {};
-$.ajax({
-    url: "json/europe_need/europe_need_ticks.json",
-    async: false,
-    dataType: 'json',
-    success: function(data) {
-        europe_ticks_need = data;
-    }
-});
 
 var cal_world_ticks = {};
 $.ajax({
@@ -83,20 +26,6 @@ $.ajax({
     }
 });
 
-layergroupHolder = {};
-mapHolder = {}
-
-colors1 = ["#f1eef6","#d0d1e6", "#a6bddb", "#74a9cf", "#2b8cbe", "#045a8d"]
-load_map(africa_ticks_supply, "json/africa_supply/africa_supply_", colors1, 'map_africa_supply', [2.318462, 19.56871], 'African Food Supply', 'kcal / persona / day', 3, 1, layergroupHolder, mapHolder);
-
-colors2 = ["#fff7fb","#ece7f2", "#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#045a8d", "#023858"]
-load_map(europe_ticks_supply, "json/europe_supply/europe_supply_", colors2, 'map_europe_supply', [54.5260, 15.2551], 'European Food Supply', 'kcal / persona / day', 4, 2, layergroupHolder, mapHolder);
-
-colors3 = ["#edf8fb","#ccece6", "#99d8c9", "#66c2a4", "#2ca25f", "#006d2c"]
-load_map(africa_ticks_need, "json/africa_need/africa_need_", colors3, 'map_africa_need', [2.318462, 19.56871], 'African Food Need', '10<sup>11</sup> kcal / year', 3, 3, layergroupHolder, mapHolder);
-
-colors4 = ["#f7fcfd","#e5f5f9", "#ccece6", "#99d8c9", "#66c2a4", "#41ae76", "#238b45", "#006d2c", "#00441b"]
-load_map(europe_ticks_need, "json/europe_need/europe_need_", colors4, 'map_europe_need', [54.5260, 15.2551], 'Eruopean Food Need', '10<sup>11</sup> kcal / year', 4, 4, layergroupHolder, mapHolder);
 
 colors5 = ["#d7191c","#fdae61", "#ffffbf", "#a6d96a", "#1a9641"]
 load_map(cal_world_ticks, "json/cal_world/cal_world_2020.geojson", colors5, 'map_world_diff', [54.5260, 15.2551], 'Estimation deficit/surplus', 'kcal / persona / day', 3, -1, layergroupHolder, mapHolder);
