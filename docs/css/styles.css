@@ -76,3 +76,7 @@ Our CSS styles
 #meal_africa, #kcal_africa {
     color: #ff0000;
 }
+
+.xlines-above, .crisp {
+    stroke: transparent !important;
+}
