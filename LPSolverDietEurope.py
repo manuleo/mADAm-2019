@@ -8,8 +8,8 @@ import picos as pic
 
 
 food_opt_distribution_df = pd.read_pickle('data/processed/food_opt_distribution_df.pickle')
-final_prices = pd.read_pickle('data/processed/final_prices.pickle')
-prod_diet_final =  pd.read_pickle("data/processed/prod_diet_final")
+final_prices = pd.read_pickle('data/processed/final_prices.pkl')
+prod_diet_final =  pd.read_pickle("data/processed/prod_diet_final.pkl")
 
 
 def LPSolverDietEurope(eu_country):
