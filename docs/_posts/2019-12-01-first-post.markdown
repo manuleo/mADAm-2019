@@ -68,7 +68,12 @@ description: |
     </div>
 </div>
 
-<br>
+<div class="row border-between">
+    <div class="col-sm-12 col-md-6">
+    </div>
+    <div class ="col-sm-12 col-md-6" style="margin:auto; height:20pt;">
+    </div>
+</div>
 
 <div class="row border-between">
     <div class="col-sm-12 col-md-6">
