@@ -7,7 +7,7 @@ import numpy as np
 import picos as pic
 
 
-food_opt_distribution_df = pd.read_pickle('data/processed/food_opt_distribution_df.pickle')
+food_opt_distribution_df = pd.read_pickle('data/processed/food_opt_distribution_df.pkl')
 final_prices = pd.read_pickle('data/processed/final_prices.pkl')
 prod_diet_final =  pd.read_pickle("data/processed/prod_diet_final.pkl")
 
