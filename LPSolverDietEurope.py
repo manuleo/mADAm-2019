@@ -55,4 +55,5 @@ def LPSolverDietEurope(eu_country):
     
     result_diet = np.array(Y_opt_diet)
     result_diet_df= pd.DataFrame(data=result_diet, index = prod_diet_index)
+    result_diet_df.columns = country_giveup_index
     return result_diet_df
