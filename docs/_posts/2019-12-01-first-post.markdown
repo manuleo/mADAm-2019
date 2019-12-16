@@ -18,7 +18,33 @@ description: |
 
 <div class="row border-between">
     <div class="col-sm-12 col-md-6">
-        <div id="map_africa_supply" style="width: 100%; height: 700px"></div>
+        <div id="map_africa_supply" style="width: 100%; height: 700px;"></div>
+    </div>
+    <div class ="col-sm-12 col-md-6" style="height: 700px;">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sit amet sapien sed lacinia. Pellentesque venenatis sem ornare, ornare tortor eu, vehicula leo. Integer congue vehicula tortor, eleifend placerat orci gravida aliquam. Duis tincidunt mi non massa tempor, ornare consectetur diam congue. Curabitur sit amet eleifend magna, vitae volutpat lacus. Praesent luctus libero tempus nisl ullamcorper tempus. Ut eros felis, porttitor a urna eu, placerat sodales tortor. In hac habitasse platea dictumst. Cras bibendum sem eu scelerisque rutrum. Maecenas sollicitudin dui id sapien interdum fermentum. Pellentesque ac convallis nibh, id lacinia lectus. 
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sit amet sapien sed lacinia. Pellentesque venenatis sem ornare, ornare tortor eu, vehicula leo. Integer congue vehicula tortor, eleifend placerat orci gravida aliquam. Duis tincidunt mi non massa tempor, ornare consectetur diam congue. Curabitur sit amet eleifend magna, vitae volutpat lacus. Praesent luctus libero tempus nisl ullamcorper tempus. Ut eros felis, porttitor a urna eu, placerat sodales tortor. In hac habitasse platea dictumst. Cras bibendum sem eu scelerisque rutrum. Maecenas sollicitudin dui id sapien interdum fermentum. Pellentesque ac convallis nibh, id lacinia lectus. 
+        </p>
+    </div>
+</div>
+
+<div class="row border-between">
+    <div class="col-sm-12 col-md-6">
+    </div>
+    <div class ="col-sm-12 col-md-6" style="margin:auto; height:20pt;">
+    </div>
+</div>
+
+<div class="row border-between">
+    <div class="col-sm-12 col-md-6">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sit amet sapien sed lacinia. Pellentesque venenatis sem ornare, ornare tortor eu, vehicula leo. Integer congue vehicula tortor, eleifend placerat orci gravida aliquam. Duis tincidunt mi non massa tempor, ornare consectetur diam congue. Curabitur sit amet eleifend magna, vitae volutpat lacus. Praesent luctus libero tempus nisl ullamcorper tempus. Ut eros felis, porttitor a urna eu, placerat sodales tortor. In hac habitasse platea dictumst. Cras bibendum sem eu scelerisque rutrum. Maecenas sollicitudin dui id sapien interdum fermentum. Pellentesque ac convallis nibh, id lacinia lectus. 
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sit amet sapien sed lacinia. Pellentesque venenatis sem ornare, ornare tortor eu, vehicula leo. Integer congue vehicula tortor, eleifend placerat orci gravida aliquam. Duis tincidunt mi non massa tempor, ornare consectetur diam congue. Curabitur sit amet eleifend magna, vitae volutpat lacus. Praesent luctus libero tempus nisl ullamcorper tempus. Ut eros felis, porttitor a urna eu, placerat sodales tortor. In hac habitasse platea dictumst. Cras bibendum sem eu scelerisque rutrum. Maecenas sollicitudin dui id sapien interdum fermentum. Pellentesque ac convallis nibh, id lacinia lectus. 
+        </p>
     </div>
     <div class ="col-sm-12 col-md-6">
         <div id="map_europe_supply" style="width: 100%; height: 700px"></div>
@@ -36,17 +62,6 @@ description: |
     <p>
         The results are presented as follows:
     </p>
-</div>
-
-<br>
-
-<div class="row border-between">
-    <div class="col-sm-12 col-md-6">
-        <div id="map_africa_need" style="width: 100%; height: 700px"></div>
-    </div>
-    <div class ="col-sm-12 col-md-6">
-        <div id="map_europe_need" style="width: 100%; height: 700px"></div>
-    </div>
 </div>
 
 <br>
@@ -84,7 +99,6 @@ description: |
     </div>
 </div>
 
-
 <script>
 
 var africa_ticks_supply = {};
@@ -107,26 +121,6 @@ $.ajax({
     }
 });
 
-var africa_ticks_need = {};
-$.ajax({
-    url: "json/africa_need/africa_need_ticks.json",
-    async: false,
-    dataType: 'json',
-    success: function(data) {
-        africa_ticks_need = data;
-    }
-});
-
-var europe_ticks_need = {};
-$.ajax({
-    url: "json/europe_need/europe_need_ticks.json",
-    async: false,
-    dataType: 'json',
-    success: function(data) {
-        europe_ticks_need = data;
-    }
-});
-
 layergroupHolder = {};
 mapHolder = {}
 
@@ -136,10 +130,4 @@ load_map(africa_ticks_supply, "json/africa_supply/africa_supply_", colors1, 'map
 colors2 = ["#fff7fb","#ece7f2", "#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#045a8d", "#023858"]
 load_map(europe_ticks_supply, "json/europe_supply/europe_supply_", colors2, 'map_europe_supply', [54.5260, 15.2551], 'European Food Supply', 'kcal / persona / day', 4, 2, layergroupHolder, mapHolder);
 
-colors3 = ["#edf8fb","#ccece6", "#99d8c9", "#66c2a4", "#2ca25f", "#006d2c"]
-load_map(africa_ticks_need, "json/africa_need/africa_need_", colors3, 'map_africa_need', [2.318462, 19.56871], 'African Food Need', '10<sup>11</sup> kcal / year', 3, 3, layergroupHolder, mapHolder);
-
-colors4 = ["#f7fcfd","#e5f5f9", "#ccece6", "#99d8c9", "#66c2a4", "#41ae76", "#238b45", "#006d2c", "#00441b"]
-load_map(europe_ticks_need, "json/europe_need/europe_need_", colors4, 'map_europe_need', [54.5260, 15.2551], 'European Food Need', '10<sup>11</sup> kcal / year', 4, 4, layergroupHolder, mapHolder);
-
-</script>>
+</script>
