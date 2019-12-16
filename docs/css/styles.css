@@ -80,3 +80,27 @@ Our CSS styles
 .xlines-above, .crisp {
     stroke: transparent !important;
 }
+
+/* svg:hover path {
+    opacity: 1;
+}
+
+svg path {
+    opacity: 0.7;
+} */
+
+.select-country:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.select-country {
+    opacity: 0.7;
+}
+
+.country-name {
+    text-shadow: 0.2px 0.2px #777;
+    font-size:20pt; 
+    font-weight: bold;
+    text-align: center;
+}
