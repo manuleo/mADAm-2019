@@ -81,10 +81,14 @@ description: |
 <div class="row" style="text-align:center">
     <div class="col-sm-12 col-md-1"></div>
     <div class="col-sm-12 col-md-5">
-        {% include cal_diff_africa.html %}
+        <div>
+            {% include cal_diff_africa.html %}
+        </div>
     </div>
     <div class="col-sm-12 col-md-5" style="border-left: solid;border-left-color: #e3e3e3;">
-        {% include cal_diff_europe.html %}
+        <div>
+            {% include cal_diff_europe.html %}
+        </div>
     </div>
     <div class="col-sm-12 col-md-1"></div>
 </div>
