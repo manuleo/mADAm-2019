@@ -43,7 +43,7 @@ description: |
             As expected, most of the European countries show a stable food supply situation, with values being more homogeneous than on the African continent. Interestingly, Belgium, Austria, and Italy are provided with the highest amount per capita. Furthermore, a correlation with a nation’s Gross Domestic Product (GDP) can be observed. 
         </p>
         <p>
-            Again, a few countries were not included in the dataset (mostly recenly established nations) and are left blank with no value assigned.
+            Again, a few countries were not included in the dataset (mostly recenly established nations) and are left blank with no values assigned to them.
         </p>
     </div>
     <div class ="col-sm-12 col-md-5">
@@ -72,7 +72,7 @@ description: |
         {% include gender.html %}
     </div>
     <div class="col-sm-12 col-md-3">
-            By multiplying this data together with the same demographic age-range information, a much preciser number for national food demand is obtained. This takes situations into account where a nation’s population composition differs substantially to others due to wars (where the male population is significantly reduced). Additionally, the age-sex-pyramid of less developed countries often shows higher shares of young people and babies, who evidently need less than an adult person.
+            By multiplying this data with the same demographic age-range information, a much preciser number for national food demand is obtained. This takes situations into account where a nation’s population composition differs substantially to others due to wars (where the male population is significantly reduced). Additionally, the age-sex-pyramid of less developed countries often shows higher shares of young people and babies, who evidently need less than an adult person.
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
