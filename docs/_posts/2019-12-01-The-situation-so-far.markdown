@@ -27,7 +27,8 @@ description: |
     </div>
     <div class ="col-sm-12 col-md-3" >
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sit amet sapien sed lacinia. Pellentesque venenatis sem ornare, ornare tortor eu, vehicula leo. Integer congue vehicula tortor, eleifend placerat orci gravida aliquam. Duis tincidunt mi non massa tempor, ornare consectetur diam congue. Curabitur sit amet eleifend magna, vitae volutpat lacus. Praesent luctus libero tempus nisl ullamcorper tempus. Ut eros felis, porttitor a urna eu, placerat sodales tortor. In hac habitasse platea dictumst. Cras bibendum sem eu scelerisque rutrum. Maecenas sollicitudin dui id sapien interdum fermentum. Pellentesque ac convallis nibh, id lacinia lectus. 
+            In Africa, there is a clear disparity between North African countries and their sub-Saharan counterparts. All of the former ones command a supply of more than 3000 kcal per person per day except for Sudan. To put this into context: The nutrition facts on food items recommend a daily calory intake of 2000 kcal. By hovering over a specific country, you can read the actual value. Some of the states were not listed in the FAO dataset and are consequently blank. 
+
         </p>
     </div>
     <div class="col-sm-12 col-md-2"></div>
@@ -39,7 +40,7 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-3">
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sit amet sapien sed lacinia. Pellentesque venenatis sem ornare, ornare tortor eu, vehicula leo. Integer congue vehicula tortor, eleifend placerat orci gravida aliquam. Duis tincidunt mi non massa tempor, ornare consectetur diam congue. Curabitur sit amet eleifend magna, vitae volutpat lacus. Praesent luctus libero tempus nisl ullamcorper tempus. Ut eros felis, porttitor a urna eu, placerat sodales tortor. In hac habitasse platea dictumst. Cras bibendum sem eu scelerisque rutrum. Maecenas sollicitudin dui id sapien interdum fermentum. Pellentesque ac convallis nibh, id lacinia lectus. 
+            As expected, most of the European countries show a stable food supply situation, with values being more homogeneous than on the African continent. Interestingly, Belgium, Austria, and Italy are provided with the highest amount per capita. Furthermore, a correlation with a nation’s Gross Domestic Product (GDP) can be observed. 
         </p>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sit amet sapien sed lacinia. Pellentesque venenatis sem ornare, ornare tortor eu, vehicula leo. Integer congue vehicula tortor, eleifend placerat orci gravida aliquam. Duis tincidunt mi non massa tempor, ornare consectetur diam congue. Curabitur sit amet eleifend magna, vitae volutpat lacus. Praesent luctus libero tempus nisl ullamcorper tempus. Ut eros felis, porttitor a urna eu, placerat sodales tortor. In hac habitasse platea dictumst. Cras bibendum sem eu scelerisque rutrum. Maecenas sollicitudin dui id sapien interdum fermentum. Pellentesque ac convallis nibh, id lacinia lectus. 
