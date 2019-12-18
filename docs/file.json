@@ -1,1 +1,136 @@
-{"mark": "bar", "encoding": {"x": {"field": "age_group", "type": "nominal"}, "y": {"field": "value", "type": "quantitative", "stack": null}, "color": {"field": "variable", "type": "nominal"}}, "$schema": "https://vega.github.io/schema/vega-lite/v2.json", "width": 450, "height": 300, "selection": {"grid": {"type": "interval", "bind": "scales"}}, "data": {"values": [{"age_group": "0-4", "variable": "input kcal", "value": 1333.3333333333333}, {"age_group": "5-9", "variable": "input kcal", "value": 1840.0}, {"age_group": "10-14", "variable": "input kcal", "value": 2440.0}, {"age_group": "15-19", "variable": "input kcal", "value": 3120.0}, {"age_group": "20-24", "variable": "input kcal", "value": 3000.0}, {"age_group": "25-29", "variable": "input kcal", "value": 3000.0}, {"age_group": "30-34", "variable": "input kcal", "value": 3000.0}, {"age_group": "35-39", "variable": "input kcal", "value": 2840.0}, {"age_group": "40-44", "variable": "input kcal", "value": 2800.0}, {"age_group": "45-49", "variable": "input kcal", "value": 2800.0}, {"age_group": "50-54", "variable": "input kcal", "value": 2800.0}, {"age_group": "55-59", "variable": "input kcal", "value": 2640.0}, {"age_group": "60-64", "variable": "input kcal", "value": 2600.0}, {"age_group": "65-69", "variable": "input kcal", "value": 2600.0}, {"age_group": "70-74", "variable": "input kcal", "value": 2600.0}, {"age_group": "75-79", "variable": "input kcal", "value": 2440.0}, {"age_group": "80-84", "variable": "input kcal", "value": 2400.0}, {"age_group": "85-89", "variable": "input kcal", "value": 2400.0}, {"age_group": "90-94", "variable": "input kcal", "value": 2400.0}, {"age_group": "95-99", "variable": "input kcal", "value": 2400.0}, {"age_group": "100+", "variable": "input kcal", "value": 2400.0}]}}
+{
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "age_group",
+            "type": "nominal"
+        },
+        "y": {
+            "field": "value",
+            "type": "quantitative",
+            "stack": null
+        },
+        "color": {
+            "field": "variable",
+            "type": "nominal"
+        }
+    },
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "width": 450,
+    "height": 300,
+    "selection": {
+        "grid": {
+            "type": "interval",
+            "bind": "scales"
+        }
+    },
+    "data": {
+        "values": [
+            {
+                "age_group": "0-4",
+                "variable": "input kcal",
+                "value": 1333.3333333333333
+            },
+            {
+                "age_group": "5-9",
+                "variable": "input kcal",
+                "value": 1840.0
+            },
+            {
+                "age_group": "10-14",
+                "variable": "input kcal",
+                "value": 2440.0
+            },
+            {
+                "age_group": "15-19",
+                "variable": "input kcal",
+                "value": 3120.0
+            },
+            {
+                "age_group": "20-24",
+                "variable": "input kcal",
+                "value": 3000.0
+            },
+            {
+                "age_group": "25-29",
+                "variable": "input kcal",
+                "value": 3000.0
+            },
+            {
+                "age_group": "30-34",
+                "variable": "input kcal",
+                "value": 3000.0
+            },
+            {
+                "age_group": "35-39",
+                "variable": "input kcal",
+                "value": 2840.0
+            },
+            {
+                "age_group": "40-44",
+                "variable": "input kcal",
+                "value": 2800.0
+            },
+            {
+                "age_group": "45-49",
+                "variable": "input kcal",
+                "value": 2800.0
+            },
+            {
+                "age_group": "50-54",
+                "variable": "input kcal",
+                "value": 2800.0
+            },
+            {
+                "age_group": "55-59",
+                "variable": "input kcal",
+                "value": 2640.0
+            },
+            {
+                "age_group": "60-64",
+                "variable": "input kcal",
+                "value": 2600.0
+            },
+            {
+                "age_group": "65-69",
+                "variable": "input kcal",
+                "value": 2600.0
+            },
+            {
+                "age_group": "70-74",
+                "variable": "input kcal",
+                "value": 2600.0
+            },
+            {
+                "age_group": "75-79",
+                "variable": "input kcal",
+                "value": 2440.0
+            },
+            {
+                "age_group": "80-84",
+                "variable": "input kcal",
+                "value": 2400.0
+            },
+            {
+                "age_group": "85-89",
+                "variable": "input kcal",
+                "value": 2400.0
+            },
+            {
+                "age_group": "90-94",
+                "variable": "input kcal",
+                "value": 2400.0
+            },
+            {
+                "age_group": "95-99",
+                "variable": "input kcal",
+                "value": 2400.0
+            },
+            {
+                "age_group": "100+",
+                "variable": "input kcal",
+                "value": 2400.0
+            }
+        ]
+    }
+}
