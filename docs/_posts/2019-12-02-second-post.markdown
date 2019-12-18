@@ -32,7 +32,7 @@ description: |
     <div class="col-sm-12 col-md-1"></div>
     <div class="col-sm-12 col-md-10">
         <h3>Which countries can help</h3>
-        Let’s determine now what European would be most suitable for redistribution. Belgium boasts the highest surplus per capita (around 1350 kcal/capita/day). Just to put this into perspective: a Belgian person’s equivalent of food waste could help one person in every single deficient African country each to reach a healthy amount of calory intake. The following map provides an overview of all countries. When redistributing food, most larger European countries have enough of a surplus to solely solve the hunger issue in Africa. However In order to facilitate calculations and enable a proper analysis, the amount of European countries should be minimized
+        Let’s determine now what European would be most suitable for redistribution. Belgium boasts the highest surplus per capita (around 1350 kcal/capita/day). Just to put this into perspective: a Belgian person’s equivalent of food waste could help one person in every single deficient African country each to reach a healthy amount of calory intake. The following map provides an overview of all countries. When redistributing food, most larger European countries have enough of a surplus to solely solve the hunger issue in Africa. However In order to facilitate calculations and enable a proper analysis, the amount of European countries should be minimized. 
     </div>
     <div class="col-sm-12 col-md-1"></div>
 </div>
@@ -50,7 +50,19 @@ description: |
             <li>Mention the 5 biggest balls to the right (Italy, Germany, United Kingdom, France, Spain) which are our selection</li>
             <li>Russia is big but small GDP</li>
         </ul>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lobortis nulla, vitae aliquet massa. Aliquam ac ante consectetur, posuere purus eget, venenatis dui. Phasellus molestie consequat mauris, sit amet suscipit massa fringilla nec. Aliquam tincidunt vel leo sit amet fringilla. Ut molestie sem ut magna condimentum semper. Nulla bibendum libero consectetur nisi venenatis varius. Mauris vitae tellus ante. Nullam placerat, lacus id tincidunt tincidunt, enim metus vestibulum odio, eget egestas arcu tellus in dui. Nam maximus nunc mauris, ut pulvinar sem sodales in.
+        In this case, Germany, France, Italy, Spain, and the United Kingdom were chosen. Even though Russia has the greatest surplus, it was not considered as its vast extent makes efficient endeavors unlikely. Spain was preferred over Poland due to geographical position as well as economic performance.
+
+<div class="row">
+    <div class="col-sm-12 col-md-1"></div>
+    <div class="col-sm-12 col-md-10">
+        Determining recipient countries should be easy, one might think. Just consider the red ones, right? Yet what about unequal wealth distribution? A better-off person eating more than the calculated daily average means another person gets less. For this reason, a threshold of 300 calories in surplus was introduced to be on the safe side. This also entails more countries are being targeted to receive help. 
+    </div>
+    <div class="col-sm-12 col-md-1"></div>
+</div>
+
+<br/>
+
+
     </div>
     <div class="col-sm-12 col-md-1"></div>
 </div>
