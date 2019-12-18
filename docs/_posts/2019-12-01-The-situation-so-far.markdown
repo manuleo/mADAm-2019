@@ -117,7 +117,6 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-4">
         Various events can be put into context here, for example, the famine in Ethiopia in the ’80s, where Ethiopia figured among the countries with the highest deficit per capita. Looking at the more recent years, this animation already suggests that only by smart redistribution, Africa could sustain its own food demand. However, having the capabilities and know-how to efficiently set up a food aid operation is harder than it seems. European countries, on the other hand, have a lot more experience in this field, and they are expected to have an even higher amount of excess food, making it easier to provide for this whole operation. 
-        Determining recipient countries should be easy, one might think. Just consider the red ones, right? Yet what about unequal wealth distribution? A better-off person eating more than the calculated daily average means another person gets less. For this reason, a threshold of 300 calories in surplus was introduced to be on the safe side. This also entails more countries are being targeted to receive help. 
     </div>
     <div class="col-sm-12 col-md-4" style="border-left: solid;border-left-color: #e3e3e3;">
         Surprisingly, all European countries boast an overall surplus in the food supply, with the exception being Albania which was slightly deficient during the first few years of our investigation (‘60s). Another significant occurrence can be detected during the aftermath of <a href=“https://en.wikipedia.org/wiki/Breakup_of_Yugoslavia“>Yugoslavia’s disintegration</a>
@@ -125,6 +124,16 @@ description: |
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
+
+<div class="row">
+    <div class="col-sm-12 col-md-2"></div>
+    <div class="col-sm-12 col-md-8">
+        Determining recipient countries should be easy, one might think. Just consider the red ones, right? Yet what about unequal wealth distribution? A better-off person eating more than the calculated daily average means another person gets less. For this reason, a threshold of 300 calories in surplus was introduced to be on the safe side. This also entails more countries are being targeted to receive help. 
+    </div>
+    <div class="col-sm-12 col-md-2"></div>
+</div>
+
+<br>
 
 <script>
 
