@@ -58,7 +58,7 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
         <h3>How much does each continent need?</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sit amet sapien sed lacinia. Pellentesque venenatis sem ornare, ornare tortor eu, vehicula leo. Integer congue vehicula tortor, eleifend placerat orci gravida aliquam. Duis tincidunt mi non massa tempor, ornare consectetur diam congue. Curabitur sit amet eleifend magna, vitae volutpat lacus. Praesent luctus libero tempus nisl ullamcorper tempus. Ut eros felis, porttitor a urna eu, placerat sodales tortor. In hac habitasse platea dictumst. Cras bibendum sem eu scelerisque rutrum. Maecenas sollicitudin dui id sapien interdum fermentum. Pellentesque ac convallis nibh, id lacinia lectus. 
+            In order to deduce a country’s demand, it would seem natural to just look at the population size multiplied by an average person’s daily need. However, this methodology would not account for different demographic compositions. The following plot illustrates the discrepancies between varying age groups and their respective nutritional requirements.
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
@@ -71,7 +71,7 @@ description: |
         {% include gender.html %}
     </div>
     <div class="col-sm-12 col-md-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sit amet sapien sed lacinia. Pellentesque venenatis sem ornare, ornare tortor eu, vehicula leo. Integer congue vehicula tortor, eleifend placerat orci gravida aliquam. Duis tincidunt mi non massa tempor, ornare consectetur diam congue. Curabitur sit amet eleifend magna, vitae volutpat lacus. Praesent luctus libero tempus nisl ullamcorper tempus. Ut eros felis, porttitor a urna eu, placerat sodales tortor. In hac habitasse platea dictumst. Cras bibendum sem eu scelerisque rutrum. Maecenas sollicitudin dui id sapien interdum fermentum. Pellentesque ac convallis nibh, id lacinia lectus. 
+            By multiplying this data together with the same demographic age-range information, a much preciser number for national food demand is obtained. This takes situations into account where a nation’s population composition differs substantially to others due to wars (where the male population is significantly reduced). Additionally, the age-sex-pyramid of less developed countries often shows higher shares of young people and babies, who evidently need less than an adult person.
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
