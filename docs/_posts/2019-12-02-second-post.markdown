@@ -3,15 +3,15 @@ layout: default
 id_div: second_section
 img: |
 category: |
-title: Where we're at
+title: Europe to the resuce
 description: |
 ---
 
 <div class="row">
     <div class="col-sm-12 col-md-1"></div>
     <div class="col-sm-12 col-md-10">
-        <h3>The surplus in 2020</h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lobortis nulla, vitae aliquet massa. Aliquam ac ante consectetur, posuere purus eget, venenatis dui. Phasellus molestie consequat mauris, sit amet suscipit massa fringilla nec. Aliquam tincidunt vel leo sit amet fringilla. Ut molestie sem ut magna condimentum semper. Nulla bibendum libero consectetur nisi venenatis varius. Mauris vitae tellus ante. Nullam placerat, lacus id tincidunt tincidunt, enim metus vestibulum odio, eget egestas arcu tellus in dui. Nam maximus nunc mauris, ut pulvinar sem sodales in.
+        <h3>The surplus in 2020: A global view</h3>
+        Let us now list all the previously determined values for 2020 on a map. This yields the following:
     </div>
     <div class="col-sm-12 col-md-1"></div>
 </div>
@@ -32,7 +32,7 @@ description: |
     <div class="col-sm-12 col-md-1"></div>
     <div class="col-sm-12 col-md-10">
         <h3>Which countries can help</h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lobortis nulla, vitae aliquet massa. Aliquam ac ante consectetur, posuere purus eget, venenatis dui. Phasellus molestie consequat mauris, sit amet suscipit massa fringilla nec. Aliquam tincidunt vel leo sit amet fringilla. Ut molestie sem ut magna condimentum semper. Nulla bibendum libero consectetur nisi venenatis varius. Mauris vitae tellus ante. Nullam placerat, lacus id tincidunt tincidunt, enim metus vestibulum odio, eget egestas arcu tellus in dui. Nam maximus nunc mauris, ut pulvinar sem sodales in.
+        Let’s determine now what European would be most suitable for redistribution. Belgium boasts the highest surplus per capita (around 1350 kcal/capita/day). Just to put this into perspective: a Belgian person’s equivalent of food waste could help one person in every single deficient African country each to reach a healthy amount of calory intake. The following map provides an overview of all countries. When redistributing food, most larger European countries have enough of a surplus to solely solve the hunger issue in Africa. However In order to facilitate calculations and enable a proper analysis, the amount of European countries should be minimized
     </div>
     <div class="col-sm-12 col-md-1"></div>
 </div>
