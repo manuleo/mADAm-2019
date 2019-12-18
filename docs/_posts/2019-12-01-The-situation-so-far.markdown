@@ -27,7 +27,7 @@ description: |
     </div>
     <div class ="col-sm-12 col-md-3" >
         <p>
-            In Africa, there is a clear disparity between North African countries and their sub-Saharan counterparts. All of the former ones command a supply of more than 3000 kcal per person per day except for Sudan. To put this into context: The nutrition facts on food items recommend a daily calory intake of 2000 kcal. By hovering over a specific country, you can read the actual value. Some of the states were not listed in the FAO dataset and are consequently blank. 
+            In Africa, there is a clear disparity between North African countries and their sub-Saharan counterparts. All of the former ones command a supply of more than 3000 kcal per person per day except for Sudan. To put this into context: A man at the age of 20 is expected to have at least 3000 kcal per day to avoid malnutrition for sure. By hovering over a specific country, you can read the actual value. Some of the states were not listed in the FAO dataset and are consequently blank. 
 
         </p>
     </div>
@@ -58,7 +58,7 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
         <h3>How much does each continent need?</h3>
-            In order to deduce a country’s demand, it would seem natural to just look at the population size multiplied by an average person’s daily need. However, this methodology would not account for different demographic compositions. The following plot illustrates the discrepancies between varying age groups and their respective nutritional requirements.
+            In order to deduce a country’s demand, it would seem natural to just look at the population size multiplied by an average person’s daily need. However, this methodology would not account for different demographic compositions. The following plot illustrates the discrepancies between varying age groups and their respective nutritional requirements .
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
@@ -118,7 +118,7 @@ description: |
         Various events can be put into context here, for example, the famine in Ethiopia in the ’80s, where Ethiopia figured among the countries with the highest deficit per capita. Looking at the more recent years, this animation already suggests that only by smart redistribution, Africa could sustain its own food demand. However, having the capabilities and know-how to efficiently set up a food aid operation is harder than it seems. European countries, on the other hand, have a lot more experience in this field, and they are expected to have an even higher amount of excess food, making it easier to provide for this whole operation.
     </div>
     <div class="col-sm-12 col-md-4" style="border-left: solid;border-left-color: #e3e3e3;">
-        Surprisingly, all European countries boast an overall surplus in the food supply, with the exception being Albania which was slightly deficient during the first few years of our investigation (‘60s). Another significant occurrence can be detected during the aftermath of Yugoslavia’s disintegration (insert Wikipedia link maybe?) in 1992, where ex-member states like Croatia, Bosnia & Herzegovina and former Macedonia’s nourishment status deteriorated drastically, causing a temporary shortage of nutrition. Most of the other countries, however, have constantly shown a surplus of around 1000 kcal per day and per person, meaning a third of European food does not end up being consumed - in other words: food waste.
+        Surprisingly, all European countries boast an overall surplus in the food supply, with the exception being Albania which was slightly deficient during the first few years of our investigation (‘60s). Another significant occurrence can be detected during the aftermath of <a href=“https://en.wikipedia.org/wiki/Breakup_of_Yugoslavia“>Yugoslavia’s disintegration</a> in 1992, where ex-member states like Croatia, Bosnia & Herzegovina and former Macedonia’s nourishment status deteriorated drastically, causing a temporary shortage of nutrition. Most of the other countries, however, have constantly shown a surplus of around 1000 kcal per day and per person, meaning a third of European food does not end up being consumed - in other words: food waste.
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
