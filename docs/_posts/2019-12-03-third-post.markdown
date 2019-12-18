@@ -6,11 +6,12 @@ category: |
 title: Our solution
 description: |
 ---
+
 <div class="row">
   <div class="col-sm-1"></div>
-  <div class="col-sm-4">
+  <div class="col-sm-10">
     <h3>The perfect diet</h3>
-    Now, the exchange of calories is known. However, in what form should it be delivered? To reach a concrete and tangible recommendation on how to solve this issue, this is an essential question. For a well-balanced diet, a share of 55% carbohydrates, 25% proteins and 20% fat is recommended (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1479724/). Secondly, products of varying food groups should be included. To this end, categories such as “Dairy and Egg Products” and “Legumes and Legume Products” were analyzed and searched for the most adequate product to be chosen as a representation, which is the one most correctly fulfilling the defined shares of macronutrients. The following food items and their corresponding composition were selected.
+    Now, the exchange of calories is known. However, in what form should it be delivered? To reach a concrete and tangible recommendation on how to solve this issue, this is an essential question. For a well-balanced diet, a share of 55% carbohydrates, 25% proteins and 20% fat is recommended (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1479724/). Secondly, products of varying food groups should be included. To this end, categories such as “Dairy and Egg Products” and “Legumes and Legume Products” were analyzed and searched to get the one product which most correctly fulfils the defined share. This would then be used as a representative product for its food category. The following food items and their corresponding composition were selected. 
   </div>
   <div class="col-sm-6">
     {% include 3d_macros.html %}
