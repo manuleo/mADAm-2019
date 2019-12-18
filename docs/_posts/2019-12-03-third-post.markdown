@@ -66,7 +66,8 @@ description: |
   </div>
   <div class="col-sm-3">
     <p>
-      This chord plot provides a general overview about how food could be redistributed with minimal expenditures. When hovering over a country's circle, its associated food flows will be highlighted. By selecting a specific country in the drop menu, you can reduce complexity and assess where this particular nation's food is meant to be allocated. Note that the total amount of food sent/received corresponds to the extension of a country's circular arc.
+      This chord plot provides a general overview about how food could be redistributed with minimal expenditures. When hovering over a country's circle, its associated food flows will be highlighted. By selecting a specific country in the drop menu, you can reduce complexity and assess where this particular nation's food is meant to be allocated. Note that the total amount of food sent/received corresponds to the extension of a country's circular arc. 
+      Germany and France were found to contribute the most, with each providing slightly more than 100,000 tons. This is mainly due to their higher GDP. On the other end, it's trivial to see that Ethiopia would claim the highest share of food aid of all examined countries.
     </p>
   </div>
   <div class="col-sm-1"></div>
