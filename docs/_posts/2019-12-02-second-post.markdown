@@ -41,10 +41,10 @@ description: |
 
 <div class="row">
     <div class="col-sm-12 col-md-1"></div>
-    <div class="col-sm-12 col-md-6">
+    <div class="col-sm-12 col-md-7">
         {% include scatter_gdp_surplus.html %}
     </div>
-    <div class="col-sm-12 col-md-4">
+    <div class="col-sm-12 col-md-3" style="border-left:solid thin #eee; height: 600px">
         Notes: 
         <ul>
             <li>Mention the 5 biggest balls to the right (Italy, Germany, United Kingdom, France, Spain) which are our selection</li>
