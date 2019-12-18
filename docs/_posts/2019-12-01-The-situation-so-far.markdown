@@ -83,7 +83,6 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
         <h3>How much is Africa lacking and how much can Europe help?</h3>
-
         Subtracting demand from the supply, deficits for the case of negative results could be determined. Move the slider on the bottom of the plots to have a look at the evolution over time.
     </div>
     <div class="col-sm-12 col-md-2"></div>
@@ -124,6 +123,8 @@ description: |
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
+
+<br>
 
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
