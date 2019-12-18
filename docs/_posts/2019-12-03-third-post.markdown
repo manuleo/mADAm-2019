@@ -11,7 +11,7 @@ description: |
   <div class="col-sm-1"></div>
   <div class="col-sm-4">
     <h3>The perfect diet</h3>
-    Now, the exchange of calories is known. However, in what form should it be delivered? To reach a concrete and tangible recommendation on how to solve this issue, this is an essential question. For a well-balanced diet, a share of 55% carbohydrates, 25% proteins and 20% fat is recommended <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1479724/">recommended</a>. Secondly, products of varying food groups should be included. To this end, categories such as “Dairy and Egg Products” and “Legumes and Legume Products” were analyzed and searched to get the one product which most correctly fulfils the defined share. This would then be used as a representative product for its food category. By hovering over a data point, you will see the product's name and its composition of the three macronutrients projected onto the corresponding axis. 
+    Now, the exchange of calories is known. However, in what form should it be delivered? To reach a concrete and tangible recommendation on how to solve this issue, this is an essential question. For a well-balanced diet, a share of 55% carbohydrates, 25% proteins and 20% fat is <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1479724/">recommended</a>. Secondly, products of varying food groups should be included. To this end, categories such as “Dairy and Egg Products” and “Legumes and Legume Products” were analyzed and searched to get the one product which most correctly fulfils the defined share. This would then be used as a representative product for its food category. By hovering over a data point, you will see the product's name and its composition of the three macronutrients projected onto the corresponding axis. 
   </div>
   <div class="col-sm-6">
     {% include 3d_macros.html %}
@@ -25,7 +25,7 @@ description: |
   <div class="col-sm-1"></div>
   <div class="col-sm-10">
     <h3>The distribution plan</h3>
-   For every European countries out of the five selected, the prices for the previously defined food items were determined (https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en) and (http://www.fao.org/faostat/en/#data/PP). As different countries have different domestic prices for specific items, a 
+   For every European countries out of the five selected, the prices for the previously defined food items were established by <a href="http://www.fao.org/faostat/en/#data/PP">FAO</a> data and a dataset from the <a href="https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en">European Commission</a>. As different countries show different domestic prices for specific items, a cost minimization was carried out using convex optimization methods. Furthermore, a linearly increasing cost function with respect to the GDP was implemented yielding a higher cost if only one country was considered while also prefering to take from richer countries.
   </div>
   <div class="col-sm-1"></div>
 </div>
@@ -65,7 +65,9 @@ description: |
     </div>
   </div>
   <div class="col-sm-3">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sit amet sapien sed lacinia. Pellentesque venenatis sem ornare, ornare tortor eu, vehicula leo. Integer congue vehicula tortor, eleifend placerat orci gravida aliquam. Duis tincidunt mi non massa tempor, ornare consectetur diam congue. Curabitur sit amet eleifend magna, vitae volutpat lacus. Praesent luctus libero tempus nisl ullamcorper tempus. Ut eros felis, porttitor a urna eu, placerat sodales tortor. In hac habitasse platea dictumst. Cras bibendum sem eu scelerisque rutrum. Maecenas sollicitudin dui id sapien interdum fermentum. Pellentesque ac convallis nibh, id lacinia lectus. </p>
+    <p>
+      This chord plot provides a general overview 
+    </p>
   </div>
   <div class="col-sm-1"></div>
 </div>
