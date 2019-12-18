@@ -51,6 +51,9 @@ description: |
             <li>Russia is big but small GDP</li>
         </ul>
         In this case, Germany, France, Italy, Spain, and the United Kingdom were chosen. Even though Russia has the greatest surplus, it was not considered as its vast extent makes efficient endeavors unlikely. Spain was preferred over Poland due to geographical position as well as economic performance.
+    </div>
+    <div class="col-sm-12 col-md-1"></div>
+</div>
 
 <div class="row">
     <div class="col-sm-12 col-md-1"></div>
@@ -61,11 +64,6 @@ description: |
 </div>
 
 <br/>
-
-
-    </div>
-    <div class="col-sm-12 col-md-1"></div>
-</div>
 
 <script>
 
