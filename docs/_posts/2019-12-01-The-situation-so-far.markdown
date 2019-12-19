@@ -11,7 +11,6 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
         <h3>How much does each continent have?</h3>
-
         Africa and Europe’s historical food situation was thoroughly analyzed. Based on past values, data was predicted and analyzed for the upcoming year 2020 in order to be as close to reality as possible. The following maps show the food that was supplied by each continent. 
         <!--I think needs some more text; map text balance a bit off-->
     </div>
@@ -40,7 +39,7 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-3">
         <p>
-            As expected, most of the European countries show a stable food supply situation, with values being more homogeneous than on the African continent. Interestingly, Belgium, Austria, and Italy are provided with the highest amount per capita. Furthermore, a correlation with a nation’s Gross Domestic Product (GDP) can be observed. 
+            As expected, most of the European countries show a stable food supply situation, with values being more homogeneous than on the African continent. Interestingly, Belgium, Austria, and Italy are provided with the highest amount per capita. Impacts of historical events can be seen when simulating a time series using the sliders. For example, a sharp drop in Eastern Europe can be observed in the years following the dissolution of the Soviet Union. Furthermore, a correlation with a nation’s Gross Domestic Product (GDP) can be assumed. 
         </p>
         <p>
             Again, a few countries were not included in the dataset (mostly recenly established nations) and are left blank with no values assigned to them.
@@ -115,7 +114,7 @@ description: |
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-4">
-        Various events can be put into context here, for example, the famine in Ethiopia in the ’80s, where Ethiopia figured among the countries with the highest deficit per capita. Looking at the more recent years, this animation already suggests that only by smart redistribution, Africa could sustain its own food demand. However, having the capabilities and know-how to efficiently set up a food aid operation is harder than it seems. European countries, on the other hand, have a lot more experience in this field, and they are expected to have an even higher amount of excess food, making it easier to provide for this whole operation. 
+        Various events can be put into context here, for example, the famine in Ethiopia in the ’80s, where Ethiopia figured among the countries with the highest deficit per capita. Looking at the more recent years, this animation already suggests that only by smart redistribution, Africa could sustain its own food demand. However, having the capabilities and know-how to efficiently set up a food aid operation is harder than it seems. European countries, on the other hand, have a lot more experience in this field, and they are expected to have an even higher amount of excess food, making it easier to provide for this whole operation. Ever since 2001, more than half of the examined countries show a net surplus. As of 2019, all of the countries in red were determined to be either war-riddled or politically fragile. Exceptions to the rule are Namibia and Eswatini, both of which boast a relatively high GDP per capita (ranked 10th and 11th for the African continent, respectively). Thus, the only explanation would be inequality amongst the population or insufficient distribution of available resources.
     </div>
     <div class="col-sm-12 col-md-4" style="border-left: solid;border-left-color: #e3e3e3;">
         Surprisingly, all European countries boast an overall surplus in the food supply, with the exception being Albania which was slightly deficient during the first few years of our investigation (‘60s). Another significant occurrence can be detected during the aftermath of <a href="https://en.wikipedia.org/wiki/Breakup_of_Yugoslavia" target="_blank">Yugoslavia’s disintegration</a>
