@@ -10,7 +10,7 @@ description: |
 <div class="row">
   <div class="col-sm-12 col-md-2"></div>
   <div class="col-sm-12 col-md-3">
-    <h3 style="margin-top:5px">The perfect diet</h3>
+    <h3>The perfect diet</h3>
     Now, the exchange of calories is known. However, in what form should it be delivered? To reach a concrete and tangible recommendation on how to solve this issue, this is an essential question. For a well-balanced diet, a share of 55% carbohydrates, 25% proteins and 20% fat is <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1479724/" target="_blank">recommended</a>. Secondly, products of varying food groups should be included. To this end, categories such as “Dairy and Egg Products” and “Legumes and Legume Products” were analyzed and searched to get the one product which most correctly fulfils the defined share. 
   </div>
   <div class="col-sm-12 col-md-5">
