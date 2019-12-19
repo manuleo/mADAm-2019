@@ -13,7 +13,7 @@ L.Control.SliderControl2 = L.Control.extend({
         range: false,
         follow: false,
         sameDate: false,
-        alwaysShowDate : false,
+        alwaysShowDate : true,
         rezoom: null,
         sliderId: 2,
         sliderFullId2: null,
@@ -188,7 +188,8 @@ L.Control.SliderControl2 = L.Control.extend({
             }
         });
         if (!_options2.range && _options2.alwaysShowDate) {
-            $(_options2.sliderTimeStampId2).html(_extractTimeStamp(_options2.markers[index_start].feature.properties[_options2.timeAttribute], _options2));
+            //$(_options2.sliderTimeStampId2).html(_extractTimeStamp(_options2.markers[index_start].feature.properties[_options2.timeAttribute], _options2));
+            $(_options2.sliderTimeStampId2).html("2020")
         }
         for (i = _options2.maxValue; i <= index_start; i++) {
             _options2.map.addLayer(_options2.markers[i]);

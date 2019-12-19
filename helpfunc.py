@@ -336,7 +336,7 @@ def obtain_difference(pop_dataframe, supply_dataframe, total_cal_demand):
     return cal_difference
 
 
-def save_map_data(geojson, country_kv, dataframe, path_data, path_ticks, bins=6, year_start = 1961, year_end = 2020):
+def save_map_data(geojson, country_kv, dataframe, path_data, path_ticks, bins=6, year_start = 1961, year_end = 2020, all_same=True):
     '''
     Save the map data to be used for datastory
     Inputs:
@@ -360,12 +360,19 @@ def save_map_data(geojson, country_kv, dataframe, path_data, path_ticks, bins=6,
         to_save["year"] = year*np.ones(to_save.index.size)
         to_save.to_file(path_data.format(year), driver="GeoJSON")
     
+    min_abs = min(save_data.min(axis=1))
+    max_abs = max(save_data.max(axis=1))
+    
     ticks_years = dict()
     if isinstance(bins, int):
         # saving ticks
         for year in range(year_start, year_end+1):
-            min_val = min(save_data[str(year)])
-            max_val = max(save_data[str(year)])
+            if (all_same):
+                min_val = min_abs
+                max_val = max_abs
+            else:
+                min_val = min(save_data[str(year)])
+                max_val = max(save_data[str(year)])
             increment = (max_val-min_val)/bins
             ticks = []
             ticks.append(min_val)
