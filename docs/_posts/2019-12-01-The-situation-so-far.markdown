@@ -91,12 +91,12 @@ description: |
 
 <div class="row" style="text-align:center">
     <div class="col-sm-12 col-md-2"></div>
-    <div class="col-sm-12 col-md-4">
+    <div class="col-sm-12 col-md-4" style="border-right: solid;border-right-color: #e3e3e3;">
         <div>
             {% include cal_diff_africa.html %}
         </div>
     </div>
-    <div class="col-sm-12 col-md-4" style="border-left: solid;border-left-color: #e3e3e3;">
+    <div class="col-sm-12 col-md-4">
         <div>
             {% include cal_diff_europe.html %}
         </div>
@@ -106,17 +106,17 @@ description: |
 
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
+    <div class="col-sm-12 col-md-4" style="border-right: solid;border-right-color: #e3e3e3; height:20pt"></div>
     <div class="col-sm-12 col-md-4"></div>
-    <div class="col-sm-12 col-md-4" style="height:20pt; border-left: solid;border-left-color: #e3e3e3;"></div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
 
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
-    <div class="col-sm-12 col-md-4">
+    <div class="col-sm-12 col-md-4" style="border-right: solid;border-right-color: #e3e3e3;">
         Various events can be put into context here, for example, the famine in Ethiopia in the ’80s, where Ethiopia figured among the countries with the highest deficit per capita. Looking at the more recent years, this animation already suggests that only by smart redistribution, Africa could sustain its own food demand. However, having the capabilities and know-how to efficiently set up a food aid operation is harder than it seems. European countries, on the other hand, have a lot more experience in this field, and they are expected to have an even higher amount of excess food, making it easier to provide for this whole operation. Ever since 2001, more than half of the examined countries show a net surplus. As of 2019, all of the countries in red were determined to be either war-riddled or politically fragile. Exceptions to the rule are Namibia and Eswatini, both of which boast a relatively high GDP per capita (ranked 10th and 11th for the African continent, respectively). Thus, the only explanation would be inequality amongst the population or insufficient distribution of available resources.
     </div>
-    <div class="col-sm-12 col-md-4" style="border-left: solid;border-left-color: #e3e3e3;">
+    <div class="col-sm-12 col-md-4">
         Surprisingly, all European countries boast an overall surplus in the food supply, with the exception being Albania which was slightly deficient during the first few years of our investigation (‘60s). Another significant occurrence can be detected during the aftermath of <a href="https://en.wikipedia.org/wiki/Breakup_of_Yugoslavia" target="_blank">Yugoslavia’s disintegration</a>
         in 1992, where ex-member states like Croatia, Bosnia & Herzegovina and former Macedonia’s nourishment status deteriorated drastically, causing a temporary shortage of nutrition. Most of the other countries, however, have constantly shown a surplus of around 1000 kcal per day and per person, meaning a third of European food does not end up being consumed - in other words: food waste.
     </div>

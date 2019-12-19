@@ -8,33 +8,41 @@ description: |
 ---
 
 <div class="row">
-  <div class="col-sm-1"></div>
-  <div class="col-sm-4">
-    <h3>The perfect diet</h3>
-    Now, the exchange of calories is known. However, in what form should it be delivered? To reach a concrete and tangible recommendation on how to solve this issue, this is an essential question. For a well-balanced diet, a share of 55% carbohydrates, 25% proteins and 20% fat is <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1479724/" target="_blank">recommended</a>. Secondly, products of varying food groups should be included. To this end, categories such as “Dairy and Egg Products” and “Legumes and Legume Products” were analyzed and searched to get the one product which most correctly fulfils the defined share. This would then be used as a representative product for its food category. By hovering over a data point, you will see the product's name and its composition of the three macronutrients projected onto the corresponding axis. 
+  <div class="col-sm-12 col-md-2"></div>
+  <div class="col-sm-12 col-md-3">
+    <h3 style="margin-top:5px">The perfect diet</h3>
+    Now, the exchange of calories is known. However, in what form should it be delivered? To reach a concrete and tangible recommendation on how to solve this issue, this is an essential question. For a well-balanced diet, a share of 55% carbohydrates, 25% proteins and 20% fat is <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1479724/" target="_blank">recommended</a>. Secondly, products of varying food groups should be included. To this end, categories such as “Dairy and Egg Products” and “Legumes and Legume Products” were analyzed and searched to get the one product which most correctly fulfils the defined share. 
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-12 col-md-5">
     {% include 3d_macros.html %}
   </div>
-  <div class="col-sm-1"></div>
+  <div class="col-sm-12 col-md-2"></div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 col-md-2"></div>
+  <div class="col-sm-12 col-md-8">
+    This would then be used as a representative product for its food category. By hovering over a data point, you will see the product's name and its composition of the three macronutrients projected onto the corresponding axis. 
+  </div>
+  <div class="col-sm-12 col-md-2"></div>
 </div>
 
 <br/>
 
 <div class="row">
-  <div class="col-sm-1"></div>
-  <div class="col-sm-10">
+  <div class="col-sm-12 col-md-2"></div>
+  <div class="col-sm-12 col-md-8">
     <h3>The distribution plan</h3>
    For every European countries out of the five selected, the prices for the previously defined food items were established by <a href="http://www.fao.org/faostat/en/#data/PP"  target="_blank">FAO</a> data and a dataset from the <a href="https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en"  target="_blank">European Commission</a>. As different countries show different domestic prices for specific items, a cost minimization was carried out using convex optimization methods. Furthermore, a linearly increasing cost function with respect to the GDP was implemented yielding a higher cost if only one country was considered while also prefering to take from richer countries.
   </div>
-  <div class="col-sm-1"></div>
+  <div class="col-sm-12 col-md-2"></div>
 </div>
 
 <br/>
 
 <div class="row">
-  <div class="col-sm-1"></div>
-  <div class="col-sm-1">
+  <div class="col-sm-12 col-md-2"></div>
+  <div class="col-sm-12 col-md-1">
     <select id="chord_countries">
       <option value="Europe" selected>All Europe</option>
       <option value="France">France</option>
@@ -44,7 +52,7 @@ description: |
       <option value="UK">United Kingdom</option>
     </select>
   </div>
-  <div class="col-sm-5" id="chord_box">
+  <div class="col-sm-12 col-md-4" id="chord_box" style="margin-left: -50pt">
     <div id="Europe_chord">
       {% include chord.html %}
     </div>
@@ -64,13 +72,13 @@ description: |
       {% include chord_uk.html %}
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="col-sm-12 col-md-3" style="position: absolute;left: 800pt;">
     <p>
       This chord plot provides a general overview about how food could be redistributed with minimal expenditures. When hovering over a country's circle, its associated food flows will be highlighted. By selecting a specific country in the drop menu, you can reduce complexity and assess where this particular nation's food is meant to be allocated. Note that the total amount of food sent/received corresponds to the extension of a country's circular arc. 
       Germany and France were found to contribute the most, with each providing slightly more than 100,000 tons. This is mainly due to their higher GDP. On the other end, it's trivial to see that Ethiopia would claim the highest share of food aid of all examined countries.
     </p>
   </div>
-  <div class="col-sm-1"></div>
+  <div class="col-sm-12 col-md-2"></div>
 </div>
 
 
