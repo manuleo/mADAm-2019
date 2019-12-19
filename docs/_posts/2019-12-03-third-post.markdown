@@ -10,7 +10,7 @@ description: |
 <div class="row">
   <div class="col-sm-12 col-md-2"></div>
   <div class="col-sm-12 col-md-3">
-    <h3>The perfect diet</h3>
+    <h2>The perfect diet</h2>
     Now, the exchange of calories is known. However, in what form should it be delivered? To reach a concrete and tangible recommendation on how to solve this issue, this is an essential question. For a well-balanced diet, a share of 55% carbohydrates, 25% proteins and 20% fat is <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1479724/" target="_blank">recommended</a>. Secondly, products of varying food groups should be included. To this end, categories such as “Dairy and Egg Products” and “Legumes and Legume Products” were analyzed and searched to get the one product which most correctly fulfils the defined share. 
   </div>
   <div class="col-sm-12 col-md-5">
@@ -32,7 +32,7 @@ description: |
 <div class="row">
   <div class="col-sm-12 col-md-2"></div>
   <div class="col-sm-12 col-md-8">
-    <h3>The distribution plan</h3>
+    <h2>The distribution plan</h2>
    For every European countries out of the five selected, the prices for the previously defined food items were established by <a href="http://www.fao.org/faostat/en/#data/PP"  target="_blank">FAO</a> data and a dataset from the <a href="https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en"  target="_blank">European Commission</a>. As different countries show different domestic prices for specific items, a cost minimization was carried out using convex optimization methods. Furthermore, a linearly increasing cost function with respect to the GDP was implemented yielding a higher cost if only one country was considered while also prefering to take from richer countries.
   </div>
   <div class="col-sm-12 col-md-2"></div>

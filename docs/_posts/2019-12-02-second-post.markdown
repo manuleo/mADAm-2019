@@ -10,7 +10,7 @@ description: |
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
-        <h3>The surplus in 2020: A global view</h3>
+        <h2>The surplus in 2020: A global view</h2>
         Let us now list all the previously determined values for 2020 on a map. This yields the following:
     </div>
     <div class="col-sm-12 col-md-2"></div>
@@ -34,7 +34,7 @@ description: |
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
-        <h3>Which countries can help</h3>
+        <h2>Which countries can help</h2>
         Let’s determine now which European countries would be most suitable for redistribution. Belgium boasts the highest surplus per capita (around 1350 kcal/capita/day). Just to put this into perspective: a Belgian person’s equivalent of food waste could help one person in every single deficient African country each to reach a healthy amount of calory intake. The following map provides an overview of all countries. When redistributing food, most larger European countries have enough of a surplus to solely solve the hunger issue in Africa. However, if only one country starts to donate its entire surplus, the costs are assumed to be greater than if multiple countries decided to send a smaller amount each. On the other hand, the amount of European countries should be minimized in order to facilitate calculations and enable a proper analysis.
     </div>
     <div class="col-sm-12 col-md-2"></div>

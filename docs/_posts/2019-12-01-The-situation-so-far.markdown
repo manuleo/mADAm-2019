@@ -10,7 +10,7 @@ description: |
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
-        <h3>How much does each continent have?</h3>
+        <h2>How much does each continent have?</h2>
         Africa and Europe’s historical food situation was thoroughly analyzed. Based on past values, data was predicted and analyzed for the upcoming year 2020 in order to be as close to reality as possible. The following maps show the food that was supplied by each continent. 
         <!--I think needs some more text; map text balance a bit off-->
     </div>
@@ -56,7 +56,7 @@ description: |
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
-        <h3>How much does each continent need?</h3>
+        <h2>How much does each continent need?</h2>
             In order to deduce a country’s demand, it would seem natural to just look at the population size multiplied by an average person’s daily need. However, this methodology would not account for different demographic compositions. The following plot illustrates the discrepancies between varying age groups and their respective nutritional requirements 
         <a href="https://health.gov/dietaryguidelines/2015/guidelines/appendix-2/" target="_blank">(Source)</a>.
     </div>
@@ -81,7 +81,7 @@ description: |
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
-        <h3>How much is Africa lacking and how much can Europe help?</h3>
+        <h2>How much is Africa lacking and how much can Europe help?</h2>
         Subtracting demand from the supply, deficits for the case of negative results could be determined. Move the slider on the bottom of the plots to have a look at the evolution over time.
     </div>
     <div class="col-sm-12 col-md-2"></div>
