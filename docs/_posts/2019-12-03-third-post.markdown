@@ -42,7 +42,7 @@ description: |
 
 <div class="row">
   <div class="col-sm-12 col-md-2"></div>
-  <div class="col-sm-12 col-md-1">
+  <div class="col-sm-12 col-md-1" style="z-index:10;">
     <select id="chord_countries">
       <option value="Europe" selected>All Europe</option>
       <option value="France">France</option>
@@ -53,7 +53,7 @@ description: |
     </select>
   </div>
   <div class="col-sm-12 col-md-4" id="chord_box" style="margin-left: -50pt">
-    <div id="Europe_chord">
+    <div id="Europe_chord" style="display:none">
       {% include chord.html %}
     </div>
     <div id="France_chord" style="display:none">
@@ -89,6 +89,7 @@ $(document).ready(function() {
 
   $(".bk-toolbar").parent().css('backgroundColor', '#f8f8f8');
   active_chord = "#Europe_chord";
+  $(active_chord).show();
   $('#chord_countries').change(function(){
 
     $(active_chord).hide();
