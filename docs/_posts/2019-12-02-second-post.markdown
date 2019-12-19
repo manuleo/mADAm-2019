@@ -3,7 +3,7 @@ layout: default
 id_div: second_section
 img: |
 category: |
-title: Europe to the resuce
+title: Europe to the rescue
 description: |
 ---
 
