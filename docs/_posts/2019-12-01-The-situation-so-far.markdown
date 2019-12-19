@@ -10,8 +10,9 @@ description: |
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
+        Before diving straight into the data analysis, it might be useful to get a little context. Ever since the dawn of civilization, the African continent was riddled by chronic food shortages and famines. With growing affluence in recent years, the European subcontinent on the other hand has experienced resource abundance. As a consequence, society's awareness for the dilemma of food waste has significantly increased. However, specific proposals on solutions are rare and often too optimistic. So why not use Data Science to solve it? 
         <h2>How much does each continent have?</h2>
-        Africa and Europe’s historical food situation was thoroughly analyzed. Based on past values, data was predicted and analyzed for the upcoming year 2020 in order to be as close to reality as possible. The following maps show the food that was supplied by each continent. 
+        Africa and Europe’s historical food situation was thoroughly analyzed. Based on past values, data was predicted and analyzed for the upcoming year 2020 in order to be as close to reality as possible. As a starting point, looking at the total food being supplied every year to each country already enables a solid overview about the dynamics. The following maps show the food that was supplied by each continent for every year since 1960. 
         <!--I think needs some more text; map text balance a bit off-->
     </div>
     <div class="col-sm-12 col-md-2"></div>
@@ -26,7 +27,7 @@ description: |
     </div>
     <div class ="col-sm-12 col-md-3" >
         <p>
-            In Africa, there is a clear disparity between North African countries and their sub-Saharan counterparts. All of the former ones command a supply of more than 3000 kcal per person per day except for Sudan. To put this into context: A man at the age of 20 is expected to have at least 3000 kcal per day to avoid malnutrition for sure. By hovering over a specific country, you can read the actual value. Some of the states were not listed in the FAO dataset and are consequently blank. 
+            In Africa, there is a clear disparity between North African countries and their sub-Saharan counterparts, which started to take form in the 70's. Currently, all of the former ones command a supply of more than 3000 kcal per person per day except for Sudan. To put this into context: A man at the age of 20 is expected to have at least 3000 kcal per day to safely avoid malnutrition. Simply judging by the change in color over the years, it can be stated that overall, there already was some improvement in most nations, especially after the year 2000. By hovering over a specific country, a country's actual value is displayed. Some of the states were not listed in the FAO dataset and are consequently blank. 
 
         </p>
     </div>
@@ -119,16 +120,6 @@ description: |
     <div class="col-sm-12 col-md-4">
         Surprisingly, all European countries boast an overall surplus in the food supply, with the exception being Albania which was slightly deficient during the first few years of our investigation (‘60s). Another significant occurrence can be detected during the aftermath of <a href="https://en.wikipedia.org/wiki/Breakup_of_Yugoslavia" target="_blank">Yugoslavia’s disintegration</a>
         in 1992, where ex-member states like Croatia, Bosnia & Herzegovina and former Macedonia’s nourishment status deteriorated drastically, causing a temporary shortage of nutrition. Most of the other countries, however, have constantly shown a surplus of around 1000 kcal per day and per person, meaning a third of European food does not end up being consumed - in other words: food waste.
-    </div>
-    <div class="col-sm-12 col-md-2"></div>
-</div>
-
-<br>
-
-<div class="row">
-    <div class="col-sm-12 col-md-2"></div>
-    <div class="col-sm-12 col-md-8">
-        Determining recipient countries should be easy, one might think. Just consider the red ones, right? Yet what about unequal wealth distribution? A better-off person eating more than the calculated daily average means another person gets less. For this reason, a threshold of 300 calories in surplus was introduced to be on the safe side. This also entails more countries are being targeted to receive help. 
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
