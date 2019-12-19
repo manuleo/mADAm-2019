@@ -77,7 +77,7 @@ $.ajax({
 });
 
 colors5 = ["#d7191c","#fdae61", "#ffffbf", "#a6d96a", "#1a9641"]
-load_map(cal_world_ticks, "json/cal_world/cal_world_2020.geojson", colors5, 'map_world_diff', [30.318462, 19.56871], 'Estimation deficit/surplus', 'kcal / persona / day', 3, -1, layergroupHolder, mapHolder);
+load_map(cal_world_ticks, "json/cal_world/cal_world_2020.geojson", colors5, 'map_world_diff', [30.318462, 19.56871], 'Estimation of deficit/surplus', 'kcal / person / day', 3, -1, layergroupHolder, mapHolder);
 
 
 </script>

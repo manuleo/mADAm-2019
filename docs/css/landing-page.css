@@ -44,7 +44,12 @@ h6 {
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    font-size: 7em;
+}
+
+.intro-message > h2 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
 }
 
 .intro-divider {
@@ -83,9 +88,13 @@ h6 {
 
 .network-name {
     text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
     letter-spacing: 2px;
+}
+
+.content-section {
+    padding: 50px 0;
 }
 
 .content-section-a {
