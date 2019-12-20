@@ -11,7 +11,7 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
         <h2>How much does each continent have?</h2>
-        Africa and Europe’s historical food situation was thoroughly analyzed. Based on past values, data was predicted and analyzed for the upcoming year 2020 in order to be as close to reality as possible. As a starting point, looking at the total food being supplied every year to each country already enables a solid overview about the dynamics. The following maps show the food that was supplied by each continent for every year since 1960. 
+        Africa and Europe’s historical food situation was thoroughly analyzed. Based on past values, data was predicted and analyzed for the upcoming year <b> 2020 </b> in order to be as close to reality as possible. As a starting point, looking at the total food being supplied every year to each country already enables a solid overview about the dynamics. The following maps show the food that was supplied by each continent for every year since 1960. 
         <!--I think needs some more text; map text balance a bit off-->
     </div>
     <div class="col-sm-12 col-md-2"></div>
