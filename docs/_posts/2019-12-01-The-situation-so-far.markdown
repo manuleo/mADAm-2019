@@ -3,7 +3,7 @@ layout: default
 id_div: first_section
 img: |
 category: |
-title: A history of food supply
+title: A history of food distribution
 description: |
 ---
 
@@ -11,8 +11,8 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
         <h2>How much does each continent have?</h2>
-        Africa and Europe’s historical food situation was thoroughly analyzed. Based on past values, data was predicted and analyzed for the upcoming year <b> 2020 </b> in order to be as close to reality as possible. As a starting point, looking at the total food being supplied every year to each country already enables a solid overview about the dynamics. The following maps show the food that was supplied by each continent for every year since 1960. 
-        <!--I think needs some more text; map text balance a bit off-->
+         As a starting point, looking at the total food supply every year in each country already enables a solid overview about the dynamics. More specifically, Africa and Europe’s historical food situation was thoroughly analyzed. Based on past values, data was predicted for the upcoming year <b> 2020 </b> in order to be as close to reality as possible.
+        The following maps show the food that was supplied by each continent for every year since 1960. 
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
@@ -26,7 +26,7 @@ description: |
     </div>
     <div class ="col-sm-12 col-md-3" >
         <p>
-            In Africa, there is a clear <b> disparity </b> between North African countries and their sub-Saharan counterparts, which started to take form in the 70's. Currently, all of the former ones command a supply of more than 3000 kcal per person per day except for Sudan. To put this into context: A man at the age of 20 is expected to have at least 3000 kcal per day to safely avoid malnutrition. Simply judging by the change in color over the years, it can be stated that overall, there already was some improvement in most nations, especially after the year 2000. By hovering over a specific country, a country's actual value is displayed. Some of the states were not listed in the FAO dataset and are consequently blank. 
+            In Africa, there is a clear <b> disparity </b> between North African countries and their sub-Saharan counterparts, which started to take form in the 70's. Currently, all of the former ones command a supply of <b>more than 3000 kcal per person per day</b> except for Sudan. To put this into context: A man at the age of 20 is expected to have at least 3000 kcal per day to safely avoid malnutrition. Simply judging by the change in color over the years, it can be stated that overall, there already was some improvement in most nations, especially after the year 2000. *Some of the states were not listed in the FAO dataset and are consequently blank*. 
 
         </p>
     </div>
@@ -39,10 +39,10 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-3">
         <p>
-            As expected, most of the European countries show a <b> stable </b> food supply situation, with values being more homogeneous than on the African continent. Interestingly, <b> Belgium, Austria,</b> and <b> Italy </b> are provided with the highest amount per capita. Impacts of historical events can be seen when simulating a time series using the sliders. For example, a sharp drop in Eastern Europe can be observed in the years following the dissolution of the Soviet Union. Furthermore, a correlation with a nation’s Gross Domestic Product (GDP) can be assumed. 
+            As expected, most of the European countries show a <b>stable</b> food supply situation, with values being more homogeneous than on the African continent. Interestingly, <b> Belgium, Austria,</b> and <b> Italy </b> are provided with the highest amount per capita. Impacts of historical events can be seen when simulating a time series using the sliders. For example, a sharp drop in Eastern Europe can be observed in the years following the dissolution of the Soviet Union. Furthermore, a correlation with a nation’s Gross Domestic Product (GDP) can be assumed.
         </p>
         <p>
-            Again, a few countries were not included in the dataset (mostly recenly established nations) and are left blank with no values assigned to them.
+            *Again, a few countries were not included in the dataset (mostly recenly established nations) and are left blank with no values assigned to them*.
         </p>
     </div>
     <div class ="col-sm-12 col-md-5">
@@ -57,8 +57,9 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
         <h2>How much does each continent need?</h2>
-            In order to deduce a country’s demand, it would seem natural to just look at the population size multiplied by an average person’s daily need. However, this methodology would not account for different <b> demographic compositions </b>. The following plot illustrates the discrepancies between varying age groups and their respective nutritional requirements 
-        <a href="https://health.gov/dietaryguidelines/2015/guidelines/appendix-2/" target="_blank">(Source)</a>.
+            In order to deduce a country’s demand, it would seem natural to just look at the population size multiplied by an average person’s daily need. However, this methodology would not account for different <b> demographic compositions </b>.
+According to this <a href="https://health.gov/dietaryguidelines/2015/guidelines/appendix-2/" target="_blank">(source)</a>, there are discrepancies between varying age groups and their respective nutritional requirements. Hovering over the plot will show how the highest caloric need is addressed by males and females in their 20s and 30s.
+        
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
@@ -71,7 +72,7 @@ description: |
         {% include gender.html %}
     </div>
     <div class="col-sm-12 col-md-3">
-            By multiplying this data with the same demographic age-range information, a much preciser number for national food demand is obtained. This takes situations into account where a nation’s population composition differs substantially to others due to wars (where the male population is significantly reduced). Additionally, the age-sex-pyramid of less developed countries often shows higher shares of young people and babies, who evidently need less than an adult person.
+            By multiplying this data with the same demographic age-range information, a much preciser number for national food demand is obtained. This takes situations into account where a nation’s population composition differs substantially to others. For example, during war periods the male population would significantly be reduced. Additionally, the age-sex-pyramid often shows higher shares of young people and babies, who evidently need less than an adult person.
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
@@ -82,7 +83,7 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
         <h2>How much is Africa lacking and how much can Europe help?</h2>
-        Subtracting demand from the supply, deficits for the case of negative results could be determined. Move the slider on the bottom of the plots to have a look at the evolution over time.
+        Subtracting demand from the supply, deficits for the case of negative results could be determined. Move the sliders to get insight on the food surplus's evolution over time!
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
