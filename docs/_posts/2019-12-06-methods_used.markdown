@@ -43,15 +43,8 @@ Estimated calories needed: we scraped this <a href="https://health.gov/dietarygu
     <h2>Methods </h2>
     <h3>Convex Optimization  </h3>
     Two minimizations were carried out. The first tackled the issue of minimizing the amount of food that has to be delivered by the five chosen european contries. While minimizing, the demand constraints had to be respected as well as the constraints on food availability of each European country. The objective function to be minimized was a quadratic non-negative weighted sum of food [kcal/year]. More spefically, the weights were designed to take into account both the GDP of a country and the food availability [kcal/year]. The modelling choice is justified by the fact that a rich country with a large surplus should contribute more than a relatively poor country with less possibilities. The problem we want to model is a <b> Quadratic Program with Linear Constraints (QP) </b>. The choice of a quadratic objective function is due the fact that we will need to evenely distribute the resources and this means that weights will have to increase quadratically with the amount of food given away. It makes sense to say that the more a country gives away of its surplus, the less the same country should contribute further if other countries didn't countribute at all yet.
-    In particular:
-- $Y$ is a matrix in $R^{mxn}$ in which $m$ is the number of European countries and $n$ is the number of African countries. Each entry $y_{ij}$ of the matrix $Y\in{R^{mxn}}$ is the amount [kcal/year] of kilocalories that the European country $i\in{1,...,m}$ will have to send to the African country $j\in{1,...,n}$
-- The weights will be in the interval $[-1,1]$. Initally we normalize the GWP per capita of every european country. Afterwards, we will calculate the gwp_inverse = (1-gwp_normalized). The final weight is computed by multiplying the food surplus for gwp_inverse. The number obtained will be the measure by which the logic "The richest gives more" is respected. We will name the weights $w\in{R^{mx1}}$.
-- The objective function is $\sum_{i=1}^{m}\sum_{j=1}^{n}{w_jy_{ij}^2 + w_jy_{ij}}$
-- The constraints can be considered a restriction on the value that our decision variable will assume. By restricting the feasibile set we will impose the following limits: 
-  - non-negativity of food [kcal/year] sent
-  - supply and demand must be met according to European country surplus and African countries deficit.
-  - even distribution of resources
-
+    <br>
+The second optimization concerned the composition of the diet, which is one of the **key steps** of our analysis. We decided to compute the amount of product by minimizing the actual costs of shipments that every European country had to meet. In order to model the problem we needed to define an objective function which in this case was the **non-negative weighted sum of products' cost**.
        </p>
   </div>
   <div class="col-sm-12 col-md-2"></div>
