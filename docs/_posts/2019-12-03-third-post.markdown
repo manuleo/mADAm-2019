@@ -98,7 +98,7 @@ description: |
 <div class="row">
   <div class="col-sm-12 col-md-2"></div>
   <div class="col-sm-12 col-md-3">
-  In a final step, we move to a detailed view of what amount of each specific product should be shipped to every individual African country. The products <b>Beef, Meat, Chicken, Oat and Tomatoes</b> are required the most in all countries in need. This can be explained by the fact that - compared to the other items - they have a lower cost per kcal of energy. Meat is used that much due to its high content in valuable proteins in fat, which other nutrients are mostly lacking.
+  In a final step, we move to a detailed view of what amount of each specific product should be shipped to every individual African country. By clicking on an individual country, its food to be received will be displayed. The products <b>Beef, Meat, Chicken, Oat and Tomatoes</b> are required the most in all countries in need. This can be explained by the fact that - compared to the other items - they have a lower cost per kcal of energy. Meat is used that much due to its high content in valuable proteins in fat, which other nutrients are mostly lacking. The respective shares of food aid are similar for all African countries, as their deficit was assumed to be comprised of the same lack of carbohydrates, fat and protein. Note that the countries or sorted clockwise with increasing deficit, the size however is kept the same to facilitate readability. 
   </div>
   <div class="col-sm-12 col-md-1" style="z-index:10; left: 40px; position: relative;">
     <select id="sun_countries">
