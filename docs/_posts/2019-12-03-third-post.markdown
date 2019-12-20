@@ -98,17 +98,7 @@ description: |
 <div class="row">
   <div class="col-sm-12 col-md-2"></div>
   <div class="col-sm-12 col-md-3">
-   To this end, a ranking system was introduced to analyze all listed food items based on their previously defined composition              suitability. In doing so, the list of products to be considered could be reduced to 13 items to be used for further analysis.
-   The food categories consequently considered are the following ones:
-    <ul>
-  <li>Beef Products</li>
-  <li>Cereal Grains and Pasta</li>
-  <li>Fruits and Fruit Juices</li>
-  <li>Poultry Products</li>
-  <li>Legumes and Legume Products</li>
-  <li>Vegetables and Vegetable Products</li>
-</ul>
-   Selecting a data point in the plot on the right will allow you to see the product's name and its composition of the three macronutrients projected onto the corresponding axis. 
+  In a final step, we move to a detailed view of what amount of each specific product should be shipped to every individual African country. The products <b>Beef, Meat, Chicken, Oat and Tomatoes</b> are required the most in all countries in need. This can be explained by the fact that - compared to the other items - they have a lower cost per kcal of energy. Meat is used that much due to its high content in valuable proteins in fat, which other nutrients are mostly lacking.
   </div>
   <div class="col-sm-12 col-md-1" style="z-index:10; left: 40px; position: relative;">
     <select id="sun_countries">
