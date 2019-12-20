@@ -97,7 +97,7 @@ description: |
 
 <div class="row">
   <div class="col-sm-12 col-md-2"></div>
-  <div class="col-sm-12 col-md-4">
+  <div class="col-sm-12 col-md-3">
    To this end, a ranking system was introduced to analyze all listed food items based on their previously defined composition              suitability. In doing so, the list of products to be considered could be reduced to 13 items to be used for further analysis.
    The food categories consequently considered are the following ones:
     <ul>
@@ -110,8 +110,35 @@ description: |
 </ul>
    Selecting a data point in the plot on the right will allow you to see the product's name and its composition of the three macronutrients projected onto the corresponding axis. 
   </div>
-  <div class="col-sm-12 col-md-4">
-    {% include sunburst.html %}
+  <div class="col-sm-12 col-md-4" id="chord_box" style="margin-rigth: -50pt">
+    <div id="Europe_sun" style="display:none">
+      {% include sunburst_EU.html %}
+    </div>
+    <div id="France_sun" style="display:none">
+      {% include sunburst_fr.html %}
+    </div>
+    <div id="Germany_sun" style="display:none">
+      {% include sunburst_ge.html %}
+    </div>
+    <div id="Italy_sun" style="display:none">
+      {% include sunburst_it.html %}
+    </div>
+    <div id="Spain_sun" style="display:none">
+      {% include sunburst_sp.html %}
+    </div>
+    <div id="UK_sun" style="display:none">
+      {% include sunburst_uk.html %}
+    </div>
+  </div>
+    <div class="col-sm-12 col-md-1" style="z-index:10;">
+    <select id="sun_countries">
+      <option value="Europe" selected>All Europe</option>
+      <option value="France">France</option>
+      <option value="Germany">Germany</option>
+      <option value="Italy">Italy</option>
+      <option value="Spain">Spain</option>
+      <option value="UK">United Kingdom</option>
+    </select>
   </div>
   <div class="col-sm-12 col-md-2"></div>
 </div>
@@ -130,5 +157,16 @@ $(document).ready(function() {
     $(active_chord).show();
     
   })
+
+  active_sun = "#Europe_sun";
+  $(active_sun).show();
+  $('#sun_countries').change(function(){
+
+    $(active_sun).hide();
+    active_sun = "#".concat($('#sun_countries').val(), "_sun");
+    $(active_sun).show();
+    
+  })
+
 });
 </script>
