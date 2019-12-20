@@ -10,7 +10,6 @@ description: |
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
-        Before diving straight into the data analysis, it might be useful to get a little context. Ever since the dawn of civilization, the African continent was riddled by chronic food shortages and famines. With growing affluence in recent years, the European subcontinent on the other hand has experienced resource abundance. As a consequence, society's awareness for the dilemma of food waste has significantly increased. However, specific proposals on solutions are rare and often too optimistic. So why not use Data Science to solve it? 
         <h2>How much does each continent have?</h2>
         Africa and Europe’s historical food situation was thoroughly analyzed. Based on past values, data was predicted and analyzed for the upcoming year 2020 in order to be as close to reality as possible. As a starting point, looking at the total food being supplied every year to each country already enables a solid overview about the dynamics. The following maps show the food that was supplied by each continent for every year since 1960. 
         <!--I think needs some more text; map text balance a bit off-->
@@ -153,10 +152,10 @@ mapHolder = {}
 
 // colors1 = ["#f1eef6","#d0d1e6", "#a6bddb", "#74a9cf", "#2b8cbe", "#045a8d"]
 colors1 = ["#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#034e7b"]
-load_map(africa_ticks_supply, "json/africa_supply/africa_supply_", colors1, 'map_africa_supply', [0.318462, 22.56871], 'African Food Supply', 'kcal / persona / day', 3, 1, layergroupHolder, mapHolder);
+load_map(africa_ticks_supply, "json/africa_supply/africa_supply_", colors1, 'map_africa_supply', [0.318462, 22.56871], 'African Food Supply', 'kcal / person / day', 3, 1, layergroupHolder, mapHolder);
 
 // colors2 = ["#fff7fb","#ece7f2", "#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#045a8d", "#023858"]
 colors2 = ["#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#034e7b"]
-load_map(europe_ticks_supply, "json/europe_supply/europe_supply_", colors2, 'map_europe_supply', [52.5260, 25.2551], 'European Food Supply', 'kcal / persona / day', 3, 2, layergroupHolder, mapHolder);
+load_map(europe_ticks_supply, "json/europe_supply/europe_supply_", colors2, 'map_europe_supply', [52.5260, 25.2551], 'European Food Supply', 'kcal / person / day', 3, 2, layergroupHolder, mapHolder);
 
 </script>
