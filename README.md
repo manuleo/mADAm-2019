@@ -1,7 +1,7 @@
 # Solving hunger in Africa: a global handbook
 
-### Datastory
-**Link to the datastory:** click to [this link](https://manuleo.github.io/mADAm-2019/)
+# Datastory
+**Link to the datastory:** click to [this link](https://manuleo.github.io/mADAm-2019/)  
 **_Note_** for a good visualization: for a correct user-experience, we recommend to use a zoom of 67% on a 13 inches (Tested on a 13 inches MacBook Pro). 
 
 ### Notebook containing the project is `project.ipynb`. As jupyter notebook doesn't reproduce the embedded HTML, the already rendered version is available [HERE](https://nbviewer.jupyter.org/github/manuleo/mADAm-2019/blob/master/project.ipynb?flush_cache=true)
