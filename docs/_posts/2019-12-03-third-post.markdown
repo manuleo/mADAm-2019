@@ -87,7 +87,8 @@ description: |
   <div class="col-sm-12 col-md-3" style="position: absolute;left: 800pt;">
     <p>
       This chord plot provides a general overview about how food could be redistributed with minimal expenditures. When hovering over a country's circle, its associated food flows will be highlighted. By selecting a specific country in the drop menu, you can reduce complexity and assess where this particular nation's food is meant to be allocated. <i>Note that the total amount of food sent/received corresponds to the extension of a country's circular arc.</i> 
-      <i>Germany</i> and <i>France</i> were found to contribute the most, with each providing slightly more than 100,000 tons. This is mainly due to their higher GDP. In contrapposition, <i>Italy</i> and <i>Spain</i> are found to contribute the least and this again confirms the goodness of our hypothesis. It is trivial to see that Ethiopia would claim the highest share of food aid (1.3*10<sup>5</sup>tons) of all examined countries. Considering that a regular Ethiopian person is estimated to lack 125 kcal every day, the intermediate result is quite promising as it indicates that the extent of population is correctly taken into account.
+      <i>Germany</i> and <i>France</i> were found to contribute the most, with each providing slightly more than 100,000 tons. This is mainly due to their higher GDP. In contrapposition, <i>Italy</i> and <i>Spain</i> are found to contribute the least and this again confirms the goodness of our hypothesis. It is trivial to see that Ethiopia would claim the highest share of food aid (1.3*10<sup>5</sup> tons) of all examined countries. Considering that a regular Ethiopian person is estimated to lack 125 kcal every day, the intermediate result is quite promising as it indicates that the extent of population is correctly taken into account.
+  </p>
   </div>
   <div class="col-sm-12 col-md-2"></div>
 </div>
