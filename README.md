@@ -1,6 +1,10 @@
 # Solving hunger in Africa: a global handbook
 
-### Notebook containing the project is `project.ipynb`. As jupyter notebook doesn't reproduce the embedded HTML, the already rendered version is available [HERE](https://nbviewer.jupyter.org/github/manuleo/mADAm-2019/blob/master/project.ipynb)
+# Datastory
+### Link to the datastory: click to [this link](https://manuleo.github.io/mADAm-2019/)  
+**_Note_** for a good visualization: for a correct user-experience, we recommend to use a zoom of 67% on a 13 inches (Tested on a 13 inches MacBook Pro). 
+
+### Notebook containing the project is `project.ipynb`. As jupyter notebook doesn't reproduce the embedded HTML, the already rendered version is available [HERE](https://nbviewer.jupyter.org/github/manuleo/mADAm-2019/blob/master/project.ipynb?flush_cache=true)
 
 # Abstract
 Despite recent technological improvements, there is still a large share of people who are starving. *“1 in 9 people in this world go to bed on an empty stomach”* (source: [World Food Program](https://www.wfp.org/zero-hunger)). The aim of this project is to propose a way to end starvation in Africa, one of the continents most affected by this hunger issue. To do so, we will tackle the problem from two different perspectives. On one hand, the analysis will show an estimatation of which African countries have food deficits. On the other hand, the investigation will give the reader a complete picture of the food availability across Europe. The FAO dataset will be intensively used as it contains useful information about net food supply for both Africa and Europe. The analysis section will then leave space to a more important chapter of our story: how to solve the uneven distribution of food? We would like to reallocate resources that otherwise would be end up as food waste from the richest European countries to the poorest African ones. This combined effort approach is a simple solution we think could potentially have a huge impact on many lives!
@@ -104,11 +108,11 @@ In the last two weeks we will focus entirely on the creation of an effective dat
 6. Propose to the reader the results of our model on two levels. The first one is aimed to catch the reader attention by showing him just few but interesting results coming from our first analysis on Africa and Europe over the years. In this part, we will use **heatmaps**, **heatmaps with time**, **short animation of different kinds**. As the data story goes on, they reader will gain more knowledge on African history of famine and European food wasting trend. As the second level comes in, our proposal will be to introduce the model of macronutrients, final products and finally reallocation of resources we proposed.
 
 # Contribution
-**Manuel**: Neural networks to predict data of different datasets up to 2020, analysis on food prices, chord plot. Analysis on both Europe and Africa.
+**Manuel**:  Neural networks to predict data of different datasets up to 2020. Analysis on the African population and deficit. Analysis on food prices and product to find the best ones. Analysis on both Europe and Africa. Website maps, chord plot, sunburst plot, layout introduction. Continuosly update on the readme and final reviews on the work.
 
-**Joao**: Website design and implementation, integration of plots and functions into the notebook. Analysis on Europe. Code refactoring.
+**Joao**: All Europe analysis and comparison with Africa. Code refactoring for milestone 2, with function rewriting and implementation. Website design, layout, counter, caloric needs for male and female and difference, scatter plot for GDP analysis. 
 
-**Dario**: Writing textual description, introduction, conclusion and detailed description of plots. Analysis on GDP and Africa. Preparing the final presentation and poster.
+**Dario**: Animation on caloric decifit for the notebook. Analysis on Africa supply. Writing all the textual description for the datastory. Preparing the final presentation and poster.
 
-**Riccardo**: Coding up the optmization part to obtain values on distribution of food and diet, 3D scatter plot of macronutrients. Analysis on Africa and comparison with Europe.
+**Riccardo**: Analysis on Africa supply and comparison with Europe. Coding the maps for the notebook. GDP analysis for the best 5 countries. Coding up the optimization part to obtain values on distribution of food and diet, 3D scatter plot of macronutrients. Continuosly update on the readme and final reviews on the work.
 
