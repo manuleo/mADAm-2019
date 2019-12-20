@@ -70,11 +70,11 @@ Our CSS styles
 }
 
 #meal_europe, #kcal_europe {
-    color: #00c200;
+    /*color: #00c200;*/
 }
 
 #meal_africa, #kcal_africa {
-    color: #ff0000;
+    /*color: #ff0000;*/
 }
 
 .xlines-above, .crisp {
