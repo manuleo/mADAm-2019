@@ -1,9 +1,9 @@
 ---
 layout: default
-id_div: fifth_section
+id_div: six_section
 img: |
 category: |
-title: Datasets used
+title: Methodology
 description: |
 ---
 <div class="row">
@@ -30,3 +30,12 @@ Estimated calories needed: we scraped this <a href="https://health.gov/dietarygu
   </div>
   <div class="col-sm-12 col-md-2"></div>
 </div>
+
+<script>
+$(document).ready(function() {
+
+  $("#six_section").removeClass("content-section-b");
+  $("#six_section").addClass("content-section-black");
+});
+
+</script>
