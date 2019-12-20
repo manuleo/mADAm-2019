@@ -21,8 +21,17 @@ description: |
 <div class="row">
   <div class="col-sm-12 col-md-2"></div>
   <div class="col-sm-12 col-md-3">
-   To this end, a ranking system was introduced to analyze all listed food items based on their previously defined composition suitability. In doing so, the list of products to be considered could be reduced to 13 items to be used for further analysis. 
-   By hovering over a data point, you will see the product's name and its composition of the three macronutrients projected onto the corresponding axis. 
+   To this end, a ranking system was introduced to analyze all listed food items based on their previously defined composition              suitability. In doing so, the list of products to be considered could be reduced to 13 items to be used for further analysis.
+   The food categories consequently considered are the following ones:
+    <ul>
+  <li>Beef Products</li>
+  <li>Cereal Grains and Pasta</li>
+  <li>Fruits and Fruit Juices</li>
+  <li>Poultry Products</li>
+  <li>Legumes and Legume Products</li>
+  <li>Vegetables and Vegetable Products</li>
+</ul>
+   Selecting a data point in the plot on the right will allow you to see the product's name and its composition of the three macronutrients projected onto the corresponding axis. 
   </div>
   <div class="col-sm-12 col-md-5">
     {% include 3d_macros.html %}
@@ -36,7 +45,7 @@ description: |
   <div class="col-sm-12 col-md-2"></div>
   <div class="col-sm-12 col-md-8">
     <h2>The distribution plan</h2>
-   For every European countries out of the five selected, the prices for the previously defined food items were established by <a href="http://www.fao.org/faostat/en/#data/PP"  target="_blank">FAO</a> data and a dataset from the <a href="https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en"  target="_blank">European Commission</a>. As different countries show different domestic prices for specific items, a cost minimization was carried out using convex optimization methods. Furthermore, a linearly increasing cost function with respect to the GDP was implemented yielding a higher cost if only one country was considered while also prefering to take from richer countries.
+   For every European countries out of the five selected, the prices for the previously defined food items were established by <a href="http://www.fao.org/faostat/en/#data/PP"  target="_blank">FAO</a> data and a dataset from the <a href="https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en"  target="_blank">European Commission</a>. As different countries show different domestic prices for specific items, a cost minimization was carried out using optimization methods. Furthermore, a linearly increasing cost function with respect to the GDP was implemented yielding a higher cost if only one country was considered while also prefering to take from richer countries.
   </div>
   <div class="col-sm-12 col-md-2"></div>
 </div>
