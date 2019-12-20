@@ -10,7 +10,6 @@ description: |
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
-        Before diving straight into the data analysis, it might be useful to get a little context. Ever since the dawn of civilization, the African continent was riddled by chronic food shortages and famines. With growing affluence in recent years, the European subcontinent on the other hand has experienced resource abundance. As a consequence, society's awareness for the dilemma of food waste has significantly increased. However, specific proposals on solutions are rare and often too optimistic. So why not use Data Science to solve it? 
         <h2>How much does each continent have?</h2>
         Africa and Europe’s historical food situation was thoroughly analyzed. Based on past values, data was predicted and analyzed for the upcoming year 2020 in order to be as close to reality as possible. As a starting point, looking at the total food being supplied every year to each country already enables a solid overview about the dynamics. The following maps show the food that was supplied by each continent for every year since 1960. 
         <!--I think needs some more text; map text balance a bit off-->
