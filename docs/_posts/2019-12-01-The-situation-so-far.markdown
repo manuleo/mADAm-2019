@@ -152,10 +152,12 @@ mapHolder = {}
 
 // colors1 = ["#f1eef6","#d0d1e6", "#a6bddb", "#74a9cf", "#2b8cbe", "#045a8d"]
 colors1 = ["#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#034e7b"]
+// colors1 = ["#ccece6", "#99d8c9", "#66c2a4", "#41ae76", "#238b45", "#005824"]
 load_map(africa_ticks_supply, "json/africa_supply/africa_supply_", colors1, 'map_africa_supply', [0.318462, 22.56871], 'African Food Supply', 'kcal / person / day', 3, 1, layergroupHolder, mapHolder);
 
 // colors2 = ["#fff7fb","#ece7f2", "#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#045a8d", "#023858"]
 colors2 = ["#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#034e7b"]
+// colors2 = ["#ccece6", "#99d8c9", "#66c2a4", "#41ae76", "#238b45", "#005824"]
 load_map(europe_ticks_supply, "json/europe_supply/europe_supply_", colors2, 'map_europe_supply', [52.5260, 25.2551], 'European Food Supply', 'kcal / person / day', 3, 2, layergroupHolder, mapHolder);
 
 </script>
