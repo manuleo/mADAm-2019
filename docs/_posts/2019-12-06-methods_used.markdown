@@ -43,20 +43,21 @@ description: |
                 2020 with a granularity of 5 years. We will interpolate to obtain data with 1 year frequency.
             </li>
             <br>
-            <li> <b><a href="https://fdc.nal.usda.gov/USDA" target="_blank"><b>Agricultural Research Service (ARS) Nutrition Facts Database</b></a> <br>
+            <li> <a href="https://fdc.nal.usda.gov/USDA" target="_blank"><b>Agricultural Research Service (ARS) Nutrition Facts Database</b></a> <br>
                 Used to build the optimal diet. This dataset contains nutritional information
                 for raw products. The information reported are per
-                100 g of servings.</li>
+                100 g of servings.
+            </li>
             <br>
-            <li> <b><a
+            <li><a
                     href="https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en"
-                    target="_blank">European Commission dataset</a></b> <br>
+                    target="_blank"><b>European Commission dataset</b></a><br>
                 This dataset is used to get domestic food prices for items whose prices were not
                 included in the FAO dataset. In the end, the majority of the prices came from this dataset.
             </li>
             <br>
             <li>
-                <b> Additional </b>
+                <b>Additional</b>
                 <br>
                 Estimated calories needed: we scraped this <a
                     href="https://health.gov/dietaryguidelines/2015/guidelines/appendix-2/" target="_blank">website</a>
