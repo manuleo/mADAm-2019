@@ -45,7 +45,7 @@ description: |
   <div class="col-sm-12 col-md-2"></div>
   <div class="col-sm-12 col-md-8">
     <h2>The distribution plan</h2>
-   For every European countries out of the five selected, the prices for the previously defined food items were established by <a href="http://www.fao.org/faostat/en/#data/PP"  target="_blank">FAO</a> data and a dataset from the <a href="https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en"  target="_blank">European Commission</a>. As different countries show different domestic prices for specific items, a cost minimization was carried out using convex optimization methods. Furthermore, a linearly increasing cost function with respect to the GDP was implemented yielding a higher cost if only one country was considered while also prefering to take from richer countries.
+   For every European countries out of the five selected, the prices for the previously defined food items were established by <a href="http://www.fao.org/faostat/en/#data/PP"  target="_blank">FAO</a> data and a dataset from the <a href="https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en"  target="_blank">European Commission</a>. As different countries show different domestic prices for specific items, a cost minimization was carried out using optimization methods. Furthermore, a linearly increasing cost function with respect to the GDP was implemented yielding a higher cost if only one country was considered while also prefering to take from richer countries.
   </div>
   <div class="col-sm-12 col-md-2"></div>
 </div>
