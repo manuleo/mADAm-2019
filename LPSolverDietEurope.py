@@ -14,7 +14,7 @@ prod_diet_final =  pd.read_pickle("data/processed/prod_diet_final.pkl")
 
 def LPSolverDietEurope(eu_country):
     '''
-    To be commented
+    Solver for Europe diet. Find kilocalories quantities to send to each African countries. It creates the optimal diet
     '''
     country_giveup_val = food_opt_distribution_df.loc[eu_country].values
     country_giveup_index = food_opt_distribution_df.loc[eu_country].index
