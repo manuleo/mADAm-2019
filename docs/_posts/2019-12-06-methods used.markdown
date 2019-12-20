@@ -11,6 +11,6 @@ description: |
     <title>Body bgcolor Attribute example</title>
   </head>
   <body bgcolor="#000000">
-    <h1>This webpage has colored background.</h1>
-  </body>
+    <font color="white">This is some text!</font>
+      </body>
 </html>
