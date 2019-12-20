@@ -21,7 +21,8 @@ description: |
 <div class="row">
   <div class="col-sm-12 col-md-2"></div>
   <div class="col-sm-12 col-md-3">
-    By hovering over a data point, you will see the product's name and its composition of the three macronutrients projected onto the corresponding axis. 
+   To this end, a ranking system was introduced to analyze all listed food items based on their previously defined composition suitability. In doing so, the list of products to be considered could be reduced to 13 items to be used for further analysis. 
+   By hovering over a data point, you will see the product's name and its composition of the three macronutrients projected onto the corresponding axis. 
   </div>
   <div class="col-sm-12 col-md-5">
     {% include 3d_macros.html %}
