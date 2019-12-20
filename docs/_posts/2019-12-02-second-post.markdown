@@ -56,7 +56,7 @@ description: |
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
-        In this case, <b> Germany, France, Italy, Spain,<b> and the <b>United Kingdom<b> were chosen. Even though Russia has the greatest surplus, it was not considered as its GDP is much smaller than the one of other European countries. Moreover, its vast extent and remote nature makes efficient endeavors of collecting remaining food unlikely. Spain was preferred over Poland due to more useful geographical position as well as better economic performance.
+        In this case, <b> Germany, France, Italy, Spain,</b> and the <b>United Kingdom</b> were chosen. Even though Russia has the greatest surplus, it was not considered as its GDP is much smaller than the one of other European countries. Moreover, its vast extent and remote nature makes efficient endeavors of collecting remaining food unlikely. Spain was preferred over Poland due to more useful geographical position as well as better economic performance.
         <p>Let us now have a look at how to evaluate a specific redistribution.</p>
     </div>
     <div class="col-sm-12 col-md-2"></div>
