@@ -1,4 +1,4 @@
-# Solving hunger in Africa: a global handbook
+# Solving hunger in Africa: A modeled approach to solve this chronic issue
 
 # Datastory
 ### Link to the datastory: click to [this link](https://manuleo.github.io/mADAm-2019/)  
