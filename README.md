@@ -41,7 +41,7 @@ As a primary resource, we used the FAO dataset to obtain prices for every food i
 Every country GDP was retrieved and used in order to obtain an overview on how much every European country should contribute to the cause. According to this [website](https://www.investopedia.com/terms/g/gdp.asp), Gross Domestic Product (GDP) is "the total monetary or market value of all the finished goods and services produced within a country's borders in a specific time period." For this reason, the index is the best measure to define welth distribution over European countries.
 
 ### United Nations /DESA / Population Division 
-**Population**
+**Population**<br>
 The dataset was retrieved at this [link](https://population.un.org/wpp/). This dataset was used to determine the male and female population for Europe and Africa from 1950 to 2020 with a granularity of 5 years. We will interpolate to obtain data with 1 year frequency.
 All FAO’s dataset are in .csv so easy to parse and to work on. Same applies to United Nations dataset. The dimensions are overall manageable and no problems emerged.
 
