@@ -34,10 +34,16 @@ In milestone 3:
 This section contains food supplies for every country in the world. As the documentation reports, a region supply is defined as: *“Production + imports - exports + changes in stocks (decrease or increase)”.*
 We will use this database to analyze the amount of kcal/person/day for each African **and** European state in the food categories we are interested in.
 
+
 **Prices**
+
+
 As a primary resource, we used the FAO dataset to obtain prices for every food items analysed in our diet. In this context, it was not possibile to find all of them and therefore we will use also other resources that will be mentioned later on.
 
+
 **GDP**
+
+
 Every country GDP was retrieved and used in order to obtain an overview on how much every European country should contribute to the cause. According to this [website](https://www.investopedia.com/terms/g/gdp.asp), Gross Domestic Product (GDP) is "the total monetary or market value of all the finished goods and services produced within a country's borders in a specific time period." For this reason, the index is the best measure to define welth distribution over European countries.
 
 ### United Nations /DESA / Population Division 
