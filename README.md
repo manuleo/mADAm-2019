@@ -17,15 +17,15 @@ Despite recent technological improvements, there is still a large share of peopl
 
 - [x] How can we quantify food surplus in Europe? What are the regions characterised by the highest food waste rates?
 
-To go:
+In milestone 3:
 
-- [ ] Can we produce a list of simple and highly nutrient-dense final products that can be shipped from Europe to Africa? 
+- [x] Can we produce a list of simple and highly nutrient-dense final products that can be shipped from Europe to Africa? 
 
-- [ ] How can we define a consistent model to predict which European countries have to ship and how much should they individually contribute?
+- [x] How can we define a consistent model to predict which European countries have to ship and how much should they individually contribute?
 
-- [ ] Which countries can provide the resources to meet this plan (based on previously observed data)?
+- [x] Which countries can provide the resources to meet this plan (based on previously observed data)?
 
-- [ ] If everyone does work together, can we solve hunger on this continent?
+- [x] If everyone does work together, can we solve hunger on this continent?
 
 
 # Dataset
@@ -34,14 +34,22 @@ To go:
 This section contains food supplies for every country in the world. As the documentation reports, a region supply is defined as: *“Production + imports - exports + changes in stocks (decrease or increase)”.*
 We will use this database to analyze the amount of kcal/person/day for each African **and** European state in the food categories we are interested in.
 
+**Prices**<br>
+As a primary resource, we used the FAO dataset to obtain prices for every food items analysed in our diet. In this context, it was not possibile to find all of them and therefore we will use also other resources that will be mentioned later on.
+
+**GDP**<br>
+Every country GDP was retrieved and used in order to obtain an overview on how much every European country should contribute to the cause. According to this [website](https://www.investopedia.com/terms/g/gdp.asp), Gross Domestic Product (GDP) is "the total monetary or market value of all the finished goods and services produced within a country's borders in a specific time period." For this reason, the index is the best measure to define welth distribution over European countries.
+
 ### United Nations /DESA / Population Division 
-**Population**
+**Population**<br>
 The dataset was retrieved at this [link](https://population.un.org/wpp/). This dataset was used to determine the male and female population for Europe and Africa from 1950 to 2020 with a granularity of 5 years. We will interpolate to obtain data with 1 year frequency.
 All FAO’s dataset are in .csv so easy to parse and to work on. Same applies to United Nations dataset. The dimensions are overall manageable and no problems emerged.
 
 ### Geospatial data 
 This dataset was retrieved from Kaggle at the following [link](https://www.kaggle.com/worldbank/world-development-indicators). The dataset contains the geometry of every country in the world. The dataset can be imported easily as it's a json file and also quite small. The Json file will be then converted to a GeoPandas Dataframe with geopandas (specialized library to work with geographical visualization).
 
+### European Commission dataset
+This dataset [link](https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en) was used to get domestic food prices for items whose prices were not included in the FAO dataset.
 
 ### USDA Agricultural Research Service (ARS) Nutrition Facts Database  
 (additional dataset found online)  
@@ -95,4 +103,12 @@ In the last two weeks we will focus entirely on the creation of an effective dat
 
 6. Propose to the reader the results of our model on two levels. The first one is aimed to catch the reader attention by showing him just few but interesting results coming from our first analysis on Africa and Europe over the years. In this part, we will use **heatmaps**, **heatmaps with time**, **short animation of different kinds**. As the data story goes on, they reader will gain more knowledge on African history of famine and European food wasting trend. As the second level comes in, our proposal will be to introduce the model of macronutrients, final products and finally reallocation of resources we proposed.
 
+# Contribution
+**Manuel**: Neural networks to predict data of different datasets up to 2020, analysis on food prices, chord plot. Analysis on both Europe and Africa.
+
+**Joao**: Website design and implementation, integration of plots and functions into the notebook. Analysis on Europe. Code refactoring.
+
+**Dario**: Writing textual description, introduction, conclusion and detailed description of plots. Analysis on GDP and Africa. Preparing the final presentation and poster.
+
+**Riccardo**: Coding up the optmization part to obtain values on distribution of food and diet, 3D scatter plot of macronutrients. Analysis on Africa and comparison with Europe.
 

@@ -26,7 +26,7 @@ description: |
     </div>
     <div class ="col-sm-12 col-md-3" >
         <p>
-            In Africa, there is a clear disparity between North African countries and their sub-Saharan counterparts, which started to take form in the 70's. Currently, all of the former ones command a supply of more than 3000 kcal per person per day except for Sudan. To put this into context: A man at the age of 20 is expected to have at least 3000 kcal per day to safely avoid malnutrition. Simply judging by the change in color over the years, it can be stated that overall, there already was some improvement in most nations, especially after the year 2000. By hovering over a specific country, a country's actual value is displayed. Some of the states were not listed in the FAO dataset and are consequently blank. 
+            In Africa, there is a clear <b> disparity </b> between North African countries and their sub-Saharan counterparts, which started to take form in the 70's. Currently, all of the former ones command a supply of more than 3000 kcal per person per day except for Sudan. To put this into context: A man at the age of 20 is expected to have at least 3000 kcal per day to safely avoid malnutrition. Simply judging by the change in color over the years, it can be stated that overall, there already was some improvement in most nations, especially after the year 2000. By hovering over a specific country, a country's actual value is displayed. Some of the states were not listed in the FAO dataset and are consequently blank. 
 
         </p>
     </div>
@@ -39,7 +39,7 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-3">
         <p>
-            As expected, most of the European countries show a stable food supply situation, with values being more homogeneous than on the African continent. Interestingly, Belgium, Austria, and Italy are provided with the highest amount per capita. Impacts of historical events can be seen when simulating a time series using the sliders. For example, a sharp drop in Eastern Europe can be observed in the years following the dissolution of the Soviet Union. Furthermore, a correlation with a nation’s Gross Domestic Product (GDP) can be assumed. 
+            As expected, most of the European countries show a <b> stable </b> food supply situation, with values being more homogeneous than on the African continent. Interestingly, <b> Belgium, Austria,</b> and <b> Italy </b> are provided with the highest amount per capita. Impacts of historical events can be seen when simulating a time series using the sliders. For example, a sharp drop in Eastern Europe can be observed in the years following the dissolution of the Soviet Union. Furthermore, a correlation with a nation’s Gross Domestic Product (GDP) can be assumed. 
         </p>
         <p>
             Again, a few countries were not included in the dataset (mostly recenly established nations) and are left blank with no values assigned to them.
@@ -57,7 +57,7 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
         <h2>How much does each continent need?</h2>
-            In order to deduce a country’s demand, it would seem natural to just look at the population size multiplied by an average person’s daily need. However, this methodology would not account for different demographic compositions. The following plot illustrates the discrepancies between varying age groups and their respective nutritional requirements 
+            In order to deduce a country’s demand, it would seem natural to just look at the population size multiplied by an average person’s daily need. However, this methodology would not account for different <b> demographic compositions </b>. The following plot illustrates the discrepancies between varying age groups and their respective nutritional requirements 
         <a href="https://health.gov/dietaryguidelines/2015/guidelines/appendix-2/" target="_blank">(Source)</a>.
     </div>
     <div class="col-sm-12 col-md-2"></div>
@@ -114,10 +114,10 @@ description: |
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-4" style="border-right: solid;border-right-color: #e3e3e3;">
-        Various events can be put into context here, for example, the famine in Ethiopia in the ’80s, where Ethiopia figured among the countries with the highest deficit per capita. Looking at the more recent years, this animation already suggests that only by smart redistribution, Africa could sustain its own food demand. However, having the capabilities and know-how to efficiently set up a food aid operation is harder than it seems. European countries, on the other hand, have a lot more experience in this field, and they are expected to have an even higher amount of excess food, making it easier to provide for this whole operation. Ever since 2001, more than half of the examined countries show a net surplus. As of 2019, all of the countries in red were determined to be either war-riddled or politically fragile. Exceptions to the rule are Namibia and Eswatini, both of which boast a relatively high GDP per capita (ranked 10th and 11th for the African continent, respectively). Thus, the only explanation would be inequality amongst the population or insufficient distribution of available resources.
+        Various events can be put into context here, for example, the famine in Ethiopia in the ’80s, where Ethiopia figured among the countries with the highest deficit per capita. Looking at the more recent years, this animation already suggests that only by smart redistribution, <b> Africa </b> could <b> sustain its own food demand </b>. However, having the capabilities and know-how to efficiently set up a food aid operation is harder than it seems. European countries, on the other hand, have a lot more experience in this field, and they are expected to have an even higher amount of excess food, making it easier to provide for this whole operation. Ever since 2001, more than half of the examined countries show a net surplus. As of 2019, all of the countries in red were determined to be either war-riddled or politically fragile. Exceptions to the rule are Namibia and Eswatini, both of which boast a relatively high GDP per capita (ranked 10th and 11th for the African continent, respectively). Thus, the only explanation would be inequality amongst the population or insufficient distribution of available resources.
     </div>
     <div class="col-sm-12 col-md-4">
-        Surprisingly, all European countries boast an overall surplus in the food supply, with the exception being Albania which was slightly deficient during the first few years of our investigation (‘60s). Another significant occurrence can be detected during the aftermath of <a href="https://en.wikipedia.org/wiki/Breakup_of_Yugoslavia" target="_blank">Yugoslavia’s disintegration</a>
+        Surprisingly, <b> all </b> European countries boast an overall <b> surplus </b> in the food supply, with the exception being Albania which was slightly deficient during the first few years of our investigation (‘60s). Another significant occurrence can be detected during the aftermath of <a href="https://en.wikipedia.org/wiki/Breakup_of_Yugoslavia" target="_blank">Yugoslavia’s disintegration</a>
         in 1992, where ex-member states like Croatia, Bosnia & Herzegovina and former Macedonia’s nourishment status deteriorated drastically, causing a temporary shortage of nutrition. Most of the other countries, however, have constantly shown a surplus of around 1000 kcal per day and per person, meaning a third of European food does not end up being consumed - in other words: food waste.
     </div>
     <div class="col-sm-12 col-md-2"></div>
