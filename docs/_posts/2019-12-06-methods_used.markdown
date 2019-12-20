@@ -14,7 +14,7 @@ description: |
         <ul>
             <li> <a href="http://www.fao.org/faostat/en/#data" target="_blank"><b>FAO dataset</b></a> <br>
                 This dataset contains the
-                following sub-daataset, which are used:
+                following sub-dataset, which are used:
                 <ul>
                     <li>
                         <b>Food balance:</b>
