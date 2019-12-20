@@ -36,7 +36,7 @@ description: |
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
         <h2>Which countries can help</h2>
-        Let’s determine now which European countries would be most suitable for redistribution. <i> Belgium </i> boasts the highest surplus per capita (around <b> 1350 kcal/capita/day </b>). Just to put this into perspective: a Belgian person’s equivalent of food waste could help one person in every single deficient African country each to reach a healthy amount of calory intake. The following plot provides an overview of all countries. When redistributing food, most larger European countries have enough of a surplus to solely solve the hunger issue in Africa. However, if only one country starts to donate its entire surplus, the costs are assumed to be greater than if multiple countries decided to send a smaller amount each. On the other hand, the amount of European countries should be minimized in order to facilitate calculations and enable a proper analysis.
+        Let’s determine now which European countries would be most suitable for redistribution. <i> Belgium </i> boasts the highest surplus per capita (around <b> 1350 kcal/capita/day </b>). Just to put this into perspective: a Belgian person’s equivalent of food waste could help one person in every single deficient African country each to reach a healthy amount of calory intake. When redistributing food, most larger European countries have enough of a surplus to solely solve the hunger issue in Africa. However, if only one country starts to donate its entire surplus, the costs are assumed to be greater than if multiple countries decided to send a smaller amount each. On the other hand, the amount of European countries should be narrowed down in order to facilitate calculations and enable a proper analysis.
     </div>
     <div class="col-sm-12 col-md-2"></div>
 </div>
@@ -56,7 +56,7 @@ description: |
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
-        In this case, <b> Germany, France, Italy, Spain,</b> and the <b>United Kingdom</b> were chosen. Even though Russia has the greatest surplus, it was not considered as its GDP is much smaller than the one of other European countries. Moreover, its vast extent and remote nature makes efficient endeavors of collecting remaining food unlikely. Spain was preferred over Poland due to more useful geographical position as well as better economic performance.
+        In this case, <b> Germany, France, Italy, Spain,</b> and the <b>United Kingdom</b> were chosen as they occupy the top-right corner of the plot, therefore they have the highest GDPs and food supply per capita. Moreover, the markers' size is considered as it is an indicator of the total food surplus, that in turn takes into account of the population. Even though Russia has the greatest total surplus, it was not considered as its GDP is much smaller than the one of other European countries. Moreover, its vast extent and remote nature makes efficient endeavors of collecting remaining food unlikely. Spain was preferred over Poland due to more useful geographical position as well as better economic performance.
         <p>Let us now have a look at how to evaluate a specific redistribution.</p>
     </div>
     <div class="col-sm-12 col-md-2"></div>
