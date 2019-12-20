@@ -34,6 +34,12 @@ In milestone 3:
 This section contains food supplies for every country in the world. As the documentation reports, a region supply is defined as: *“Production + imports - exports + changes in stocks (decrease or increase)”.*
 We will use this database to analyze the amount of kcal/person/day for each African **and** European state in the food categories we are interested in.
 
+**Prices**
+As a primary resource, we used the FAO dataset to obtain prices for every food items analysed in our diet. In this context, it was not possibile to find all of them and therefore we will use also other resources that will be mentioned later on.
+
+**GDP**
+Every country GDP was retrieved and used in order to obtain an overview on how much every European country should contribute to the cause. According to this [website](https://www.investopedia.com/terms/g/gdp.asp), Gross Domestic Product (GDP) is "the total monetary or market value of all the finished goods and services produced within a country's borders in a specific time period." For this reason, the index is the best measure to define welth distribution over European countries.
+
 ### United Nations /DESA / Population Division 
 **Population**
 The dataset was retrieved at this [link](https://population.un.org/wpp/). This dataset was used to determine the male and female population for Europe and Africa from 1950 to 2020 with a granularity of 5 years. We will interpolate to obtain data with 1 year frequency.
@@ -42,6 +48,8 @@ All FAO’s dataset are in .csv so easy to parse and to work on. Same applies to
 ### Geospatial data 
 This dataset was retrieved from Kaggle at the following [link](https://www.kaggle.com/worldbank/world-development-indicators). The dataset contains the geometry of every country in the world. The dataset can be imported easily as it's a json file and also quite small. The Json file will be then converted to a GeoPandas Dataframe with geopandas (specialized library to work with geographical visualization).
 
+### European Commission dataset
+This dataset [link](https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en) was used to get domestic food prices for items whose prices were not included in the FAO dataset.
 
 ### USDA Agricultural Research Service (ARS) Nutrition Facts Database  
 (additional dataset found online)  
