@@ -12,9 +12,9 @@ description: |
     <div class="col-sm-12 col-md-8">
         <h2>Datasets used </h2>
         <ul>
-            <li> <b>FAO dataset</b> <br>
-                This <a href="http://www.fao.org/faostat/en/#data" target="_blank">dataset</a> contains the
-                following parameteres which were used:
+            <li> <a href="http://www.fao.org/faostat/en/#data" target="_blank"><b>FAO dataset</b></a> <br>
+                This dataset contains the
+                following sub-daataset, which are used:
                 <ul>
                     <li>
                         <b>Food balance:</b>
@@ -25,12 +25,12 @@ description: |
                         European state in the food categories we are interested in.
                     </li>
                     <li>
-                        <b> Prices </b>
-                        As a primary resource, we used the FAO dataset to obtain prices of the food items analysed in
+                        <b>Prices:</b>
+                        We used FAO dataset to obtain prices of the food items analysed in
                         our diet. In this context, FAO did not contain all the prices needed.
                     </li>
                     <li>
-                        <b> GDP </b>
+                        <b>GDP:</b>
                         GDP was retrieved and used in order to obtain an overview on how much each
                         European country should contribute to the cause.
                     </li>
@@ -38,34 +38,21 @@ description: |
                 <br>
             </li>
             <li>
-                <b>United Nations /DESA / Population Division</b> <br>
-                The dataset was retrieved at this <a href="https://population.un.org/wpp/" target="_blank">link</a>.
+                <a href="https://population.un.org/wpp/" target="_blank"><b>United Nations Population Dataset</b></a> <br>
                 This dataset was used to determine the male and female population for Europe and Africa from 1950 to
-                2020 with a granularity of 5 years. We will interpolate to obtain data with 1 year frequency. All
-                FAO datasets are in <i> .csv </i>, so it is easy to parse and to work on. Same applies to United
-                Nations dataset. The dimensions were overall manageable and no problems emerged.
+                2020 with a granularity of 5 years. We will interpolate to obtain data with 1 year frequency.
             </li>
             <br>
-            <li>
-                <b>Geospatial data </b><br>
-                This dataset was retrieved from Kaggle at the following <a
-                    href="https://www.kaggle.com/worldbank/world-development-indicators" target="_blank">link</a>.
-                The dataset contains the geometry of every country in the world. The dataset can be imported easily
-                as it's a json file and also quite small. The json file will be then converted to a GeoPandas
-                Dataframe with <i> geopandas </i> (specialized library to work with geographical visualization).
-            </li>
-            <br>
-            <li> <b>USDA Agricultural Research Service (ARS) Nutrition Facts Database (additional dataset found
-                    online) </b> <br>
-                We will use this dataset to build the optimal diet. This dataset contains nutritional information
-                for raw products, covering all those present in the FAO dataset. The information reported are per
+            <li> <b><a href="https://fdc.nal.usda.gov/USDA" target="_blank"><b>Agricultural Research Service (ARS) Nutrition Facts Database</b></a> <br>
+                Used to build the optimal diet. This dataset contains nutritional information
+                for raw products. The information reported are per
                 100 g of servings.</li>
             <br>
-            <li> <b>European Commission dataset</b> <br>
-                This dataset (<a
+            <li> <b><a
                     href="https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en"
-                    target="_blank">link</a>) was used to get domestic food prices for items whose prices were not
-                included in the FAO dataset.
+                    target="_blank">European Commission dataset</a></b> <br>
+                This dataset is used to get domestic food prices for items whose prices were not
+                included in the FAO dataset. In the end, the majority of the prices came from this dataset.
             </li>
             <br>
             <li>
@@ -86,14 +73,12 @@ description: |
     <div class="col-sm-12 col-md-8">
         <p>
             <h2>Methods </h2>
-            <h3>Recurring Neural Networks (RNN)</h3>
+            <h3>Recurrent Neural Networks (RNN)</h3>
             This widely used machine learning method was used to predict data up until the year 2020, as FAO only
-            provides information until 2013. The RNN were prefered over a simple linear regression because the latter
+            provides information until 2013. The RNN were preferred over a simple linear regression because the latter
             does not take into account intermittent outliers like periods of war or polticial instability. Additionally,
-            the mostly exponential growth of food supply was not considered in this method. The only option would have
-            been considering a shorter time span of data for the regression, but finding an appropriate range for every
-            single country was virtually impossible. <a
-                href="https://www.tensorflow.org/tutorials/structured_data/time_series" target="_blank">Tensorflow</a>'s
+            the mostly exponential growth of food supply was not considered in this method. Also, giving the short avaibility of data (only about 50 datapoints for each country), using the feeback provided by the RNN improved the accuracy of the model exponentially. The RNN was fitted using all the data from the past, but an additional <i>time window</i> method was implemented. This method uses as datapoint to predict the next year supply not only the past history (already embedded in the model), but also a time span of the last 10 years datapoints, in order to fit better the time-series behavior of the recent history.
+            <a href="https://www.tensorflow.org/tutorials/structured_data/time_series" target="_blank">Tensorflow</a>'s
             tutorial was used and adapted to fit this model.
             <h3>Convex Optimization </h3>
             Two minimizations were carried out.
