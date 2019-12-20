@@ -6,6 +6,7 @@ category: |
 title: Appendix
 description: |
 ---
+<!--A comment for Manuel-->
 <div class="row">
     <div class="col-sm-12 col-md-2"></div>
     <div class="col-sm-12 col-md-8">
