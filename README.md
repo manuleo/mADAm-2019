@@ -17,15 +17,15 @@ Despite recent technological improvements, there is still a large share of peopl
 
 - [x] How can we quantify food surplus in Europe? What are the regions characterised by the highest food waste rates?
 
-To go:
+In milestone 3:
 
-- [ ] Can we produce a list of simple and highly nutrient-dense final products that can be shipped from Europe to Africa? 
+- [x] Can we produce a list of simple and highly nutrient-dense final products that can be shipped from Europe to Africa? 
 
-- [ ] How can we define a consistent model to predict which European countries have to ship and how much should they individually contribute?
+- [x] How can we define a consistent model to predict which European countries have to ship and how much should they individually contribute?
 
-- [ ] Which countries can provide the resources to meet this plan (based on previously observed data)?
+- [x] Which countries can provide the resources to meet this plan (based on previously observed data)?
 
-- [ ] If everyone does work together, can we solve hunger on this continent?
+- [x] If everyone does work together, can we solve hunger on this continent?
 
 
 # Dataset
@@ -95,4 +95,9 @@ In the last two weeks we will focus entirely on the creation of an effective dat
 
 6. Propose to the reader the results of our model on two levels. The first one is aimed to catch the reader attention by showing him just few but interesting results coming from our first analysis on Africa and Europe over the years. In this part, we will use **heatmaps**, **heatmaps with time**, **short animation of different kinds**. As the data story goes on, they reader will gain more knowledge on African history of famine and European food wasting trend. As the second level comes in, our proposal will be to introduce the model of macronutrients, final products and finally reallocation of resources we proposed.
 
+# Contribution
+**Manuel**: Neural networks to predict data of different datasets up to 2020, analysis on food prices, chord plot. Analysis on both Europe and Africa.
+**Joao**: Website design and implementation, integration of plots and functions into the notebook. Analysis on Europe. Code refactoring.
+**Dario**: Writing textual description, introduction, conclusion and detailed description of plots. Analysis on GDP and Africa. Preparing the final presentation and poster.
+**Riccardo**: Coding up the optmization part to obtain values on distribution of food and diet, 3D scatter plot of macronutrients. Analysis on Africa and comparison with Europe.
 
