@@ -110,7 +110,17 @@ description: |
 </ul>
    Selecting a data point in the plot on the right will allow you to see the product's name and its composition of the three macronutrients projected onto the corresponding axis. 
   </div>
-  <div class="col-sm-12 col-md-4" id="chord_box" style="margin-rigth: -50pt">
+  <div class="col-sm-12 col-md-1" style="z-index:10; left: 40px; position: relative;">
+    <select id="sun_countries">
+      <option value="Europe" selected>All Europe</option>
+      <option value="France">France</option>
+      <option value="Germany">Germany</option>
+      <option value="Italy">Italy</option>
+      <option value="Spain">Spain</option>
+      <option value="UK">United Kingdom</option>
+    </select>
+  </div>
+  <div class="col-sm-12 col-md-4" id="sun_box">
     <div id="Europe_sun" style="display:none">
       {% include sunburst_EU.html %}
     </div>
@@ -129,16 +139,6 @@ description: |
     <div id="UK_sun" style="display:none">
       {% include sunburst_uk.html %}
     </div>
-  </div>
-    <div class="col-sm-12 col-md-1" style="z-index:10;">
-    <select id="sun_countries">
-      <option value="Europe" selected>All Europe</option>
-      <option value="France">France</option>
-      <option value="Germany">Germany</option>
-      <option value="Italy">Italy</option>
-      <option value="Spain">Spain</option>
-      <option value="UK">United Kingdom</option>
-    </select>
   </div>
   <div class="col-sm-12 col-md-2"></div>
 </div>
