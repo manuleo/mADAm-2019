@@ -58,7 +58,7 @@ description: |
     <div class="col-sm-12 col-md-8">
         <h2>How much does each continent need?</h2>
             In order to deduce a country’s demand, it would seem natural to just look at the population size multiplied by an average person’s daily need. However, this methodology would not account for different <b> demographic compositions </b>.
-According to this <a href="https://health.gov/dietaryguidelines/2015/guidelines/appendix-2/" target="_blank">source</a>, there are discrepancies between varying age groups and their respective nutritional requirements. Hovering over the plot will show how the highest caloric need is addressed by males and females in their 20s and 30s.
+According to this <a href="https://health.gov/dietaryguidelines/2015/guidelines/appendix-2/" target="_blank">source</a>, there are discrepancies between varying age groups and their respective nutritional requirements.  The plot clearly shows how the highest caloric need is addressed by males and females in their 20s and 30s.
         
     </div>
     <div class="col-sm-12 col-md-2"></div>
