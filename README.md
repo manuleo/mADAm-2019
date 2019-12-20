@@ -49,7 +49,7 @@ All FAO’s dataset are in .csv so easy to parse and to work on. Same applies to
 This dataset was retrieved from Kaggle at the following [link](https://www.kaggle.com/worldbank/world-development-indicators). The dataset contains the geometry of every country in the world. The dataset can be imported easily as it's a json file and also quite small. The Json file will be then converted to a GeoPandas Dataframe with geopandas (specialized library to work with geographical visualization).
 
 ### European Commission dataset
-This dataset [link](https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en) was used to get domestic food prices for items whose prices were not included in the FAO dataset.
+This dataset [linked](https://ec.europa.eu/info/food-farming-fisheries/farming/facts-and-figures/markets/prices/price-monitoring-sector/eu-prices-selected-representative-products_en) was used to get domestic food prices for items whose prices were not included in the FAO dataset.
 
 ### USDA Agricultural Research Service (ARS) Nutrition Facts Database  
 (additional dataset found online)  
